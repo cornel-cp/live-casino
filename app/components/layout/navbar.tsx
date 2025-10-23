@@ -27,14 +27,14 @@ const Navbar = () => {
         },
     ]
 
-    useEffect(() => {
-        console.log(path)
-    }, [])
+    // useEffect(() => {
+    //     console.log(path)
+    // }, [])
 
     return (
-        <ul className="flex gap-2 py-4 px-10 bg-white/20">
+        <ul className="flex gap-2 py-4 px-10 bg-white/20 -skew-x-12 mr-8">
             {menulist.map((menu, idx) => (
-                <Link href={menu.path} className={`uppercase  text-[14px] cursor-pointer ${path === menu.path ? "text-white/50" : "text-white"}`} key={idx}>{menu.label}</Link>
+                <Link href={menu.path} className={`uppercase  text-[14px] cursor-pointer skew-x-12  ${path === menu.path ? "text-white/20" : "text-white"}`} key={idx}>{menu.label}</Link>
             ))}
         </ul>
     )
