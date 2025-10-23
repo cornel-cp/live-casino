@@ -1,3 +1,4 @@
+import Jackpot from "../jackpot"
 import Footer from "./footer"
 import Header from "./header"
 
@@ -9,6 +10,7 @@ const Layout = (props: any) => {
             <main className="flex-1">
                 <Header className="absolute right-0" />
                 {children}
+                <Jackpot />
             </main>
             <Footer />
         </div>
