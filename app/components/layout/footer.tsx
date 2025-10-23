@@ -30,7 +30,7 @@ const Footer = () => {
                                         setData({ ...data, email: e.target.value })
                                     }} placeholder="Your Email" />
                                 </div>
-                                <button className="w-[103px] h-[34px] bg-red-800 -skew-x-16" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
+                                <button className="w-[103px] h-[34px] bg-red-800 -skew-x-16 cursor-pointer" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
                             </form>
                         </div>
                     </div></div>
@@ -50,7 +50,7 @@ const Footer = () => {
                                 <p className="font-normal">We are just off Highway 101 by the San Jose International Airport.</p>
                             </div>
                         </div>
-                        <button className="border-2 border-white -skew-x-16 text-white p-2"><p className="sk">Private Policy</p></button>
+                        <button className="border-2 border-white -skew-x-16 text-white p-2 cursor-pointer"><p className="skew-x-16">Private Policy</p></button>
                     </div>
                     <div className="flex items-center justify-between mt-5">
                         <div className="flex text-white text-[9px]">
@@ -62,10 +62,10 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex gap-7">
-                            <img src={"/assets/images/facebook.png"} alt="facebook" width={"12px"} height={"22px"} />
-                            <img src={"/assets/images/instagram.png"} alt="instagram" width={"22px"} height={"22px"} />
-                            <img src={"/assets/images/Youtube.png"} alt="Youtube" width={"26px"} height={"20px"} />
-                            <img src={"/assets/images/Linkedin.png"} alt="Linkedin" width={"23px"} height={"22px"} />
+                            <img className="cursor-pointer" src={"/assets/images/facebook.png"} alt="facebook" width={"12px"} height={"22px"} />
+                            <img className="cursor-pointer" src={"/assets/images/instagram.png"} alt="instagram" width={"22px"} height={"22px"} />
+                            <img className="cursor-pointer" src={"/assets/images/Youtube.png"} alt="Youtube" width={"26px"} height={"20px"} />
+                            <img className="cursor-pointer" src={"/assets/images/Linkedin.png"} alt="Linkedin" width={"23px"} height={"22px"} />
 
                         </div>
                     </div>
