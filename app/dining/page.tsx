@@ -7,170 +7,170 @@ import Image from "next/image";
 import RoomPart from "../components/restaurant/RoomPart";
 
 const Dining = () => {
-  return (
-    <Layout>
-      {/* room Section */}
-      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full">
-        <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]">
-          <div className="">
-            <p className="text-[100px] font-normal text-white leading-25">
-              DINING
-            </p>
-            <p className="text-[28px] font-normal pt-0 text-red-600 text-center pb-[69px]">
-              AT CASINO M8TRIX
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* restaurant Section */}
-      <div className="flex flex-col justify-around h-[1990px] bg-black/90">
-        <BorderBox>
-          <Image
-            className="absolute top-0 left-20 transform -translate-[50%]"
-            src="/Restaurant Logos.svg"
-            alt="restaurant"
-            width={100}
-            height={100}
-          />
-          <div className="flex justify-around absolute top-0 right-[29px] transform -translate-[50%] bg-black/90">
-            <Image
-              className="cursor-pointer mx-3.5 my-[9px]"
-              src={"/assets/images/facebook.png"}
-              alt="facebook"
-              width={12}
-              height={22}
-            />
-            <Image
-              className="cursor-pointer m-[9.5px]"
-              src={"/assets/images/Instagram.png"}
-              alt="Instagram"
-              width={26}
-              height={20}
-            />
-          </div>
-          <div className="flex gap-4 mb-10">
-            <Image
-              src={"/assets/images/image 18.png"}
-              alt="Image18"
-              width={300}
-              height={230}
-            />
-            <div className="flex-6">
-              <p className="text-white/60 font-extralight text-[14px] mb-5">
-                Zone 8 Sports Bar & Grill showcases the latest news and biggest
-                sporting events on our 40 HD flat screen TV’s, as well as two
-                massive 200” HD screens. Our menu offers a diverse selection,
-                from American to Asian fare, and more!
-              </p>
-              <div className="pb-2.5">
-                <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[14px] font-bold text-white">
-                    Opening Hours
-                  </p>
-                  <p className="flex-3 text-[8px] italic text-white/60">
-                    Sunday to Thursday
-                  </p>
-                  <p className="flex-3 text-[8px] italic text-white/60">
-                    Friday & Saturday
-                  </p>
+    return (
+        <Layout>
+            {/* room Section */}
+            <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full">
+                <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]">
+                    <div className="">
+                        <p className="text-[100px] font-normal text-white leading-25">
+                            DINING
+                        </p>
+                        <p className="text-[28px] font-normal pt-0 text-red-600 text-center pb-[69px]">
+                            AT CASINO M8TRIX
+                        </p>
+                    </div>
                 </div>
-                <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[10px] font-bold text-white">
-                    Dining Room
-                  </p>
-                  <p className="flex-3 text-[10px] text-white/60">
-                    11:00AM-12:00AM
-                  </p>
-                  <p className="flex-3 text-[10px] text-white/60">
-                    11:00AM-1:00AM
-                  </p>
-                </div>
-                <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[10px] font-bold text-white">Bar</p>
-                  <p className="flex-6 text-[10px] text-white/60">
-                    11:00AM-1:00AM
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-between mb-2.5">
-                <p className="text-[14px] font-bold text-white">To-Go Orders</p>
-                <p className="text-[12px] font-light text-white/60">
-                  Call at{" "}
-                  <span className="text-[10px] font-bold text-white">
-                    408-484-6298
-                  </span>
-                </p>
-              </div>
-              <div className="flex justify-between">
-                <p className="text-[14px] font-bold text-white">
-                  Restaurant Info
-                </p>
-                <p className="text-[12px] font-light text-white/60">
-                  Call at{" "}
-                  <span className="text-[10px] font-bold text-white">
-                    408-453-4030
-                  </span>
-                </p>
-              </div>
             </div>
-          </div>
-          <div className="flex justify-between">
-            <BtnElement name="LATE NITE MENU" color="white" />
-            <BtnElement name="HAPPY HOUR MENU" color="white" />
-            <BtnElement name="WEEKLY SPECIALS" color="white" />
-            <BtnElement name="3D TOUR" color="white" />
-            <BtnElement name="ORDER ONLINE" color="white" />
-            <BtnElement name="SEE MORE" color="red" />
-          </div>
-        </BorderBox>
-        <RoomPart
-          direction="right"
-          logoUrl="/Epic Bar.svg"
-          logoName="EpicBar"
-          text="Epic Bar is located in the heart of the casino and is the perfect setting for gathering and socializing. The bar serves finely crafted cocktails, draft beers, wines by the glass, and an appetizer and dining menu."
-          firstHeader="Opening Hours"
-          firstBody="Daily 6:00AM – 1:00AM"
-          secondHeader="To-Go Orders"
-          secondBody="408-484-6298"
-          imageUrl="/assets/images/room_of_bar.png"
-          imageName="RomeOfBar"
-        />
-        <RoomPart
-          direction="left"
-          logoUrl="/parallel.svg"
-          logoName="Parallel"
-          text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
+
+            {/* restaurant Section */}
+            <div className="flex flex-col justify-around h-[1990px] bg-black/90">
+                <BorderBox>
+                    <Image
+                        className="absolute top-0 left-20 transform -translate-[50%]"
+                        src="/Restaurant Logos.svg"
+                        alt="restaurant"
+                        width={100}
+                        height={100}
+                    />
+                    <div className="flex justify-around absolute top-0 right-[29px] transform -translate-[50%] bg-black/90">
+                        <Image
+                            className="cursor-pointer mx-3.5 my-[9px]"
+                            src={"/assets/images/facebook.png"}
+                            alt="facebook"
+                            width={12}
+                            height={22}
+                        />
+                        <Image
+                            className="cursor-pointer m-[9.5px]"
+                            src={"/assets/images/Instagram.png"}
+                            alt="Instagram"
+                            width={26}
+                            height={20}
+                        />
+                    </div>
+                    <div className="flex gap-4 mb-10">
+                        <Image
+                            src={"/assets/images/image_18.png"}
+                            alt="Image18"
+                            width={300}
+                            height={230}
+                        />
+                        <div className="flex-6">
+                            <p className="text-white/60 font-extralight text-[14px] mb-5">
+                                Zone 8 Sports Bar & Grill showcases the latest news and biggest
+                                sporting events on our 40 HD flat screen TV’s, as well as two
+                                massive 200” HD screens. Our menu offers a diverse selection,
+                                from American to Asian fare, and more!
+                            </p>
+                            <div className="pb-2.5">
+                                <div className="flex items-center pb-[5px]">
+                                    <p className="flex-4 text-[14px] font-bold text-white">
+                                        Opening Hours
+                                    </p>
+                                    <p className="flex-3 text-[8px] italic text-white/60">
+                                        Sunday to Thursday
+                                    </p>
+                                    <p className="flex-3 text-[8px] italic text-white/60">
+                                        Friday & Saturday
+                                    </p>
+                                </div>
+                                <div className="flex items-center pb-[5px]">
+                                    <p className="flex-4 text-[10px] font-bold text-white">
+                                        Dining Room
+                                    </p>
+                                    <p className="flex-3 text-[10px] text-white/60">
+                                        11:00AM-12:00AM
+                                    </p>
+                                    <p className="flex-3 text-[10px] text-white/60">
+                                        11:00AM-1:00AM
+                                    </p>
+                                </div>
+                                <div className="flex items-center pb-[5px]">
+                                    <p className="flex-4 text-[10px] font-bold text-white">Bar</p>
+                                    <p className="flex-6 text-[10px] text-white/60">
+                                        11:00AM-1:00AM
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex justify-between mb-2.5">
+                                <p className="text-[14px] font-bold text-white">To-Go Orders</p>
+                                <p className="text-[12px] font-light text-white/60">
+                                    Call at{" "}
+                                    <span className="text-[10px] font-bold text-white">
+                                        408-484-6298
+                                    </span>
+                                </p>
+                            </div>
+                            <div className="flex justify-between">
+                                <p className="text-[14px] font-bold text-white">
+                                    Restaurant Info
+                                </p>
+                                <p className="text-[12px] font-light text-white/60">
+                                    Call at{" "}
+                                    <span className="text-[10px] font-bold text-white">
+                                        408-453-4030
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex justify-between">
+                        <BtnElement name="LATE NITE MENU" color="white" />
+                        <BtnElement name="HAPPY HOUR MENU" color="white" />
+                        <BtnElement name="WEEKLY SPECIALS" color="white" />
+                        <BtnElement name="3D TOUR" color="white" />
+                        <BtnElement name="ORDER ONLINE" color="white" />
+                        <BtnElement name="SEE MORE" color="red" />
+                    </div>
+                </BorderBox>
+                <RoomPart
+                    direction="right"
+                    logoUrl="/Epic Bar.svg"
+                    logoName="EpicBar"
+                    text="Epic Bar is located in the heart of the casino and is the perfect setting for gathering and socializing. The bar serves finely crafted cocktails, draft beers, wines by the glass, and an appetizer and dining menu."
+                    firstHeader="Opening Hours"
+                    firstBody="Daily 6:00AM – 1:00AM"
+                    secondHeader="To-Go Orders"
+                    secondBody="408-484-6298"
+                    imageUrl="/assets/images/room_of_bar.png"
+                    imageName="RomeOfBar"
+                />
+                <RoomPart
+                    direction="left"
+                    logoUrl="/parallel.svg"
+                    logoName="Parallel"
+                    text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
 
 Now accepting reservations for parties of 6 or larger. Have a seated dinner for up to 14 people, or host a cocktail party for up to 25.
 
 Reservations are required to be made at least 48 hours in advance. A $100 food and beverage minimum applies. 21 and over."
-          firstHeader="Opening Hours"
-          firstBody="Daily 11am to 12am"
-          secondHeader="Reservations"
-          secondBody="408-416-4482"
-          imageUrl="/assets/images/room.png"
-          imageName="RomeOfParallel"
-        />
-        <RoomPart
-          direction="right"
-          logoUrl="/Cafe.svg"
-          logoName="Cafe"
-          text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
+                    firstHeader="Opening Hours"
+                    firstBody="Daily 11am to 12am"
+                    secondHeader="Reservations"
+                    secondBody="408-416-4482"
+                    imageUrl="/assets/images/room.png"
+                    imageName="RomeOfParallel"
+                />
+                <RoomPart
+                    direction="right"
+                    logoUrl="/Cafe.svg"
+                    logoName="Cafe"
+                    text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
 
 Now accepting reservations for parties of 6 or larger. Have a seated dinner for up to 14 people, or host a cocktail party for up to 25.
 
 Reservations are required to be made at least 48 hours in advance. A $100 food and beverage minimum applies. 21 and over."
-          firstHeader="Opening Hours"
-          firstBody="Daily 11am to 12am"
-          secondHeader="Reservations"
-          secondBody="408-484-6298"
-          imageUrl="/assets/images/room_of_cafe.png"
-          imageName="RomeOfCafe"
-        />
-      </div>
-    </Layout>
-  );
+                    firstHeader="Opening Hours"
+                    firstBody="Daily 11am to 12am"
+                    secondHeader="Reservations"
+                    secondBody="408-484-6298"
+                    imageUrl="/assets/images/room_of_cafe.png"
+                    imageName="RomeOfCafe"
+                />
+            </div>
+        </Layout>
+    );
 };
 
 export default Dining;

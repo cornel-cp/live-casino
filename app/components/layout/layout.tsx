@@ -11,7 +11,6 @@ const Layout = (props: any) => {
             <main className="flex-1">
                 <Header className="absolute right-0" />
                 {children}
-                <Jackpot />
             </main>
             <Footer />
         </div>

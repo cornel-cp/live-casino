@@ -11,7 +11,7 @@ const Jackpot = () => {
     })
 
     return (
-        <div className="flex p-[85px] bg-black/60">
+        <div className="flex p-[85px] bg-black/50">
             <div className="flex-8 text-white">
                 <div className="relative">
                     <CornerGradient />

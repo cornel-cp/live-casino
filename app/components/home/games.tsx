@@ -4,7 +4,7 @@ const Games = () => {
 
 
     return (
-        <div className="bg-black/60 relative flex flex-col justify-center">
+        <div className="bg-black/50 relative flex flex-col justify-center">
             {/* <img className="absolute top-[50px]" src={"/assets/images/games_border.png"} alt="jackpot_corner" width={"719px"} height={"346px"} /> */}
             <div className="bg-[url(/assets/images/games_border.png)] bg-no-repeat w-[722px] m-auto">
                 <p className="text-white text-center text-[50px] -mt-8">ARE YOU IN?</p>

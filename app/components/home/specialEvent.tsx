@@ -3,7 +3,7 @@ import Image from "next/image"
 const SpecialEvent = () => {
 
     return (
-        <div className="bg-black/60 px-[90px]">
+        <div className="bg-black/50 px-[90px]">
             <p className="text-6xl text-white text-center pt-[50px]">Specials & Events</p>
             <div className="flex pt-5">
                 <Image src={"/assets/images/specialDish.png"} alt="special event" width={265} height={117} />
