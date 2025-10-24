@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         {/* Link to Google Fonts */}
-        <link href="/assets/fonts/big_noodle_titling.ttf" rel="stylesheet" />
+        <Link href="/assets/fonts/big_noodle_titling.ttf" rel="stylesheet" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-screen m-auto bg-black/90`}
