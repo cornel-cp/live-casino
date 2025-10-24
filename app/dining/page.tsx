@@ -43,7 +43,7 @@ const Dining = () => {
           </div>
           <div className="flex gap-4 mb-10">
             <Image
-              src={"/assets/images/image 18.png"}
+              src={"/assets/images/image_18.png"}
               alt="Image18"
               width={300}
               height={230}
