@@ -3,7 +3,7 @@ import BtnElement from "../BtnElement/BtnElement";
 
 const RoomPart = (props: any) => {
   return (
-    <main className="relative h-[380px] mx-[88px] px-10 pt-[25px] pb-[33.5px] border-4 border-red-600 shadow-md shadow-red-600 rounded-xs">
+    <main className="relative h-[380px] mx-[88px] px-10 pt-[25px] pb-[33.5px] border-4 border-red-600 shadow-[0_0_20px_rgba(255,0,0,0.9)] rounded-xs">
       <Image
         className={`absolute top-0 transform -translate-[50%] ${
           props.direction === "right" ? "-right-5" : "left-20"

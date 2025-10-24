@@ -5,6 +5,7 @@ import BorderBox from "../components/restaurant/BorderBox";
 import BtnElement from "../components/BtnElement/BtnElement";
 import Image from "next/image";
 import RoomPart from "../components/restaurant/RoomPart";
+import Link from "next/link";
 
 const Dining = () => {
   return (
@@ -113,7 +114,9 @@ const Dining = () => {
             <BtnElement name="WEEKLY SPECIALS" color="white" />
             <BtnElement name="3D TOUR" color="white" />
             <BtnElement name="ORDER ONLINE" color="white" />
-            <BtnElement name="SEE MORE" color="red" />
+            <Link href="/dining/sportsBar">
+              <BtnElement name="SEE MORE" color="red" />
+            </Link>
           </div>
         </BorderBox>
         <RoomPart

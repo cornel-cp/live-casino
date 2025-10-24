@@ -30,11 +30,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <ul className="flex gap-2 py-4 px-10 bg-white/20">
+    <ul className="flex gap-2 py-4 px-10 bg-white/20 -skew-x-12 mr-11">
       {menulist.map((menu, idx) => (
         <Link
           href={menu.path}
-          className={`uppercase  text-[14px] cursor-pointer ${
+          className={`uppercase  text-[14px] skew-x-12 cursor-pointer ${
             "/" + path.split("/")[1] === menu.path
               ? "text-white/50"
               : "text-white"
