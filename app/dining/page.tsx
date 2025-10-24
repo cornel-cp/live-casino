@@ -109,13 +109,13 @@ const Dining = () => {
             </div>
           </div>
           <div className="flex justify-between">
-            <BtnElement name="LATE NITE MENU" color="white" />
-            <BtnElement name="HAPPY HOUR MENU" color="white" />
-            <BtnElement name="WEEKLY SPECIALS" color="white" />
-            <BtnElement name="3D TOUR" color="white" />
-            <BtnElement name="ORDER ONLINE" color="white" />
+            <BtnElement className="" name="LATE NITE MENU" color="white" />
+            <BtnElement className="" name="HAPPY HOUR MENU" color="white" />
+            <BtnElement className="" name="WEEKLY SPECIALS" color="white" />
+            <BtnElement className="" name="3D TOUR" color="white" />
+            <BtnElement className="" name="ORDER ONLINE" color="white" />
             <Link href="/dining/sportsBar">
-              <BtnElement name="SEE MORE" color="red" />
+              <BtnElement className="" name="SEE MORE" color="red" />
             </Link>
           </div>
         </BorderBox>
@@ -130,6 +130,7 @@ const Dining = () => {
           secondBody="408-484-6298"
           imageUrl="/assets/images/room_of_bar.png"
           imageName="RomeOfBar"
+          href="/dining/EpicBar"
         />
         <RoomPart
           direction="left"
@@ -146,6 +147,7 @@ Reservations are required to be made at least 48 hours in advance. A $100 food a
           secondBody="408-416-4482"
           imageUrl="/assets/images/room.png"
           imageName="RomeOfParallel"
+          href="/dining/parallel"
         />
         <RoomPart
           direction="right"
@@ -162,6 +164,7 @@ Reservations are required to be made at least 48 hours in advance. A $100 food a
           secondBody="408-484-6298"
           imageUrl="/assets/images/room_of_cafe.png"
           imageName="RomeOfCafe"
+          href="/dining/cafe"
         />
       </div>
     </Layout>

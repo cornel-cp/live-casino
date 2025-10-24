@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BtnElement from "../BtnElement/BtnElement";
+import Link from "next/link";
 
 const RoomPart = (props: any) => {
   return (
@@ -40,9 +41,11 @@ const RoomPart = (props: any) => {
             </div>
             <div className="absolute bottom-2.5 w-full">
               <div className="flex justify-between">
-                <BtnElement color="white" name="3D TOUR" />
-                <BtnElement color="white" name="MENU" />
-                <BtnElement color="red" name="SEE MORE" />
+                <BtnElement className="" color="white" name="3D TOUR" />
+                <BtnElement className="" color="white" name="MENU" />
+                <Link href={props.href}>
+                  <BtnElement className="" color="red" name="SEE MORE" />
+                </Link>
               </div>
             </div>
           </div>
@@ -86,9 +89,11 @@ const RoomPart = (props: any) => {
             </div>
             <div className="absolute bottom-2.5 w-full">
               <div className="flex justify-between">
-                <BtnElement color="white" name="3D TOUR" />
-                <BtnElement color="white" name="RESERVATION" />
-                <BtnElement color="red" name="SEE MORE" />
+                <BtnElement className="" color="white" name="3D TOUR" />
+                <BtnElement className="" color="white" name="RESERVATION" />
+                <Link href={props.href}>
+                  <BtnElement className="" color="red" name="SEE MORE" />
+                </Link>
               </div>
             </div>
           </div>

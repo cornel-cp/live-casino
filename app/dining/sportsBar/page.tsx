@@ -40,10 +40,12 @@ const SportsBar = () => {
           </div>
           <div className="flex-6">
             <p className="text-white/60 font-extralight text-[14px] pb-5 border-b-2 border-gray-780">
-              Zone 8 Sports Bar & Grill showcases the latest news and biggest
-              sporting events on our 40 HD flat screen TV’s, as well as two
-              massive 200” HD screens. Our menu offers a diverse selection, from
-              American to Asian fare, and more!
+              <p className="font-bold inline-block text-white">
+                Zone 8 Sports Bar & Grill
+              </p>{" "}
+              showcases the latest news and biggest sporting events on our 40 HD
+              flat screen TV’s, as well as two massive 200” HD screens. Our menu
+              offers a diverse selection, from American to Asian fare, and more!
             </p>
             <div className="py-5 border-b-2 border-gray-300">
               <div className="flex items-center pb-[5px]">
@@ -116,9 +118,17 @@ const SportsBar = () => {
             </Link>
           </div>
           <div className="flex justify-between w-[316px]!">
-            <BtnElement color="white" name="3D TOUR" />
-            <BtnElement color="white" name="SEE MENU" />
-            <BtnElement color="red" name="ORDER ONLINE" />
+            <BtnElement className="" color="white" name="3D TOUR" />
+            <button
+              className={`bg-white flex justify-center items-center w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+            >
+              <p
+                className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
+              >
+                SEE MENU
+              </p>
+            </button>
+            <BtnElement className="" color="red" name="ORDER ONLINE" />
           </div>
         </div>
       </div>
