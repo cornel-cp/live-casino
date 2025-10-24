@@ -5,6 +5,7 @@ import Header from "./header"
 const Layout = (props: any) => {
 
     const { children } = props
+
     return (
         <div className="flex flex-col min-h-screen">
             <main className="flex-1">

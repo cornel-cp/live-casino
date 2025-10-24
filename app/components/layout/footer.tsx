@@ -10,6 +10,7 @@ const Footer = () => {
         name: "",
         email: ""
     });
+
     return (
         <footer className="">
             <div className="bg-[url(/assets/images/footer-bg1.png)]  bg-black bg-no-repeat bg-cover w-full h-[140px]">
