@@ -2,13 +2,13 @@
 
 import Header from "../components/layout/header"
 import Footer from "../components/layout/footer"
-import Jackpot from "../components/jackpot";
-import Games from "../components/games";
-import HomeDining from "../components/homedining";
-import Discover from "../components/discover";
+import Jackpot from "../components/home/jackpot";
+import Games from "../components/home/games";
+import HomeDining from "../components/home/homedining";
+import Discover from "../components/home/discover";
 import Image from "next/image";
-import SpecialEvent from "../components/specialEvent";
-import EventSpace from "../components/eventSpace";
+import SpecialEvent from "../components/home/specialEvent";
+import EventSpace from "../components/home/eventSpace";
 
 const HomePage = () => {
 

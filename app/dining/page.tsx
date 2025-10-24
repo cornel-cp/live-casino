@@ -24,7 +24,7 @@ const Dining = () => {
       </div>
 
       {/* restaurant Section */}
-      <div className="flex flex-col justify-around h-[1990px] bg-black/50">
+      <div className="flex flex-col justify-around h-[1990px] bg-black/90">
         <BorderBox>
           <Image
             className="absolute top-0 left-20 transform -translate-[50%]"
@@ -33,17 +33,25 @@ const Dining = () => {
             width={100}
             height={100}
           />
-          <div className="flex justify-around absolute top-0 right-[29px] transform -translate-[50%]">
+          <div className="flex justify-around absolute top-0 right-[29px] transform -translate-[50%] bg-black/90">
             <Image
-              src="/assets/images/social_media.png"
-              alt="SocialMedia"
-              width={80}
-              height={40}
+              className="cursor-pointer mx-3.5 my-[9px]"
+              src={"/assets/images/facebook.png"}
+              alt="facebook"
+              width={12}
+              height={22}
+            />
+            <Image
+              className="cursor-pointer m-[9.5px]"
+              src={"/assets/images/Instagram.png"}
+              alt="Instagram"
+              width={26}
+              height={20}
             />
           </div>
           <div className="flex gap-4 mb-10">
             <Image
-              src={"/assets/images/image 18.png"}
+              src={"/assets/images/image_18.png"}
               alt="Image18"
               width={300}
               height={230}
