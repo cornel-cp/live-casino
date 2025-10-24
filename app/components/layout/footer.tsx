@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react"
+import Image from "next/image";
 
 
 const Footer = () => {
@@ -30,7 +31,7 @@ const Footer = () => {
                                         setData({ ...data, email: e.target.value })
                                     }} placeholder="Your Email" />
                                 </div>
-                                <button className="w-[103px] h-[34px] bg-red-800 -skew-x-16" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
+                                <button className="w-[103px] h-[34px] bg-red-800 -skew-x-16 cursor-pointer" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
                             </form>
                         </div>
                     </div></div>
@@ -39,22 +40,22 @@ const Footer = () => {
                 <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover h-[267px] bg-no-repeat"></div>
                 <div className="px-16">
                     <div className="flex items-center">
-                        <img src={"/assets/images/footer_mobile.png"} alt="mobile" width={"24px"} height={"24px"} />
+                        <Image src={"/assets/images/footer_mobile.png"} alt="mobile" width={24} height={24} />
                         <p className="text-white pl-2 text-[10px] font-bold">408 244 3333</p>
                     </div>
                     <div className="flex items-center justify-between mt-5">
                         <div className="flex">
-                            <img src={"/assets/images/footer_location.png"} alt="location" width={"24px"} height={"24px"} />
+                            <Image src={"/assets/images/footer_location.png"} alt="location" width={24} height={24} />
                             <div className="text-white pl-2 text-[12px] ">
                                 <p className="font-bold">1887 Matrix Boulevard San Jose, Ca 95110</p>
                                 <p className="font-normal">We are just off Highway 101 by the San Jose International Airport.</p>
                             </div>
                         </div>
-                        <button className="border-2 border-white -skew-x-16 text-white p-2"><p className="sk">Private Policy</p></button>
+                        <button className="border-2 border-white -skew-x-16 text-white p-2 cursor-pointer"><p className="skew-x-16">Private Policy</p></button>
                     </div>
                     <div className="flex items-center justify-between mt-5">
                         <div className="flex text-white text-[9px]">
-                            <img src={"/assets/images/footer-logo.png"} alt="location" width={"120px"} height={"32px"} />
+                            <Image src={"/assets/images/footer-logo.png"} alt="location" width={120} height={32} />
                             <div className="pl-2.5">
                                 <p >© 2022 CASINO M8TRIX. All Rights Reserved</p>
                                 <p>21+ Please gamble responsibly | 1-800-GAMBLER | www.problemgambling.ca.gov</p>
@@ -62,10 +63,10 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex gap-7">
-                            <img src={"/assets/images/facebook.png"} alt="facebook" width={"12px"} height={"22px"} />
-                            <img src={"/assets/images/instagram.png"} alt="instagram" width={"22px"} height={"22px"} />
-                            <img src={"/assets/images/Youtube.png"} alt="Youtube" width={"26px"} height={"20px"} />
-                            <img src={"/assets/images/Linkedin.png"} alt="Linkedin" width={"23px"} height={"22px"} />
+                            <Image className="cursor-pointer" src={"/assets/images/facebook.png"} alt="facebook" width={12} height={22} />
+                            <Image className="cursor-pointer" src={"/assets/images/instagram.png"} alt="instagram" width={22} height={22} />
+                            <Image className="cursor-pointer" src={"/assets/images/Youtube.png"} alt="Youtube" width={26} height={20} />
+                            <Image className="cursor-pointer" src={"/assets/images/Linkedin.png"} alt="Linkedin" width={23} height={22} />
 
                         </div>
                     </div>
