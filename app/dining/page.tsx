@@ -33,7 +33,7 @@ const Dining = () => {
             width={100}
             height={100}
           />
-          <div className="flex justify-around absolute top-0 right-[29px] transform -translate-[50%]">
+          <div className="flex justify-around absolute top-0 -right-[15px] transform -translate-[50%]">
             <Image
               src="/assets/images/social_media.png"
               alt="SocialMedia"
