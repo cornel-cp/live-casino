@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
@@ -27,15 +27,12 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         {/* Link to Google Fonts */}
-        <link
-          href="/assets/fonts/big_noodle_titling.ttf"
-          rel="stylesheet"
-        />
+        <link href="/assets/fonts/big_noodle_titling.ttf" rel="stylesheet" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[895px] m-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-screen m-auto bg-black/90`}
       >
-        {children}
+        <div className="max-w-[895px] m-auto">{children}</div>
       </body>
     </html>
   );
