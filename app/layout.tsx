@@ -31,7 +31,7 @@ export default function RootLayout({
         <Link href="/assets/fonts/big_noodle_titling.ttf" rel="stylesheet" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-screen m-auto bg-black/90`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-screen m-auto`}
       >
         <div className="max-w-[895px] m-auto">{children}</div>
       </body>

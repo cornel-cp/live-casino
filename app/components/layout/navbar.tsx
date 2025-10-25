@@ -34,11 +34,10 @@ const Navbar = () => {
       {menulist.map((menu, idx) => (
         <Link
           href={menu.path}
-          className={`uppercase  text-[14px] skew-x-12 cursor-pointer ${
-            "/" + path.split("/")[1] === menu.path
+          className={`uppercase  text-[14px] skew-x-12 cursor-pointer ${"/" + path.split("/")[1] === menu.path
               ? "text-white/50"
               : "text-white"
-          }`}
+            }`}
           key={idx}
         >
           {menu.label}
