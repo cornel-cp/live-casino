@@ -3,15 +3,24 @@ import BtnElement from "../BtnElement/BtnElement";
 
 const JobPost = (props: any) => {
   return (
-    <div className="w-[233px] h-[268px] relative border border-gray-700">
+    <div
+      className={`group w-[233px] h-[268px] relative border border-gray-700  ${props.className}`}
+    >
       <Image
-        className="absolute top-[15.5px] right-[16.5px]"
+        className={`absolute top-[15.5px] right-[16.5px]`}
         src={"/assets/images/Group 48095852.png"}
         alt="Molicule"
         width={11.5}
         height={12.5}
       />
-      <div className="ml-[26px] mr-[30px] mt-[27px] mb-12 text-[14px]">
+      <Image
+        className="absolute -top-0.5 -left-0.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+        src={"/assets/images/Vector 3.png"}
+        alt="Vector"
+        width={54}
+        height={61}
+      />
+      <div className="ml-[26px] mr-[30px] mt-[27px] mb-12 text-[14px] ">
         <p className="text-white/40 font-light">{props.date}</p>
         <div>
           <p className="text-[20px] font-bold text-white">{props.title}</p>
