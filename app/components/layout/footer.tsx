@@ -3,6 +3,10 @@
 import Link from "next/link";
 import { useState } from "react"
 import Image from "next/image";
+import FacebookIcon from "../icons/facebookIcon";
+import InstagramIcon from "../icons/instagramIcon";
+import LinkedinIcon from "../icons/linkedinIcon";
+import YoutubeIcon from "../icons/youtubeIcon";
 
 
 const Footer = () => {
@@ -64,11 +68,10 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="flex gap-7">
-                            <Image className="cursor-pointer" src={"/assets/images/facebook.png"} alt="facebook" width={12} height={22} />
-                            <Image className="cursor-pointer" src={"/assets/images/instagram.png"} alt="instagram" width={22} height={22} />
-                            <Image className="cursor-pointer" src={"/assets/images/Youtube.png"} alt="Youtube" width={26} height={20} />
-                            <Image className="cursor-pointer" src={"/assets/images/Linkedin.png"} alt="Linkedin" width={23} height={22} />
-
+                            <FacebookIcon />
+                            <InstagramIcon />
+                            <YoutubeIcon />
+                            <LinkedinIcon />
                         </div>
                     </div>
                 </div>
