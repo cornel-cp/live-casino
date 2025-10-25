@@ -12,7 +12,6 @@ const GameIcon = (props: any) => {
 
     return (
         <div className="text-center group cursor-pointer">
-            {/* <Image className="text-white hover:text-red-500" src={`/assets/images/${icon}.svg`} alt="jackpot corner" width={110} height={60} /> */}
             {icon === "poker" && <PokerIcon />}
             {icon === "pure" && <PureIcon />}
             {icon === "baccarat" && <IcoBabacat />}
