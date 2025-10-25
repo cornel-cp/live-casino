@@ -15,7 +15,7 @@ const HomePage = () => {
 
     return (
 
-        < div className="flex flex-col min-h-screen" >
+        <div className="flex flex-col min-h-screen" >
             <main className="">
                 <Header className="absolute right-0" />
                 {/* Hero Section */}
