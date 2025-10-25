@@ -6,8 +6,8 @@ const Jackpot = () => {
 
     const [value, setValue] = useState({
         first: "$ 10,000.00",
-        second: "$ 100,000.00",
-        third: "$ 100,000.00"
+        second: "$100,000.00",
+        third: "$100,000.00"
     })
 
     return (

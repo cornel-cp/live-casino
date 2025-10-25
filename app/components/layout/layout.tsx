@@ -1,4 +1,3 @@
-import Jackpot from "../jackpot"
 import Footer from "./footer"
 import Header from "./header"
 

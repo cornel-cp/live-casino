@@ -1,7 +1,16 @@
+"use client"
+
+import { useRouter } from "next/router";
 import GameIcon from "./gameicon"
+import Link from "next/link";
 
 const Games = () => {
 
+    // const router = useRouter();
+
+    // const goToGamingPage = () => {
+    //     router.push('/gaming'); // Navigate to the gaming page
+    // };
 
     return (
         <div className="bg-black/50 relative flex flex-col justify-center">
@@ -17,7 +26,9 @@ const Games = () => {
                     <GameIcon icon="aka" name="AKA PAI GOW POKER" />
                     <GameIcon icon="pri" name="PAI GOW TILES" />
                 </div>
-                <button className="bg-red-600 -skew-x-12 p-2 flex justify-center mt-7 w-[102px] mx-auto mb-11"><p className="text-white skew-x-12">All Games</p></button>
+                <Link href={"/gaming"}>
+                    <button className="bg-red-600 -skew-x-12 p-2 flex justify-center mt-7 w-[102px] mx-auto mb-11"><p className="text-white skew-x-12">All Games</p></button>
+                </Link>
             </div>
 
         </div>
