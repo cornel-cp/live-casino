@@ -42,9 +42,6 @@ const Employment = () => {
               must be at least 21 years of age to work on the Gaming Floor.
             </p>
           </div>
-          <span className="text-white rounded-[50%] px-2 pt-[3px] mb-[182px] ml-5 bg-white/20 cursor-pointer">
-            ^
-          </span>
         </div>
         <div className="mx-[86px] mt-[97px]">
           <p className="text-[18px] font-[400px] text-white">
