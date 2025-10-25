@@ -4,6 +4,7 @@ import Image from "next/image";
 import Layout from "../components/layout/layout";
 import JobPost from "../components/employment/jobPost";
 import BtnElement from "../components/BtnElement/BtnElement";
+import Molicule from "../components/icons/molicule";
 
 const Employment = () => {
   return (
@@ -54,7 +55,7 @@ const Employment = () => {
             you shortly.
           </p>
           <div className="flex flex-wrap gap-3 mb-[78px]">
-            <div className="w-[233px] h-[268px] relative border border-white">
+            <div className="w-[233px] h-[268px] relative border border-white [&:has(.special:hover)]:border-gray-600 transition duration-500">
               <Image
                 className="absolute -top-0.5 -left-0.5"
                 src={"/assets/images/Vector 3.png"}
@@ -62,13 +63,7 @@ const Employment = () => {
                 width={54}
                 height={61}
               />
-              <Image
-                className="absolute top-[15.5px] right-[16.5px]"
-                src={"/assets/images/Group 48095852.png"}
-                alt="Molicule"
-                width={11.5}
-                height={12.5}
-              />
+              <Molicule className="special absolute top-[15.5px] right-[16.5px] text-gray-600 hover:text-white transition duration-500" />
               <div className="ml-[26px] mr-[30px] mt-[27px] mb-12 text-[14px]">
                 <p className="text-white/40 font-light">Nov, 13</p>
                 <div>
@@ -95,25 +90,25 @@ const Employment = () => {
               </div>
             </div>
             <JobPost
-              className="hover:border-white transition"
+              className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 9"
               title="Bartender"
               text="Bartenders prepare alcoholic or non-alcoholic beverages for bar and restaurant patrons."
             />
             <JobPost
-              className="hover:border-white transition"
+              className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 11"
               title="Security Officer"
               text="Security Officer candidates with specialty skills including customer service and concierge experience. "
             />
             <JobPost
-              className="hover:border-white transition"
+              className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 21"
               title="Chip Runner"
               text="Responsible for chip and cash transactions, issuing imprest bank carts and table banks, assisting with even-exchange employee transactions."
             />
             <JobPost
-              className="hover:border-white transition"
+              className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 17"
               title="Poker Dealer"
               text="We promote from within and often our gaming employees will have the opportunity to be promoted to Game Attendants."
@@ -180,7 +175,7 @@ const Employment = () => {
           </div>
           <div className="mt-14 relative border-2 border-red-600 inline-block p-8 float-right -skew-x-16 mb-3">
             <Image
-              className="skew-x-16 absolute top-0 -right-10 -translate-[50%] bg-gray-600 p-2"
+              className="skew-x-16 absolute top-0 -right-10 -translate-[50%] bg-gray-700 p-2"
               src={"/assets/images/Office Hours.png"}
               alt="OfficeHour"
               width={112}
