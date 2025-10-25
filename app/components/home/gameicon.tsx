@@ -1,10 +1,13 @@
 "use client"
 
 import AkaIcon from "../icons/akaIcon";
+import CasinoWar from "../icons/casinoWar";
 import { IcoBabacat } from "../icons/icons";
 import PokerIcon from "../icons/pokerIcon";
 import PriIcon from "../icons/priIcon";
 import PureIcon from "../icons/pureIcon";
+import ThreeCard from "../icons/threeCard";
+import UltimateTexas from "../icons/ultimateTexas";
 
 const GameIcon = (props: any) => {
 
@@ -17,6 +20,11 @@ const GameIcon = (props: any) => {
             {icon === "baccarat" && <IcoBabacat />}
             {icon === "aka" && <AkaIcon />}
             {icon === "pri" && <PriIcon />}
+            {icon === "three_card" && <ThreeCard />}
+            {icon === "ultimate" && <UltimateTexas />}
+            {icon === "casino" && <CasinoWar />}
+
+
             <p className="text-white/20 text-[12px] text-center group-hover:text-white" >{name}</p>
         </div>
     )

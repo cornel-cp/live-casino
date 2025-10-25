@@ -1,6 +1,7 @@
 import { useState } from "react"
 import InputModel from "./inputModel"
 import CornerGradient from "./cornerGradient"
+import Link from "next/link"
 
 const Jackpot = () => {
 
@@ -24,7 +25,9 @@ const Jackpot = () => {
                         <p className="text-white text-[9px] mb-6">
                             Last Update: 07/07/2023 16:04:28
                         </p>
-                        <button className="bg-red-600 text-white -skew-x-12 p-2 rounded-sm"> <p className="text-[12px] skew-x-12"> Learn More</p></button>
+                        <Link href={"/gaming/jackpot"}>
+                            <button className="bg-red-600 text-white -skew-x-12 p-2 rounded-sm"> <p className="text-[12px] skew-x-12"> Learn More</p></button>
+                        </Link>
                     </div>
                 </div>
             </div>
