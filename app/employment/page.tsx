@@ -95,21 +95,25 @@ const Employment = () => {
               </div>
             </div>
             <JobPost
+              className="hover:border-white transition"
               date="Nov, 9"
               title="Bartender"
               text="Bartenders prepare alcoholic or non-alcoholic beverages for bar and restaurant patrons."
             />
             <JobPost
+              className="hover:border-white transition"
               date="Nov, 11"
               title="Security Officer"
               text="Security Officer candidates with specialty skills including customer service and concierge experience. "
             />
             <JobPost
+              className="hover:border-white transition"
               date="Nov, 21"
               title="Chip Runner"
               text="Responsible for chip and cash transactions, issuing imprest bank carts and table banks, assisting with even-exchange employee transactions."
             />
             <JobPost
+              className="hover:border-white transition"
               date="Nov, 17"
               title="Poker Dealer"
               text="We promote from within and often our gaming employees will have the opportunity to be promoted to Game Attendants."
@@ -118,7 +122,7 @@ const Employment = () => {
           <div className="flex justify-between items-end mb-[76px]">
             <div>
               <p className="text-white text-[36px]">
-                Not Finding What You're Looking For?
+                Not Finding What You&apos;re Looking For?
               </p>
               <p className="text-white/40 text-[12px]">
                 Share your information and we will contact you if new
