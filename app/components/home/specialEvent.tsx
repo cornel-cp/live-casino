@@ -3,9 +3,9 @@ import Image from "next/image"
 const SpecialEvent = () => {
 
     return (
-        <div className="bg-black/50 px-[90px]">
+        <div className="bg-background px-12 md:px-[90px]">
             <p className="text-6xl text-white text-center pt-[50px]">Specials & Events</p>
-            <div className="flex pt-5">
+            <div className="flex pt-5 flex-col md:flex-row gap-4 items-center">
                 <Image src={"/assets/images/specialDish.png"} alt="special event" width={265} height={117} className="-skew-x-2" />
                 <div className="bg-white/20 flex items-center justify-between w-full mr-10 -skew-x-18 text-white hover:bg-white hover:text-black" >
                     <div className=" pt-[18px] pl-14 skew-x-19">
@@ -16,7 +16,7 @@ const SpecialEvent = () => {
                     <button className="-skew-x-12 bg-red-600 w-[103px] h-[34px] mr-5"><p className="text-white skew-x-30">READ MORE</p></button>
                 </div>
             </div>
-            <div className="flex pt-8 pb-20">
+            <div className="flex pt-8 pb-20 flex-col md:flex-row gap-4 items-center">
                 <Image src={"/assets/images/specialEvent2.png"} alt="special event" width={265} height={117} className="-skew-x-2" />
                 <div className="bg-white/20 flex items-center justify-between w-full mr-10 -skew-x-18 text-white hover:bg-white hover:text-black" >
                     <div className=" pt-[18px] pl-14 skew-x-18">

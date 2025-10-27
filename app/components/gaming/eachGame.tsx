@@ -6,8 +6,8 @@ const EachGame = () => {
 
 
     return (
-        <div className="flex">
-            <div className="flex-4 group border-1 border-white/20 m-1 text-center py-6 hover:border-red-600 transition duration-1000">
+        <div className="flex flex-col md:flex-row">
+            <div className="flex-4 group border-1 border-white/20 m-1 text-center py-6 hover:border-red-600 transition duration-1000 px-4">
                 <PokerIcon />
                 <p className="text-[18px]">POKER</p>
                 <p className="pt-2.5 text-[12px] text-white/40">Three card poker is one of the most popular

@@ -10,10 +10,10 @@ const Gaming = () => {
         <div>
             <main className="">
                 <Header className="absolute right-0" />
-                <div className="bg-[url(/assets/images/gaming_header.png)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full" >
+                <div className="bg-[url(/assets/images/gaming_header.png)] bg-no-repeat bg-cover bg-center h-[469px] flex flex-col justify-end w-full" >
                     <div className="bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[267px]"></div>
                 </div>
-                <div className="bg-black/50 relative flex flex-col justify-center pt-20">
+                <div className="bg-background relative flex flex-col justify-center pt-20">
                     <div className="bg-[url(/assets/images/rectangle_gaming.png)] bg-no-repeat w-[722px] mx-auto relative">
                         <div className="bg-[url(/assets/images/table_gradient.png)] bg-no-repeat bg-cover w-full h-[60px] absolute bottom-2.5"></div>
                         <p className="text-white text-center text-[50px] -mt-10">GAMES</p>
@@ -22,7 +22,7 @@ const Gaming = () => {
                     </div>
                 </div>
                 <GamesRules />
-                <div className="px-15 pt-14 bg-black/50 pb-14">
+                <div className="px-15 pt-14 bg-background pb-14">
                     <EventSpaceCom
                         text1="Casino M8TRIX Card academy"
                         text2="Learn from the professionals"

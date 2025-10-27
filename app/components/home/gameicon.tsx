@@ -14,7 +14,7 @@ const GameIcon = (props: any) => {
     const { icon, name } = props;
 
     return (
-        <div className="text-center group cursor-pointer">
+        <div className="text-center group cursor-pointer w-full">
             {icon === "poker" && <PokerIcon />}
             {icon === "pure" && <PureIcon />}
             {icon === "baccarat" && <IcoBabacat />}
@@ -25,7 +25,7 @@ const GameIcon = (props: any) => {
             {icon === "casino" && <CasinoWar />}
 
 
-            <p className="text-white/20 text-[12px] text-center group-hover:text-white" >{name}</p>
+            <p className="text-white/20 text-[24px] text-center group-hover:text-white transition duration-500" >{name}</p>
         </div>
     )
 }

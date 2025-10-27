@@ -24,7 +24,7 @@ const Footer = () => {
               <p className="text-white text-[18px] pt-0.5 m-0">GET FRESH NEWS EVERY MONTH!</p>
             </div>
             <div className="flex-6 flex-col">
-              <form className="pt-[41px] pb-[41px] flex z-50 items-center justify-around" action={"#"}>
+              <form className="pt-[41px] pb-[41px] flex z-50 items-center flex-col md:flex-row justify-around" action={"#"}>
                 <div>
                   <input className="bg-white/20 block w-[207px] h-6 text-white mb-2.5 px-2 py-1 border-ra" value={data.name} onChange={(e) => {
                     setData({ ...data, name: e.target.value })

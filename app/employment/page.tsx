@@ -7,7 +7,7 @@ import BtnElement from "../components/BtnElement/BtnElement";
 
 const Employment = () => {
   return (
-    <div className="bg-black/50">
+    <div className="bg-background">
       <Layout>
         <div>
           <Image

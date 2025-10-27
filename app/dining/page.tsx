@@ -25,7 +25,7 @@ const Dining = () => {
       </div>
 
       {/* restaurant Section */}
-      <div className="flex flex-col justify-around h-[1990px] bg-black/50">
+      <div className="flex flex-col justify-around h-[1990px] bg-background">
         <BorderBox>
           <Image
             className="absolute top-0 left-20 transform -translate-[50%]"
