@@ -6,7 +6,7 @@ const TrCom = (props: any) => {
     return (
         <tbody>
             {
-                data.map((trData, index) => {
+                data.map(({ trData, index }: { trData: any, index: any }) => {
                     <tr className="text-white text-center border-b-1 border-b-white/20" key={index}>
                         <td className="text-left">{trData.game}</td>
                         <td className="text-red-600">2</td>

@@ -25,7 +25,7 @@ const Dining = () => {
       </div>
 
       {/* restaurant Section */}
-      <div className="flex flex-col justify-around h-[1990px] bg-background">
+      <div className="flex flex-col justify-around bg-background gap-20 pb-12">
         <BorderBox>
           <Image
             className="absolute top-0 left-20 transform -translate-[50%]"
@@ -42,14 +42,15 @@ const Dining = () => {
               height={40}
             />
           </div>
-          <div className="flex gap-4 mb-10">
+          <div className="flex gap-4 mb-10 flex-col md:flex-row w-full ">
             <Image
               src={"/assets/images/image_18.png"}
               alt="Image18"
-              width={300}
+              width={400}
               height={230}
+              className="w-full md:w-1/2 aspect-4/3 shrink-0 "
             />
-            <div className="flex-6">
+            <div className=" md:w-1/2">
               <p className="text-white/60 font-extralight text-[14px] mb-5">
                 Zone 8 Sports Bar & Grill showcases the latest news and biggest
                 sporting events on our 40 HD flat screen TV’s, as well as two
@@ -108,7 +109,7 @@ const Dining = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between flex-wrap gap-4">
             <BtnElement className="" name="LATE NITE MENU" color="white" />
             <BtnElement className="" name="HAPPY HOUR MENU" color="white" />
             <BtnElement className="" name="WEEKLY SPECIALS" color="white" />

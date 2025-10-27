@@ -5,8 +5,9 @@ import Navbar from "./navbar";
 import Image from "next/image";
 import { useState } from "react";
 
-const Header = () => {
+const Header = (props: any) => {
 
+  const { className } = props
   const [isOpen, setIsOpen] = useState(false); // State to toggle the menu
 
   const toggleMenu = () => {
@@ -45,9 +46,9 @@ const Header = () => {
               className="w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>

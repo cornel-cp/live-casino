@@ -24,13 +24,12 @@ const Employment = () => {
             Shifts may vary depending on our business needs.
           </p>
         </div>
-        <div className="ml-[86px] flex items-end">
+        <div className="max-w-5xl mx-auto w-full flex items-end">
           <Image
-            className="h-[321px]! -z-10"
             src={"/assets/images/Intersect (1).png"}
             alt="Intersect"
             width={659}
-            height={321}
+            height={421}
           />
           <div className="-ml-[90px]">
             <p className="text-[36px] font-[400px] text-white text-end">
@@ -43,7 +42,7 @@ const Employment = () => {
             </p>
           </div>
         </div>
-        <div className="mx-[86px] mt-[97px]">
+        <div className="max-w-7xl mx-auto">
           <p className="text-[18px] font-[400px] text-white">
             FIND YOUR NEXT JOB IN our{" "}
             <p className="text-[36px]">5 opportunities</p>
@@ -53,7 +52,7 @@ const Employment = () => {
             Upload your resume and fill up the online application, we’ll contact
             you shortly.
           </p>
-          <div className="flex flex-wrap gap-3 mb-[78px]">
+          <div className="flex flex-wrap gap-3 mb-[78px] items-center justify-center">
             <div className="w-[233px] h-[268px] relative border border-white">
               <Image
                 className="absolute -top-0.5 -left-0.5"
@@ -139,7 +138,7 @@ const Employment = () => {
               </p>
             </button>
           </div>
-          <div className="relative">
+          <div className="relative max-w-5xl mx-auto">
             <Image
               className="absolute top-0 left-0"
               src={"/assets/images/Vector 3.png"}
@@ -147,7 +146,7 @@ const Employment = () => {
               width={84.5}
               height={94.5}
             />
-            <div className="flex justify-between ml-[35px] pt-[30px] gap-8">
+            <div className="flex justify-between px-4 pt-[30px] gap-8">
               <div className="flex-6">
                 <p className="text-white 36px font-normal">
                   why work at casino m8trix

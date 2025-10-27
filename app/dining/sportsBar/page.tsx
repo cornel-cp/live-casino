@@ -13,32 +13,30 @@ const SportsBar = () => {
         <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
       </div>
       {/* main body Part */}
-      <div className=" bg-background pt-[60px]">
-        <div className="flex gap-10 ml-28 mr-[85px]">
-          <div className="relative">
-            <Image
-              className="block h-[315px]"
-              src={"/assets/images/image_18.png"}
-              alt="Image18"
-              width={300}
-              height={315}
-            />
-            <Image
-              className="absolute top-0 translate-[-50%]"
-              src={"/assets/images/Ellipse (1).png"}
-              alt="RestaurantLogo"
-              width={145}
-              height={145}
-            />
-            <Image
-              className="absolute top-0 translate-[-50%]"
-              src={"/assets/images/Ellipse1.png"}
-              alt="RestaurantLogo"
-              width={140}
-              height={62}
-            />
-          </div>
-          <div className="flex-6">
+      <div className=" bg-background pt-[60px] max-w-5xl mx-auto">
+        <div className="flex gap-10 px-8 md:mx-20  flex-col md:flex-row relative">
+          <Image
+            className="block w-full shrink-0 md:w-1/2"
+            src={"/assets/images/image_18.png"}
+            alt="Image18"
+            width={300}
+            height={315}
+          />
+          <Image
+            className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
+            src={"/assets/images/Ellipse (1).png"}
+            alt="RestaurantLogo"
+            width={145}
+            height={145}
+          />
+          <Image
+            className="absolute top-0  left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
+            src={"/assets/images/Ellipse1.png"}
+            alt="RestaurantLogo"
+            width={140}
+            height={62}
+          />
+          <div className="w-full md:w-1/2">
             <p className="text-white/60 font-extralight text-[14px] pb-5 border-b-2 border-gray-780">
               <p className="font-bold inline-block text-white">
                 Zone 8 Sports Bar & Grill
@@ -117,7 +115,7 @@ const SportsBar = () => {
               </p>
             </Link>
           </div>
-          <div className="flex justify-between w-[316px]!">
+          <div className="flex justify-between w-[316px]! flex-col sm:flex-row gap-4">
             <BtnElement className="" color="white" name="3D TOUR" />
             <button
               className={`bg-white flex justify-center items-center w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
