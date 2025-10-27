@@ -61,3 +61,11 @@ button:hover{
 tr td{
   padding: 3px 6px;
 }
+
+.nunito {
+  font-family: 'Nunito';
+}
+
+.noodle {
+  font-family: 'noodle';
+}

@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import Header from "../components/layout/header"
-import Footer from "../components/layout/footer"
+import Header from "../components/layout/header";
+import Footer from "../components/layout/footer";
 import Jackpot from "../components/home/jackpot";
 import Games from "../components/home/games";
 import HomeDining from "../components/home/homedining";
@@ -40,5 +40,4 @@ const HomePage = () => {
     )
 };
 
-export default HomePage
-
+export default HomePage;

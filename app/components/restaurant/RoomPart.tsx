@@ -9,7 +9,7 @@ const RoomPart = (props: any) => {
         className={`absolute top-0 transform -translate-[50%] left-1/2 ${props.direction === "right" ? "md:right-5 md:left-auto" : "md:left-20"
           }`}
         src={props.logoUrl}
-        alt={props.logoName}
+        alt="restaurant"
         width={100}
         height={100}
       />
@@ -49,6 +49,7 @@ const RoomPart = (props: any) => {
             </div>
           </div>
           <Image
+            className="flex-6 w-full h-[133px] md:h-full"
             src={props.imageUrl}
             alt={props.imageName}
             width={300}
@@ -59,13 +60,14 @@ const RoomPart = (props: any) => {
       ) : (
         <div className="flex gap-4 flex-col md:flex-row">
           <Image
+            className="flex-6 w-full h-[133px] md:h-full"
             src={props.imageUrl}
             alt={props.imageName}
             width={300}
             height={315}
             className="w-full md:w-1/2 aspect-4/3"
           />
-          <div className="flex-6 relative">
+          <div className="flex-6 relative nunito">
             <p className="text-white/60 font-extralight text-[14px] mb-5">
               {props.text}
             </p>
@@ -100,7 +102,7 @@ const RoomPart = (props: any) => {
           </div>
         </div>
       )}
-    </main>
+    </div>
   );
 };
 

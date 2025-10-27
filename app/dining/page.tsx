@@ -6,12 +6,17 @@ import BtnElement from "../components/BtnElement/BtnElement";
 import Image from "next/image";
 import RoomPart from "../components/restaurant/RoomPart";
 import Link from "next/link";
+import Cocktail from "../components/icons/cocktail";
+import Cutlery from "../components/icons/cutlery";
+import Hamburger from "../components/icons/hamburger";
+import FacebookIcon from "../components/icons/facebookIcon";
+import InstagramIcon from "../components/icons/instagramIcon";
 
 const Dining = () => {
   return (
     <Layout>
       {/* room Section */}
-      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full">
+      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full min-h-screen">
         <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]">
           <div className="">
             <p className="text-[100px] font-normal text-white leading-25">
@@ -28,22 +33,21 @@ const Dining = () => {
       <div className="flex flex-col justify-around bg-background gap-20 pb-12">
         <BorderBox>
           <Image
-            className="absolute top-0 left-20 transform -translate-[50%]"
+            className="absolute top-0 left-[50%] transform -translate-[50%] md:top-0 md:left-20 md:transform md:-translate-[50%]"
             src="/Restaurant Logos.svg"
             alt="restaurant"
             width={100}
             height={100}
           />
-          <div className="flex justify-around absolute top-0 -right-[15px] transform -translate-[50%]">
-            <Image
-              src="/assets/images/social_media.png"
-              alt="SocialMedia"
-              width={80}
-              height={40}
-            />
+          <div className="hidden md:block">
+            <div className=" bg-background px-4 py-2 flex justify-around gap-4 absolute top-[50%] -right-[5px] transform -translate-[50%] md:top-0 md:-right-[5px] md:transform md:-translate-[50%]">
+              <FacebookIcon />
+              <InstagramIcon />
+            </div>
           </div>
           <div className="flex gap-4 mb-10 flex-col md:flex-row w-full ">
             <Image
+              className="flex-6 w-full md:h-full"
               src={"/assets/images/image_18.png"}
               alt="Image18"
               width={400}
@@ -59,48 +63,52 @@ const Dining = () => {
               </p>
               <div className="pb-2.5">
                 <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[14px] font-bold text-white">
+                  <p className="flex-4 text-[14px] font-bold text-white nunito">
                     Opening Hours
                   </p>
-                  <p className="flex-3 text-[8px] italic text-white/60">
+                  <p className="flex-3 text-[8px] italic text-white/60 nunito">
                     Sunday to Thursday
                   </p>
-                  <p className="flex-3 text-[8px] italic text-white/60">
+                  <p className="flex-3 text-[8px] italic text-white/60 nunito">
                     Friday & Saturday
                   </p>
                 </div>
                 <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[10px] font-bold text-white">
+                  <p className="flex-4 text-[10px] font-bold text-white nunito">
                     Dining Room
                   </p>
-                  <p className="flex-3 text-[10px] text-white/60">
+                  <p className="flex-3 text-[10px] text-white/60 nunito">
                     11:00AM-12:00AM
                   </p>
-                  <p className="flex-3 text-[10px] text-white/60">
+                  <p className="flex-3 text-[10px] text-white/60 nunito">
                     11:00AM-1:00AM
                   </p>
                 </div>
                 <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[10px] font-bold text-white">Bar</p>
-                  <p className="flex-6 text-[10px] text-white/60">
+                  <p className="flex-4 text-[10px] font-bold text-white nunito">
+                    Bar
+                  </p>
+                  <p className="flex-6 text-[10px] text-white/60 nunito">
                     11:00AM-1:00AM
                   </p>
                 </div>
               </div>
               <div className="flex justify-between mb-2.5">
-                <p className="text-[14px] font-bold text-white">To-Go Orders</p>
-                <p className="text-[12px] font-light text-white/60">
+                <p className="text-[14px] font-bold text-white nunito">
+                  To-Go Orders
+                </p>
+                <p className="text-[12px] font-light text-white/60 nunito">
                   Call at{" "}
-                  <span className="text-[10px] font-bold text-white">
+                  <span className="text-[10px] font-bold text-white nunito">
                     408-484-6298
                   </span>
                 </p>
               </div>
               <div className="flex justify-between">
-                <p className="text-[14px] font-bold text-white">
+                <p className="text-[14px] font-bold text-white nunito">
                   Restaurant Info
                 </p>
-                <p className="text-[12px] font-light text-white/60">
+                <p className="text-[12px] font-light text-white/60 nunito">
                   Call at{" "}
                   <span className="text-[10px] font-bold text-white">
                     408-453-4030
