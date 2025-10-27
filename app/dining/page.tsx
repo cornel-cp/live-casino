@@ -6,12 +6,17 @@ import BtnElement from "../components/BtnElement/BtnElement";
 import Image from "next/image";
 import RoomPart from "../components/restaurant/RoomPart";
 import Link from "next/link";
+import Cocktail from "../components/icons/cocktail";
+import Cutlery from "../components/icons/cutlery";
+import Hamburger from "../components/icons/hamburger";
+import FacebookIcon from "../components/icons/facebookIcon";
+import InstagramIcon from "../components/icons/instagramIcon";
 
 const Dining = () => {
   return (
     <Layout>
       {/* room Section */}
-      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full">
+      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full min-h-screen">
         <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]">
           <div className="">
             <p className="text-[100px] font-normal text-white leading-25">
@@ -25,25 +30,48 @@ const Dining = () => {
       </div>
 
       {/* restaurant Section */}
-      <div className="flex flex-col justify-around h-[1990px] bg-black/50">
+      <div className="flex flex-col justify-around gap-20 my-10 bg-gray-430">
+        <div className="block md:hidden">
+          <BorderBox>
+            <div className="flex flex-col items-center">
+              <p className="text-white text-[50px] text-center inline -mt-[60px] pt-2 px-4 leading-none">
+                Happy hour
+              </p>
+              <p className="text-center text-[14px]">
+                <p className="inline text-white/60">Daily from</p>
+                <p className="inline text-white"> 3 PM to 6 PM </p>
+                <p className="inline text-white/60">& </p>
+                <p className="inline text-white">9 PM to 11 PM</p>
+              </p>
+              <div className="flex justify-around mt-[22px] w-full">
+                <Cocktail />
+                <Cutlery />
+                <Hamburger />
+                <Cutlery />
+              </div>
+              <BtnElement
+                className="w-[258px] mt-6 -mb-[50px]"
+                color="red"
+                name="see our great deals"
+              />
+            </div>
+          </BorderBox>
+        </div>
         <BorderBox>
           <Image
-            className="absolute top-0 left-20 transform -translate-[50%]"
+            className="absolute top-0 left-[50%] transform -translate-[50%] md:top-0 md:left-20 md:transform md:-translate-[50%]"
             src="/Restaurant Logos.svg"
             alt="restaurant"
             width={100}
             height={100}
           />
-          <div className="flex justify-around absolute top-0 -right-[15px] transform -translate-[50%]">
-            <Image
-              src="/assets/images/social_media.png"
-              alt="SocialMedia"
-              width={80}
-              height={40}
-            />
+          <div className="flex justify-around gap-4 absolute top-[50%] -right-[5px] transform -translate-[50%] md:top-0 md:-right-[5px] md:transform md:-translate-[50%]">
+            <FacebookIcon />
+            <InstagramIcon />
           </div>
-          <div className="flex gap-4 mb-10">
+          <div className="flex flex-col md:flex-row gap-4 mb-10">
             <Image
+              className="flex-6 w-full md:h-full"
               src={"/assets/images/image_18.png"}
               alt="Image18"
               width={300}
@@ -108,14 +136,14 @@ const Dining = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col gap-4 md:flex-row justify-between">
             <BtnElement className="" name="LATE NITE MENU" color="white" />
             <BtnElement className="" name="HAPPY HOUR MENU" color="white" />
             <BtnElement className="" name="WEEKLY SPECIALS" color="white" />
             <BtnElement className="" name="3D TOUR" color="white" />
             <BtnElement className="" name="ORDER ONLINE" color="white" />
             <Link href="/dining/sportsBar">
-              <BtnElement className="" name="SEE MORE" color="red" />
+              <BtnElement className="w-full" name="SEE MORE" color="red" />
             </Link>
           </div>
         </BorderBox>
