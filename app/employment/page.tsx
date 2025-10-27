@@ -76,9 +76,9 @@ const Employment = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-2 justify-center">
+              <div className="flex gap-2 justify-center px-4">
                 <button
-                  className={`bg-white flex justify-center items-center w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+                  className={`flex-5 bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
                 >
                   <p
                     className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
@@ -86,7 +86,11 @@ const Employment = () => {
                     PREVIEW
                   </p>
                 </button>
-                <BtnElement className="" color="red" name="APPLY NOW" />
+                <BtnElement
+                  className="flex-5 w-full"
+                  color="red"
+                  name="APPLY NOW"
+                />
               </div>
             </div>
             <JobPost

@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { useState } from "react";
 import Image from "next/image";
 import FacebookIcon from "../icons/facebookIcon";
 import InstagramIcon from "../icons/instagramIcon";
@@ -9,11 +7,6 @@ import YoutubeIcon from "../icons/youtubeIcon";
 import LinkedinIcon from "../icons/linkedinIcon";
 
 const Footer = () => {
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-  });
-
   return (
     <footer className="nunito">
       <div className="bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover flex flex-col justify-top w-full h-[535px]">
