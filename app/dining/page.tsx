@@ -137,13 +137,33 @@ const Dining = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 md:flex-row justify-between">
-            <BtnElement className="" name="LATE NITE MENU" color="white" />
-            <BtnElement className="" name="HAPPY HOUR MENU" color="white" />
-            <BtnElement className="" name="WEEKLY SPECIALS" color="white" />
-            <BtnElement className="" name="3D TOUR" color="white" />
-            <BtnElement className="" name="ORDER ONLINE" color="white" />
-            <Link href="/dining/sportsBar">
-              <BtnElement className="w-full" name="SEE MORE" color="red" />
+            <BtnElement
+              className="md:w-full"
+              name="LATE NITE MENU"
+              color="white"
+            />
+            <BtnElement
+              className="md:w-full"
+              name="HAPPY HOUR MENU"
+              color="white"
+            />
+            <BtnElement
+              className="md:w-full"
+              name="WEEKLY SPECIALS"
+              color="white"
+            />
+            <BtnElement className="md:w-full" name="3D TOUR" color="white" />
+            <BtnElement
+              className="md:w-full"
+              name="ORDER ONLINE"
+              color="white"
+            />
+            <Link href="/dining/sportsBar" className="md:w-full">
+              <BtnElement
+                className="w-full md:w-full"
+                name="SEE MORE"
+                color="red"
+              />
             </Link>
           </div>
         </BorderBox>

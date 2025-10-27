@@ -8,7 +8,7 @@ import Molicule from "../components/icons/molicule";
 
 const Employment = () => {
   return (
-    <div className="bg-black/50">
+    <div className="bg-gray-340">
       <Layout>
         <div>
           <Image
