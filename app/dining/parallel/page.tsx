@@ -9,12 +9,29 @@ import Link from "next/link";
 
 const Parallel = () => {
   return (
-    <>
-      <div className="hidden md:block">
-        <Layout>
-          {/* main image Part */}
-          <div className="bg-[url(/assets/images/room.png)] bg-no-repeat bg-cover bg-center h-[300px] flex flex-col justify-end w-full">
-            <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
+    <Layout>
+      {/* main image Part */}
+      <div className="bg-[url(/assets/images/room.png)] bg-no-repeat bg-cover bg-center h-[300px] flex flex-col justify-end w-full">
+        <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
+      </div>
+      {/* main body Part */}
+      <div className=" bg-background pt-[60px]">
+        <div className="flex gap-10 ml-28 mr-[85px]">
+          <div className="relative">
+            <Image
+              className="block h-[315px]"
+              src={"/assets/images/room.png"}
+              alt="Image18"
+              width={300}
+              height={315}
+            />
+            <Image
+              className="absolute top-0 translate-[-50%]"
+              src={"/Group 48095902.svg"}
+              alt="RestaurantLogo"
+              width={145}
+              height={145}
+            />
           </div>
           {/* main body Part */}
           <div className="  pt-[60px]">

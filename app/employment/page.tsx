@@ -8,7 +8,7 @@ import Molicule from "../components/icons/molicule";
 
 const Employment = () => {
   return (
-    <div className=" ">
+    <div className="bg-background">
       <Layout>
         <div className="ml-10 md:ml-0">
           <Image
@@ -25,13 +25,12 @@ const Employment = () => {
             Shifts may vary depending on our business needs.
           </p>
         </div>
-        <div className="ml-0 md:ml-[86px] mr-10 md:mr-[86px] flex items-end justify-between">
+        <div className="max-w-5xl mx-auto w-full flex items-end">
           <Image
-            className="w-full"
             src={"/assets/images/Intersect (1).png"}
             alt="Intersect"
             width={659}
-            height={321}
+            height={421}
           />
           <div className="-ml-20 pl-8 [clip-path:polygon(30%_0,100%_0,100%_100%,0_100%)]">
             <p className="text-[36px] font-[400px] text-white text-center md:text-end">
@@ -44,7 +43,7 @@ const Employment = () => {
             </p>
           </div>
         </div>
-        <div className="mx-8 md:mx-[86px] mt-[97px]">
+        <div className="max-w-7xl mx-auto">
           <p className="text-[18px] font-[400px] text-white">
             FIND YOUR NEXT JOB IN our{" "}
             <p className="text-[36px]">5 opportunities</p>
@@ -54,8 +53,8 @@ const Employment = () => {
             Upload your resume and fill up the online application, we’ll contact
             you shortly.
           </p>
-          <div className="flex flex-col items-center md:flex-row flex-wrap gap-2 mb-[78px]">
-            <div className="w-[233px] h-[268px] relative border border-white [&:has(.special:hover)]:border-gray-600 transition duration-500">
+          <div className="flex flex-wrap gap-3 mb-[78px] items-center justify-center">
+            <div className="w-[233px] h-[268px] relative border border-white">
               <Image
                 className="absolute -top-0.5 -left-0.5"
                 src={"/assets/images/Vector 3.png"}
@@ -142,7 +141,7 @@ const Employment = () => {
               </button>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative max-w-5xl mx-auto">
             <Image
               className="absolute top-0 left-0"
               src={"/assets/images/Vector 3.png"}
@@ -150,55 +149,14 @@ const Employment = () => {
               width={84.5}
               height={94.5}
             />
-            <div className="hidden md:block">
-              <div className="flex justify-between ml-[35px] pt-[30px] gap-8">
-                <div className="flex-6">
-                  <p className="text-white text-[36px] font-normal">
-                    why work at casino m8trix
-                  </p>
-                  <p className="text-red-600 text-[18px]">
-                    Vestibulum, in leo, lorem sed interdum.
-                  </p>
-                  <p className="text-white/40 text-[14px]">
-                    Casino M8trix is an equal opportunity employer and no
-                    employee, applicant, or candidate for hiring, promotion,
-                    training or other benefit shall be discriminated against or
-                    given preference based on race, color, creed, sex, sexual
-                    orientation, religion, gender, gender identity, national
-                    origin, age, disability, ancestry, medical condition,
-                    marital status, veteran status, citizenship status, sexual
-                    orientation, or any other category or status protected by
-                    federal, state or local laws of an individual or that
-                    individual’s associates or relatives. This policy governs
-                    all aspects of our employment.
-                  </p>
-                </div>
-                <Image
-                  className="flex-6 w-full"
-                  src={"/assets/images/Image 20.jpg"}
-                  alt="girl"
-                  width={310}
-                  height={264}
-                />
-              </div>
-            </div>
-            <div className="block md:hidden">
-              <div className="flex flex-col justify-between ml-[35px] pt-[30px] gap-2">
-                <div className="flex-6">
-                  <p className="text-white text-[36px] font-normal">
-                    why work at casino m8trix
-                  </p>
-                  <p className="text-red-600 text-[18px]">
-                    Vestibulum, in leo, lorem sed interdum.
-                  </p>
-                </div>
-                <Image
-                  className="flex-6 w-full"
-                  src={"/assets/images/Image 20.jpg"}
-                  alt="girl"
-                  width={310}
-                  height={264}
-                />
+            <div className="flex justify-between px-4 pt-[30px] gap-8">
+              <div className="flex-6">
+                <p className="text-white 36px font-normal">
+                  why work at casino m8trix
+                </p>
+                <p className="text-red-600 text-[18px]">
+                  Vestibulum, in leo, lorem sed interdum.
+                </p>
                 <p className="text-white/40 text-[14px]">
                   Casino M8trix is an equal opportunity employer and no
                   employee, applicant, or candidate for hiring, promotion,

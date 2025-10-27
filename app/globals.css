@@ -13,9 +13,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Nunito';
+  src: url('/assets/fonts/static/Nunito-ExtraLight.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #181818;
+  --background: #181818;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -36,12 +45,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   /* opacity: 0.3; */
-  font-family: 'noodle', Arial, Helvetica, sans-serif;
+  font-family: 'noodle';
 }
 
 button:hover{
   box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.7);
   cursor: pointer;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function) /* cubic-bezier(0.4, 0, 0.2, 1) */);
+    transition-duration: var(--tw-duration, var(--default-transition-duration) /* 150ms */);
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
 }
 
 tr td{

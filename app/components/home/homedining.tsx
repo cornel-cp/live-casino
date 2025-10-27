@@ -13,7 +13,7 @@ const HomeDining = () => {
     // });
 
     return (
-        <div className="bg-black/50 ">
+        <div className="bg-background ">
             {/* <button className="-skew-x-12 " onMouseEnter={() => { setHover({ ...hover, first: true }) }} onMouseDown={() => { setHover({ ...hover, first: false }) }}>
                 <Image className={`${hover.first === true ? "bg-white" : ""}`} src={"/assets/images/dining2.png"} alt="dining2" width={hover.first === true ? 280 : 253} height={hover.first === true ? 200 : 181} />
             </button>

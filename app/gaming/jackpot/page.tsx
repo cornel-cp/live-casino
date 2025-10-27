@@ -14,7 +14,7 @@ const Jackpot = () => {
                 <Header className="absolute right-0" />
                 <div className="bg-[url(/assets/images/bg_jackpot.png)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full" ></div>
 
-                <div className="bg-black/50 px-16 text-white pb-20">
+                <div className="bg-background px-16 text-white pb-20">
                     <div className="flex pt-12 pb-8">
                         <div className="flex-6">
                             <p className="text-white text-4xl">Progressive Jackpot</p>

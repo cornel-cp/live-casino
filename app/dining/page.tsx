@@ -30,33 +30,7 @@ const Dining = () => {
       </div>
 
       {/* restaurant Section */}
-      <div className="flex flex-col justify-around gap-20 my-10 bg-gray-430">
-        <div className="block md:hidden">
-          <BorderBox>
-            <div className="flex flex-col items-center">
-              <p className="text-white text-[50px] text-center inline -mt-[60px] pt-2 px-4 leading-none bg-background">
-                Happy hour
-              </p>
-              <p className="text-center text-[14px]">
-                <p className="inline text-white/60">Daily from</p>
-                <p className="inline text-white"> 3 PM to 6 PM </p>
-                <p className="inline text-white/60">& </p>
-                <p className="inline text-white">9 PM to 11 PM</p>
-              </p>
-              <div className="flex justify-around mt-[22px] w-full">
-                <Cocktail />
-                <Cutlery />
-                <Hamburger />
-                <Cutlery />
-              </div>
-              <BtnElement
-                className="w-[258px] mt-6 -mb-[50px]"
-                color="red"
-                name="see our great deals"
-              />
-            </div>
-          </BorderBox>
-        </div>
+      <div className="flex flex-col justify-around bg-background gap-20 pb-12">
         <BorderBox>
           <Image
             className="absolute top-0 left-[50%] transform -translate-[50%] md:top-0 md:left-20 md:transform md:-translate-[50%]"
@@ -71,16 +45,17 @@ const Dining = () => {
               <InstagramIcon />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 mb-10">
+          <div className="flex gap-4 mb-10 flex-col md:flex-row w-full ">
             <Image
               className="flex-6 w-full md:h-full"
               src={"/assets/images/image_18.png"}
               alt="Image18"
-              width={300}
+              width={400}
               height={230}
+              className="w-full md:w-1/2 aspect-4/3 shrink-0 "
             />
-            <div className="flex-6">
-              <p className="text-white/60 font-extralight text-[14px] mb-5 nunito">
+            <div className=" md:w-1/2">
+              <p className="text-white/60 font-extralight text-[14px] mb-5">
                 Zone 8 Sports Bar & Grill showcases the latest news and biggest
                 sporting events on our 40 HD flat screen TV’s, as well as two
                 massive 200” HD screens. Our menu offers a diverse selection,
@@ -142,34 +117,14 @@ const Dining = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4 md:flex-row justify-between">
-            <BtnElement
-              className="md:w-full"
-              name="LATE NITE MENU"
-              color="white"
-            />
-            <BtnElement
-              className="md:w-full"
-              name="HAPPY HOUR MENU"
-              color="white"
-            />
-            <BtnElement
-              className="md:w-full"
-              name="WEEKLY SPECIALS"
-              color="white"
-            />
-            <BtnElement className="md:w-full" name="3D TOUR" color="white" />
-            <BtnElement
-              className="md:w-full"
-              name="ORDER ONLINE"
-              color="white"
-            />
-            <Link href="/dining/sportsBar" className="md:w-full">
-              <BtnElement
-                className="w-full md:w-full"
-                name="SEE MORE"
-                color="red"
-              />
+          <div className="flex justify-between flex-wrap gap-4">
+            <BtnElement className="" name="LATE NITE MENU" color="white" />
+            <BtnElement className="" name="HAPPY HOUR MENU" color="white" />
+            <BtnElement className="" name="WEEKLY SPECIALS" color="white" />
+            <BtnElement className="" name="3D TOUR" color="white" />
+            <BtnElement className="" name="ORDER ONLINE" color="white" />
+            <Link href="/dining/sportsBar">
+              <BtnElement className="" name="SEE MORE" color="red" />
             </Link>
           </div>
         </BorderBox>
