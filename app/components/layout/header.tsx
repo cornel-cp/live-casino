@@ -10,7 +10,7 @@ const Header = ({ className = "" }: HeaderProps) => {
   return (
     <header className={`relative sm:bg-red-600 ${className}`}>
       {/* Logo */}
-      <Link href="#" className="absolute left-5 top-0 sm:left-20 sm:top-2">
+      <Link href="#" className="absolute left-5 top-0 sm:left-20">
         <Image
           src="/logo.svg"
           alt="Site logo"

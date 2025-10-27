@@ -17,7 +17,7 @@ const EpicBar = () => {
             <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className="  pt-[60px]">
+          <div className=" bg-gray-340 pt-[60px]">
             <div className="flex gap-10 ml-28 mr-[85px]">
               <div className="relative">
                 <Image
@@ -139,8 +139,8 @@ const EpicBar = () => {
               </div>
             </div>
             <div className="flex flex-col gap-15">
-              <div className="">
-                <p className="text-white/60 font-extralight text-[14px] mb-5 nunito">
+              <div>
+                <p className="text-white/60 font-extralight text-[14px] mb-5">
                   <p className="inline text-white">Zone 8 Sports Bar & Grill</p>{" "}
                   showcases the latest news and biggest sporting events on our
                   40 HD flat screen TV’s, as well as two massive 200” HD

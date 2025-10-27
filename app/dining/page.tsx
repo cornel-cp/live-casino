@@ -80,7 +80,7 @@ const Dining = () => {
               className="flex-6 w-full md:h-full"
             />
             <div className=" md:w-1/2">
-              <p className="text-white/60 font-extralight text-[14px] mb-5">
+              <p className="text-white/60 font-extralight text-[14px] mb-5 nunito">
                 Zone 8 Sports Bar & Grill showcases the latest news and biggest
                 sporting events on our 40 HD flat screen TV’s, as well as two
                 massive 200” HD screens. Our menu offers a diverse selection,
@@ -143,13 +143,33 @@ const Dining = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 md:flex-row justify-between">
-            <BtnElement className="" name="LATE NITE MENU" color="white" />
-            <BtnElement className="" name="HAPPY HOUR MENU" color="white" />
-            <BtnElement className="" name="WEEKLY SPECIALS" color="white" />
-            <BtnElement className="" name="3D TOUR" color="white" />
-            <BtnElement className="" name="ORDER ONLINE" color="white" />
-            <Link href="/dining/sportsBar">
-              <BtnElement className="w-full" name="SEE MORE" color="red" />
+            <BtnElement
+              className="md:w-full"
+              name="LATE NITE MENU"
+              color="white"
+            />
+            <BtnElement
+              className="md:w-full"
+              name="HAPPY HOUR MENU"
+              color="white"
+            />
+            <BtnElement
+              className="md:w-full"
+              name="WEEKLY SPECIALS"
+              color="white"
+            />
+            <BtnElement className="md:w-full" name="3D TOUR" color="white" />
+            <BtnElement
+              className="md:w-full"
+              name="ORDER ONLINE"
+              color="white"
+            />
+            <Link href="/dining/sportsBar" className="md:w-full">
+              <BtnElement
+                className="w-full md:w-full"
+                name="SEE MORE"
+                color="red"
+              />
             </Link>
           </div>
         </BorderBox>
