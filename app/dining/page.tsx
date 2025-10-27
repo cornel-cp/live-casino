@@ -16,7 +16,7 @@ const Dining = () => {
   return (
     <Layout>
       {/* room Section */}
-      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full min-h-screen">
+      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-center bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full min-h-screen">
         <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]">
           <div className="">
             <p className="text-[100px] font-normal text-white leading-25">
@@ -34,7 +34,7 @@ const Dining = () => {
         <div className="block md:hidden">
           <BorderBox>
             <div className="flex flex-col items-center">
-              <p className="text-white text-[50px] text-center inline -mt-[60px] pt-2 px-4 leading-none">
+              <p className="bg-background text-white text-[50px] text-center inline -mt-[60px] pt-2 px-4 leading-none">
                 Happy hour
               </p>
               <p className="text-center text-[14px]">
@@ -66,7 +66,7 @@ const Dining = () => {
             height={100}
           />
           <div className="hidden md:block">
-            <div className="flex justify-around gap-4 absolute top-[50%] -right-[5px] transform -translate-[50%] md:top-0 md:-right-[5px] md:transform md:-translate-[50%]">
+            <div className="flex justify-around gap-4 bg-background p-2 absolute top-[50%] -right-[5px] transform -translate-[50%] md:top-0 md:-right-[5px] md:transform md:-translate-[50%]">
               <FacebookIcon />
               <InstagramIcon />
             </div>

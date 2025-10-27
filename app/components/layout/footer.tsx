@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="nunito">
       <div className="bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover flex flex-col justify-top w-full h-[535px]">
         <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover h-[267px] bg-no-repeat"></div>
-        <div className="px-8 md:px-16">
+        <div className="px-8 md:px-16 -mt-[150px] md:mt-0">
           <div className="flex items-center">
             <Image
               src={"/assets/images/footer_mobile.png"}
@@ -93,7 +93,7 @@ const Footer = () => {
                 <LinkedinIcon />
               </div>
             </div>
-            <div className="mt-5 text-white">
+            <div className="mt-5 text-white text-[9px]">
               <p>© 2022 CASINO M8TRIX. All Rights Reserved</p>
               <p>
                 21+ Please gamble responsibly | 1-800-GAMBLER |

@@ -19,27 +19,55 @@ const SportsBar = () => {
           <div className=" bg-background pt-[60px] max-w-5xl mx-auto">
             {/* main body Part */}
             <div className="flex gap-10 md:mx-20 flex-col md:flex-row relative">
-              <Image
-                className="block w-full shrink-0 md:w-1/2"
-                src={"/assets/images/image_18.png"}
-                alt="Image18"
-                width={300}
-                height={315}
-              />
-              <Image
-                className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
-                src={"/assets/images/Ellipse (1).png"}
-                alt="RestaurantLogo"
-                width={145}
-                height={145}
-              />
-              <Image
-                className="absolute top-0  left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
-                src={"/assets/images/Ellipse1.png"}
-                alt="RestaurantLogo"
-                width={140}
-                height={62}
-              />
+              <div className="flex-6 flex-col">
+                <div className="w-full">
+                  <Image
+                    className="block w-full shrink-0"
+                    src={"/assets/images/image_18.png"}
+                    alt="Image18"
+                    width={300}
+                    height={315}
+                  />
+
+                  <Image
+                    className="absolute top-0  left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
+                    src={"/assets/images/Ellipse 24.svg"}
+                    alt="RestaurantLogo"
+                    width={140}
+                    height={62}
+                  />
+                  <Image
+                    className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
+                    src={"/assets/images/Frame.svg"}
+                    alt="RestaurantLogo"
+                    width={145}
+                    height={145}
+                  />
+                </div>
+                <div className="flex justify-between gap-2 mt-2">
+                  <Image
+                    className="border rounded-md w-full"
+                    src={"/assets/images/image 19.png"}
+                    alt="Orange"
+                    width={95}
+                    height={50}
+                  />
+                  <Image
+                    className="border rounded-md  w-full"
+                    src={"/assets/images/image 20.png"}
+                    alt="Orange"
+                    width={95}
+                    height={50}
+                  />
+                  <Image
+                    className="border rounded-md w-full"
+                    src={"/assets/images/image 21.png"}
+                    alt="Orange"
+                    width={95}
+                    height={50}
+                  />
+                </div>
+              </div>
               <div className="flex-6 nunito">
                 <p className="text-white/60 font-extralight text-[14px] pb-5 border-b-2 border-gray-780">
                   <p className="font-bold inline-block text-white">
@@ -147,18 +175,18 @@ const SportsBar = () => {
             <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className="ml-28 mr-[85px] my-10">
+          <div className="mx-8 md:ml-28 md:mr-[85px] my-10">
             <div className="relative mb-[50px]">
               <Image
-                className="absolute -top-5 translate-[-50%]"
-                src={"/assets/images/Ellipse (1).png"}
+                className="absolute -top-10 -translate-y-1/2"
+                src={"/assets/images/Ellipse 24.svg"}
                 alt="RestaurantLogo"
                 width={145}
                 height={145}
               />
               <Image
-                className="absolute -top-5 translate-[-50%]"
-                src={"/assets/images/Ellipse1.png"}
+                className="absolute -top-10 -translate-y-1/2"
+                src={"/assets/images/Frame.svg"}
                 alt="RestaurantLogo"
                 width={140}
                 height={62}

@@ -107,14 +107,14 @@ const Parallel = () => {
             <div className="relative mb-[50px]">
               <Image
                 className="absolute -top-5 translate-[-50%]"
-                src={"/assets/images/Ellipse (1).png"}
+                src={"/assets/images/Ellipse 24.svg"}
                 alt="RestaurantLogo"
                 width={145}
                 height={145}
               />
               <Image
                 className="absolute -top-5 translate-[-50%]"
-                src={"/assets/images/Ellipse1.png"}
+                src={"/assets/images/Frame.svg"}
                 alt="RestaurantLogo"
                 width={140}
                 height={62}
