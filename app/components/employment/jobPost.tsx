@@ -1,20 +1,15 @@
 import Image from "next/image";
 import BtnElement from "../BtnElement/BtnElement";
+import Molicule from "../icons/molicule";
 
 const JobPost = (props: any) => {
   return (
     <div
       className={`group w-[233px] h-[268px] relative border border-gray-700  ${props.className}`}
     >
+      <Molicule className="special absolute top-[15.5px] right-[16.5px] text-gray-600 hover:text-white transition duration-500" />
       <Image
-        className={`absolute top-[15.5px] right-[16.5px]`}
-        src={"/assets/images/Group 48095852.png"}
-        alt="Molicule"
-        width={11.5}
-        height={12.5}
-      />
-      <Image
-        className="absolute -top-0.5 -left-0.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all"
+        className="absolute -top-0.5 -left-0.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500"
         src={"/assets/images/Vector 3.png"}
         alt="Vector"
         width={54}
