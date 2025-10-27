@@ -44,4 +44,4 @@ const AkaIcon = () => {
   );
 };
 
-export default AkaIcon;
+export default AkaIcon
