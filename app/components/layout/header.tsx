@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Navbar from "./navbar";
 import Image from "next/image";
-import { useState } from "react";
 
 interface HeaderProps {
   className?: string;
@@ -12,18 +11,13 @@ const Header = ({ className = "" }: HeaderProps) => {
     <header className={`relative sm:bg-red-600 ${className}`}>
       {/* Logo */}
       <Link href="#" className="absolute left-5 top-0 sm:left-20 sm:top-2">
-        <a
-          aria-label="Go to homepage" // Accessibility improvement
-          className="flex items-center"
-        >
-          <Image
-            src="/logo.svg"
-            alt="Site logo"
-            width={140}
-            height={50}
-            className="w-auto h-auto" // Ensures responsiveness of logo
-          />
-        </a>
+        <Image
+          src="/logo.svg"
+          alt="Site logo"
+          width={140}
+          height={50}
+          className="w-auto h-auto" // Ensures responsiveness of logo
+        />
       </Link>
 
       {/* Navbar */}

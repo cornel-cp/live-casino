@@ -1,11 +1,13 @@
 "user client";
 
 import Image from "next/image";
-import Layout from "../components/layout/layout";
-import JobPost from "../components/employment/jobPost";
-import BtnElement from "../components/BtnElement/BtnElement";
-import Molicule from "../components/icons/molicule";
-
+import RoomPart from "../components/restaurant/RoomPart";
+import Link from "next/link";
+import Cocktail from "../components/icons/cocktail";
+import Cutlery from "../components/icons/cutlery";
+import Hamburger from "../components/icons/hamburger";
+import FacebookIcon from "../components/icons/facebookIcon";
+import InstagramIcon from "../components/icons/instagramIcon";
 const Employment = () => {
   return (
     <div className="bg-background">

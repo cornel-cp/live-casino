@@ -110,31 +110,15 @@ const EpicBar = () => {
           </div>
         </Layout>
       </div>
-      {/* main body Part */}
-      <div className=" bg-background pt-[60px]">
-        <div className="flex gap-10 ml-28 mr-[85px]">
-          <div className="relative">
-            <Image
-              className="block h-[315px]"
-              src={"/assets/images/room_of_bar.png"}
-              alt="Image18"
-              width={300}
-              height={315}
-            />
-            <Image
-              className="absolute top-0 translate-[-50%]"
-              src={"/Restaurant_Logos_(2).svg"}
-              alt="RestaurantLogo"
-              width={145}
-              height={145}
-            />
-            <div className="flex justify-between mb-[186.5px]">
-              <Image
-                src={"/assets/images/image 19.png"}
-                alt="Orange"
-                width={95}
-                height={50}
-              />
+      <div className="block md:hidden">
+        <Layout>
+          {/* main image Part */}
+          <div className="bg-[url(/assets/images/image_18.png)] bg-no-repeat bg-cover bg-center h-[300px] flex flex-col justify-end w-full">
+            <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
+          </div>
+          {/* main body Part */}
+          <div className="ml-28 mr-[85px] my-10">
+            <div className="relative mb-[50px]">
               <Image
                 className="absolute -top-5 translate-[-50%]"
                 src={"/assets/images/Ellipse (1).png"}
@@ -155,8 +139,8 @@ const EpicBar = () => {
               </div>
             </div>
             <div className="flex flex-col gap-15">
-              <div>
-                <p className="text-white/60 font-extralight text-[14px] mb-5">
+              <div className="">
+                <p className="text-white/60 font-extralight text-[14px] mb-5 nunito">
                   <p className="inline text-white">Zone 8 Sports Bar & Grill</p>{" "}
                   showcases the latest news and biggest sporting events on our
                   40 HD flat screen TV’s, as well as two massive 200” HD
