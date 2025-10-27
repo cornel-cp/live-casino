@@ -15,7 +15,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #181818;
 }
 
 @theme inline {
@@ -27,8 +27,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #2b332e;
-    --foreground: #0a0a0a;
+    --background: #181818;
+    --foreground: white;
   }
 }
 
@@ -46,4 +46,12 @@ button:hover{
 
 tr td{
   padding: 3px 6px;
+}
+
+.nunito {
+  font-family: 'Nunito';
+}
+
+.noodle {
+  font-family: 'noodle';
 }

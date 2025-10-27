@@ -17,7 +17,7 @@ const Cafe = () => {
             <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className=" bg-gray-340 pt-[60px]">
+          <div className="  pt-[60px]">
             <div className="flex gap-10 ml-28 mr-[85px]">
               <div className="relative">
                 <Image
@@ -35,7 +35,7 @@ const Cafe = () => {
                   height={145}
                 />
               </div>
-              <div className="flex-6">
+              <div className="flex-6 nunito">
                 <p className="text-white/60 font-extralight text-[14px] pb-5 border-b-2 border-gray-780">
                   <p className="font-bold inline-block text-white">
                     Lotus Café
@@ -65,7 +65,7 @@ const Cafe = () => {
                     </span>
                   </p>
                 </div>
-                <div className="flex justify-end gap-4 mt-[52px]">
+                <div className="flex justify-end gap-4 mt-[52px] noodle">
                   <BtnElement className="" color="white" name="3D TOUR" />
                   <button
                     className={`bg-white flex justify-center items-center w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}

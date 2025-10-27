@@ -34,7 +34,7 @@ const Dining = () => {
         <div className="block md:hidden">
           <BorderBox>
             <div className="flex flex-col items-center">
-              <p className="text-white text-[50px] text-center inline -mt-[60px] pt-2 px-4 leading-none">
+              <p className="text-white text-[50px] text-center inline -mt-[60px] pt-2 px-4 leading-none bg-background">
                 Happy hour
               </p>
               <p className="text-center text-[14px]">
@@ -65,9 +65,11 @@ const Dining = () => {
             width={100}
             height={100}
           />
-          <div className="flex justify-around gap-4 absolute top-[50%] -right-[5px] transform -translate-[50%] md:top-0 md:-right-[5px] md:transform md:-translate-[50%]">
-            <FacebookIcon />
-            <InstagramIcon />
+          <div className="hidden md:block">
+            <div className=" bg-background px-4 py-2 flex justify-around gap-4 absolute top-[50%] -right-[5px] transform -translate-[50%] md:top-0 md:-right-[5px] md:transform md:-translate-[50%]">
+              <FacebookIcon />
+              <InstagramIcon />
+            </div>
           </div>
           <div className="flex flex-col md:flex-row gap-4 mb-10">
             <Image
@@ -78,7 +80,7 @@ const Dining = () => {
               height={230}
             />
             <div className="flex-6">
-              <p className="text-white/60 font-extralight text-[14px] mb-5">
+              <p className="text-white/60 font-extralight text-[14px] mb-5 nunito">
                 Zone 8 Sports Bar & Grill showcases the latest news and biggest
                 sporting events on our 40 HD flat screen TV’s, as well as two
                 massive 200” HD screens. Our menu offers a diverse selection,
@@ -86,48 +88,52 @@ const Dining = () => {
               </p>
               <div className="pb-2.5">
                 <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[14px] font-bold text-white">
+                  <p className="flex-4 text-[14px] font-bold text-white nunito">
                     Opening Hours
                   </p>
-                  <p className="flex-3 text-[8px] italic text-white/60">
+                  <p className="flex-3 text-[8px] italic text-white/60 nunito">
                     Sunday to Thursday
                   </p>
-                  <p className="flex-3 text-[8px] italic text-white/60">
+                  <p className="flex-3 text-[8px] italic text-white/60 nunito">
                     Friday & Saturday
                   </p>
                 </div>
                 <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[10px] font-bold text-white">
+                  <p className="flex-4 text-[10px] font-bold text-white nunito">
                     Dining Room
                   </p>
-                  <p className="flex-3 text-[10px] text-white/60">
+                  <p className="flex-3 text-[10px] text-white/60 nunito">
                     11:00AM-12:00AM
                   </p>
-                  <p className="flex-3 text-[10px] text-white/60">
+                  <p className="flex-3 text-[10px] text-white/60 nunito">
                     11:00AM-1:00AM
                   </p>
                 </div>
                 <div className="flex items-center pb-[5px]">
-                  <p className="flex-4 text-[10px] font-bold text-white">Bar</p>
-                  <p className="flex-6 text-[10px] text-white/60">
+                  <p className="flex-4 text-[10px] font-bold text-white nunito">
+                    Bar
+                  </p>
+                  <p className="flex-6 text-[10px] text-white/60 nunito">
                     11:00AM-1:00AM
                   </p>
                 </div>
               </div>
               <div className="flex justify-between mb-2.5">
-                <p className="text-[14px] font-bold text-white">To-Go Orders</p>
-                <p className="text-[12px] font-light text-white/60">
+                <p className="text-[14px] font-bold text-white nunito">
+                  To-Go Orders
+                </p>
+                <p className="text-[12px] font-light text-white/60 nunito">
                   Call at{" "}
-                  <span className="text-[10px] font-bold text-white">
+                  <span className="text-[10px] font-bold text-white nunito">
                     408-484-6298
                   </span>
                 </p>
               </div>
               <div className="flex justify-between">
-                <p className="text-[14px] font-bold text-white">
+                <p className="text-[14px] font-bold text-white nunito">
                   Restaurant Info
                 </p>
-                <p className="text-[12px] font-light text-white/60">
+                <p className="text-[12px] font-light text-white/60 nunito">
                   Call at{" "}
                   <span className="text-[10px] font-bold text-white">
                     408-453-4030

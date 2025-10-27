@@ -7,7 +7,7 @@ import BtnElement from "@/app/components/BtnElement/BtnElement";
 
 const ThreeCardGame = () => {
   return (
-    <div className="bg-gray-340">
+    <div className="">
       <Layout>
         <div className="px-[85px]">
           <Link href={"/gaming"}>

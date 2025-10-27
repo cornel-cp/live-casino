@@ -8,7 +8,7 @@ import Molicule from "../components/icons/molicule";
 
 const Employment = () => {
   return (
-    <div className="bg-gray-340 ">
+    <div className=" ">
       <Layout>
         <div className="ml-10 md:ml-0">
           <Image
@@ -44,7 +44,7 @@ const Employment = () => {
             </p>
           </div>
         </div>
-        <div className="mx-[86px] mt-[97px]">
+        <div className="mx-8 md:mx-[86px] mt-[97px]">
           <p className="text-[18px] font-[400px] text-white">
             FIND YOUR NEXT JOB IN our{" "}
             <p className="text-[36px]">5 opportunities</p>
@@ -217,7 +217,7 @@ const Employment = () => {
           </div>
           <div className="w-full md:w-1/2 mt-14 relative border-2 border-red-600 inline-block p-8 float-right -skew-x-16 mb-3">
             <Image
-              className="skew-x-16 absolute top-0 -right-10 -translate-[50%] bg-gray-340 p-2"
+              className="skew-x-16 absolute top-0 -right-10 -translate-[50%]  p-2 bg-background"
               src={"/assets/images/Office Hours.png"}
               alt="OfficeHour"
               width={112}

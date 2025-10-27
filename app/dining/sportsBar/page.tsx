@@ -17,7 +17,7 @@ const SportsBar = () => {
             <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className="bg-gray-340 pt-[60px]">
+          <div className=" pt-[60px]">
             <div className="flex gap-10 ml-28 mr-[85px]">
               <div className="relative">
                 <Image
@@ -65,7 +65,7 @@ const SportsBar = () => {
                   />
                 </div>
               </div>
-              <div className="flex-6">
+              <div className="flex-6 nunito">
                 <p className="text-white/60 font-extralight text-[14px] pb-5 border-b-2 border-gray-780">
                   <p className="font-bold inline-block text-white">
                     Zone 8 Sports Bar & Grill

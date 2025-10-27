@@ -16,9 +16,9 @@ const Header = (props: any) => {
       <div className={`flex justify-end ${className} sm:inherit `}>
         <Navbar />
       </div>
-      <span className="absolute right-10 top-105 text-white rounded-[50%] px-2 pt-[3px] bg-white/20 cursor-pointer hover:bg-white hover:text-gray-600 transition-all duration-500">
+      {/* <span className="absolute right-10 top-105 text-white rounded-[50%] px-2 pt-[3px] bg-white/20 cursor-pointer hover:bg-white hover:text-gray-600 transition-all duration-500">
         ^
-      </span>
+      </span> */}
     </header>
   );
 };
