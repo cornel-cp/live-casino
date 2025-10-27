@@ -9,6 +9,9 @@ const Gaming = () => {
     return (
         <div>
             <main className="">
+
+
+                
                 <Header className="absolute right-0" />
                 <div className="bg-[url(/assets/images/gaming_header.png)] bg-no-repeat bg-cover bg-center h-[469px] flex flex-col justify-end w-full" >
                     <div className="bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[267px]"></div>
