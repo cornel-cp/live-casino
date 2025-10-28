@@ -259,7 +259,6 @@ const Dining = () => {
         <RoomPart
           direction="right"
           logoUrl="/Epic Bar.svg"
-          logoName="EpicBar"
           text="Epic Bar is located in the heart of the casino and is the perfect setting for gathering and socializing. The bar serves finely crafted cocktails, draft beers, wines by the glass, and an appetizer and dining menu."
           firstHeader="Opening Hours"
           firstBody="Daily 6:00AM – 1:00AM"
@@ -272,7 +271,6 @@ const Dining = () => {
         <RoomPart
           direction="left"
           logoUrl="/parallel.svg"
-          logoName="Parallel"
           text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
 
 Now accepting reservations for parties of 6 or larger. Have a seated dinner for up to 14 people, or host a cocktail party for up to 25.
@@ -289,7 +287,6 @@ Reservations are required to be made at least 48 hours in advance. A $100 food a
         <RoomPart
           direction="right"
           logoUrl="/Cafe.svg"
-          logoName="Cafe"
           text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
 
 Now accepting reservations for parties of 6 or larger. Have a seated dinner for up to 14 people, or host a cocktail party for up to 25.

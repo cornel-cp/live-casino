@@ -1,17 +1,27 @@
-const BtnElement = (props: any) => {
+interface BtnElementProps {
+  color: string;
+  name: string;
+  onClick?: () => void;
+  className?: string;
+}
+
+const BtnElement: React.FC<BtnElementProps> = ({
+  color,
+  name,
+  onClick,
+  className,
+}) => {
   return (
     <button
-      onClick={props.onClick}
-      className={`${
-        props.className
-      } flex justify-center items-center md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer ${
-        props.color === "red" ? "bg-red-600" : "border rounded-xs border-white"
+      onClick={onClick}
+      className={`${className} flex justify-center items-center md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer ${
+        color === "red" ? "bg-red-600" : "border rounded-xs border-white"
       }`}
     >
       <p
         className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}
       >
-        {props.name}
+        {name}
       </p>
     </button>
   );
