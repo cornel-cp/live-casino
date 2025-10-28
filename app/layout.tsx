@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./fontawesome";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -33,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-screen m-auto`}
       >
-        <div className="max-w-[1980px]">{children}</div>
+        <div className="max-w-screen m-auto">{children}</div>
       </body>
     </html>
   );

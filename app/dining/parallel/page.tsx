@@ -9,32 +9,15 @@ import Link from "next/link";
 
 const Parallel = () => {
   return (
-    <Layout>
-      {/* main image Part */}
-      <div className="bg-[url(/assets/images/room.png)] bg-no-repeat bg-cover bg-center h-[300px] flex flex-col justify-end w-full">
-        <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
-      </div>
-      {/* main body Part */}
-      <div className=" bg-background pt-[60px]">
-        <div className="flex gap-10 ml-28 mr-[85px]">
-          <div className="relative">
-            <Image
-              className="block h-[315px]"
-              src={"/assets/images/room.png"}
-              alt="Image18"
-              width={300}
-              height={315}
-            />
-            <Image
-              className="absolute top-0 translate-[-50%]"
-              src={"/Group 48095902.svg"}
-              alt="RestaurantLogo"
-              width={145}
-              height={145}
-            />
+    <>
+      <div className="hidden md:block">
+        <Layout>
+          {/* main image Part */}
+          <div className="bg-[url(/assets/images/room.png)] bg-no-repeat bg-cover bg-center h-[300px] flex flex-col justify-end w-full">
+            <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className="  pt-[60px]">
+          <div className=" bg-background pt-[60px] max-w-5xl mx-auto">
             <div className="flex gap-10 ml-28 mr-[85px]">
               <div className="relative">
                 <Image
@@ -120,18 +103,18 @@ const Parallel = () => {
             <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className="ml-28 mr-[85px] my-10">
+          <div className="mx-8 md:ml-28 md:mr-[85px] my-10">
             <div className="relative mb-[50px]">
               <Image
-                className="absolute -top-5 translate-[-50%]"
-                src={"/assets/images/Ellipse (1).png"}
+                className="absolute -top-10 translate-y-[-50%]"
+                src={"/assets/images/Ellipse 24.svg"}
                 alt="RestaurantLogo"
                 width={145}
                 height={145}
               />
               <Image
-                className="absolute -top-5 translate-[-50%]"
-                src={"/assets/images/Ellipse1.png"}
+                className="absolute -top-10 translate-y-[-50%]"
+                src={"/assets/images/Frame.svg"}
                 alt="RestaurantLogo"
                 width={140}
                 height={62}
@@ -141,9 +124,9 @@ const Parallel = () => {
                 <InstagramIcon />
               </div>
             </div>
-            <div className="flex flex-col gap-15">
-              <div className="">
-                <p className="text-white/60 font-extralight text-[14px] mb-5 nunito">
+            <div className="flex flex-col gap-15 nunito">
+              <div>
+                <p className="text-white/60 font-extralight text-[14px] mb-5">
                   <p className="inline text-white">Zone 8 Sports Bar & Grill</p>{" "}
                   showcases the latest news and biggest sporting events on our
                   40 HD flat screen TV’s, as well as two massive 200” HD
@@ -238,7 +221,7 @@ const Parallel = () => {
                 </div>
               </div>
               <div>
-                <div className="flex flex-col justify-between gap-4">
+                <div className="flex flex-col justify-between gap-4 noodle">
                   <BtnElement className="w-full" color="white" name="3D TOUR" />
                   <button
                     className={`bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
