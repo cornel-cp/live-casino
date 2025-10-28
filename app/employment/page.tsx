@@ -5,27 +5,24 @@ import Layout from "../components/layout/layout";
 import Molicule from "../components/icons/molicule";
 import BtnElement from "../components/BtnElement/BtnElement";
 import JobPost from "../components/employment/jobPost";
+import DraggableContainer from "../components/Animations/motion";
 
 const Employment = () => {
   return (
-    <div className="bg-gray-340 ">
+    <div className="bg-background">
       <Layout>
         <div className="ml-10 md:ml-0">
-          <Image
-            className="mt-[111px] md:mx-auto"
-            src="/assets/images/WELCOME BACK.png"
-            alt="Intersect"
-            width={165}
-            height={77}
-          />
-          <p className="text-white text-[20px] text-start md:text-center pt-[19px]">
+          <p className="text-red-600 text-[70px] md:text-center pt-16">
+            JOIN US
+          </p>
+          <p className="text-white text-[20px] text-start md:text-center">
             Join a great team, with great benefits!
           </p>
           <p className="text-white/60 font-light text-start md:text-center text-[14px] pb-[47px]">
             Shifts may vary depending on our business needs.
           </p>
         </div>
-        <div className="ml-0 md:ml-[86px] mr-10 md:mr-[86px] flex items-end justify-between">
+        <div className="ml-0 md:ml-[86px] mr-10 md:mr-[86px] lg:mx-auto max-w-4xl flex items-end justify-between">
           <Image
             className="w-full"
             src={"/assets/images/Intersect (1).png"}
@@ -37,24 +34,34 @@ const Employment = () => {
             <p className="text-[36px] font-[400px] text-white text-center md:text-end">
               APPLY TODAY
             </p>
-            <p className="hidden md:block w-[160.5px] text-wrap text-[12px] font-[400px] text-right text-white/60">
+            <p className="hidden md:block w-[160.5px] text-wrap text-[12px] font-[400px] text-right text-white/60 nunito">
               We are accepting Resumes and Applications by email, fax, walk-ins
               and job fairs. We are open 24 hours a day. All casino employees
               must be at least 21 years of age to work on the Gaming Floor.
             </p>
           </div>
         </div>
-        <div className="mx-[86px] mt-[97px]">
+        <div className="block md:hidden mx-10 mt-[30px]">
+          <p className="w-full text-wrap text-[12px] font-[400px] text-white nunito">
+            We are accepting Resumes and Applications by email, fax, walk-ins
+            and job fairs. We are open 24 hours a day. All casino employees must
+            be at least 21 years of age to work on the Gaming Floor.
+          </p>
+        </div>
+        <div className="mx-10 md:mx-[86px] lg:mx-auto max-w-4xl mt-[97px]">
           <p className="text-[18px] font-[400px] text-white">
             FIND YOUR NEXT JOB IN our{" "}
             <p className="text-[36px]">5 opportunities</p>
           </p>
-          <p className="mt-5 mb-10 text-[12px] font-[400px] text-white/30">
+          <p className="mt-5 mb-10 text-[12px] font-[400px] text-white/30 nunito">
             If you want to be part of our Casino, apply now to join us! <br />
             Upload your resume and fill up the online application, we’ll contact
             you shortly.
           </p>
-          <div className="flex flex-col md:flex-row items-center flex-wrap gap-2 mb-[78px]">
+          <div className="block md:hidden nunito">
+            <DraggableContainer />
+          </div>
+          <div className="hidden md:flex flex-row items-center flex-wrap w-full gap-2 mb-[78px] nunito">
             <div className="w-[233px] h-[268px] relative border border-white [&:has(.special:hover)]:border-gray-600 transition duration-500">
               <Image
                 className="absolute -top-0.5 -left-0.5"
@@ -76,7 +83,7 @@ const Employment = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-2 justify-center px-4">
+              <div className="flex gap-2 justify-center px-4 noodle">
                 <button
                   className={`flex-5 bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
                 >
@@ -123,7 +130,7 @@ const Employment = () => {
               <p className="text-white text-[36px]">
                 Not Finding What You&apos;re Looking For?
               </p>
-              <p className="text-white/40 text-[12px]">
+              <p className="text-white/40 text-[12px] nunito">
                 Share your information and we will contact you if new
                 opportunities fitting your qualifications become available
               </p>
@@ -163,7 +170,7 @@ const Employment = () => {
                   <p className="text-red-600 text-[18px]">
                     Vestibulum, in leo, lorem sed interdum.
                   </p>
-                  <p className="text-white/40 text-[14px]">
+                  <p className="text-white/40 text-[14px] nunito">
                     Casino M8trix is an equal opportunity employer and no
                     employee, applicant, or candidate for hiring, promotion,
                     training or other benefit shall be discriminated against or
@@ -203,7 +210,7 @@ const Employment = () => {
                   width={310}
                   height={264}
                 />
-                <p className="text-white/40 text-[14px]">
+                <p className="text-white/40 text-[14px] nunito">
                   Casino M8trix is an equal opportunity employer and no
                   employee, applicant, or candidate for hiring, promotion,
                   training or other benefit shall be discriminated against or
@@ -219,9 +226,9 @@ const Employment = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 mt-14 relative border-2 border-red-600 inline-block p-8 float-right -skew-x-16 mb-3">
+          <div className="w-full md:w-1/2 mt-14 relative border-2 border-red-600 inline-block p-8 float-right -skew-x-16 mb-3 shadow-[0_0_15px_rgba(255,0,0,0.9)]">
             <Image
-              className="skew-x-16 absolute top-0 -right-10 -translate-[50%] bg-gray-340 p-2"
+              className="skew-x-16 absolute top-0 -right-10 -translate-[50%] bg-background p-2 "
               src={"/assets/images/Office Hours.png"}
               alt="OfficeHour"
               width={112}

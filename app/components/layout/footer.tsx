@@ -5,6 +5,8 @@ import FacebookIcon from "../icons/facebookIcon";
 import InstagramIcon from "../icons/instagramIcon";
 import YoutubeIcon from "../icons/youtubeIcon";
 import LinkedinIcon from "../icons/linkedinIcon";
+import PhoneIcon from "../icons/phoneIcon";
+import LocationOutline from "../icons/locationIcon";
 
 const Footer = () => {
   return (
@@ -13,12 +15,7 @@ const Footer = () => {
         <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover h-[267px] bg-no-repeat"></div>
         <div className="px-8 md:px-16 -mt-[150px] md:mt-0">
           <div className="flex items-center">
-            <Image
-              src={"/assets/images/footer_mobile.png"}
-              alt="mobile"
-              width={24}
-              height={24}
-            />
+            <PhoneIcon />
             <p className="text-white pl-2 text-[10px] font-bold">
               408 244 3333
             </p>
@@ -26,12 +23,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-start gap-7 md:items-center justify-between mt-5">
             <div className="flex-10/12">
               <div className="flex">
-                <Image
-                  src={"/assets/images/footer_location.png"}
-                  alt="location"
-                  width={24}
-                  height={24}
-                />
+                <LocationOutline />
                 <div className="text-white pl-2 text-[12px] ">
                   <p className="font-bold">
                     1887 Matrix Boulevard San Jose, Ca 95110

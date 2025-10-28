@@ -1,4 +1,5 @@
-"use client"
+"use client";
+import Image from "next/image";
 import Footer from "./footer";
 import Header from "./header";
 
@@ -8,7 +9,7 @@ const Layout = (props: any) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -19,9 +20,14 @@ const Layout = (props: any) => {
         {children}
         <div
           onClick={scrollToTop}
-          className="fixed bottom-10 right-10 text-white rounded-[50%] px-2 pt-[3px] bg-white/20 cursor-pointer hover:bg-white hover:text-gray-600 transition-all duration-500"
+          className="fixed bottom-10 right-10 text-white rounded-[50%] p-2 bg-white/20 cursor-pointer hover:bg-white hover:text-gray-600 transition-all duration-500"
         >
-          ^
+          <Image
+            src={`/assets/images/Vector 41.png`}
+            alt="Vector"
+            width={8}
+            height={3.33}
+          />
         </div>
       </main>
       <Footer />

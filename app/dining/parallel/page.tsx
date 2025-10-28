@@ -17,7 +17,7 @@ const Parallel = () => {
             <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className=" bg-gray-340 pt-[60px] max-w-5xl mx-auto">
+          <div className=" bg-background pt-[60px] max-w-5xl mx-auto">
             <div className="flex gap-10 ml-28 mr-[85px]">
               <div className="relative">
                 <Image
