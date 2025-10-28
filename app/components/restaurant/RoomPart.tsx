@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const RoomPart = (props: any) => {
   return (
-    <div className="relative mx-8 md:mx-auto lg:max-w-[1020px] px-4 md:px-10 pt-[25px] pb-[33.5px] border-4 border-red-600 shadow-[0_0_20px_rgba(255,0,0,0.9)] rounded-xs">
+    <div className="relative mx-8 md:mx-[88px] lg:mx-auto lg:max-w-[1020px] px-4 md:px-10 pt-[25px] pb-[33.5px] mt-2.5 border-4 border-red-600 shadow-[0_0_15px_rgba(255,0,0,0.9)] rounded-xs">
       <Image
         className={`absolute top-0 transform -translate-[50%] left-[50%] ${
           props.direction === "right" ? " md:left-[85%]" : "md:left-20"
@@ -69,13 +69,13 @@ const RoomPart = (props: any) => {
             alt={props.imageName}
             width={300}
             height={315}
-            className="flex-6 w-full h-[133px] md:h-full"
+            className="flex-6 w-full md:w-1/2 md:h-full"
           />
         </div>
       ) : (
         <div className="flex flex-col mb-20 md:mb-0 md:flex-row gap-4">
           <Image
-            className="flex-6 w-full h-[133px] md:h-full"
+            className="flex-6 w-full md:w-1/2 md:h-full"
             src={props.imageUrl}
             alt={props.imageName}
             width={300}

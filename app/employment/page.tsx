@@ -1,4 +1,4 @@
-"user client";
+"use client";
 
 import Image from "next/image";
 import Layout from "../components/layout/layout";
@@ -6,8 +6,11 @@ import Molicule from "../components/icons/molicule";
 import BtnElement from "../components/BtnElement/BtnElement";
 import JobPost from "../components/employment/jobPost";
 import DraggableContainer from "../components/Animations/motion";
+import { useState } from "react";
+import Modal from "../components/Modal/modal";
 
 const Employment = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="bg-background">
       <Layout>
@@ -22,7 +25,7 @@ const Employment = () => {
             Shifts may vary depending on our business needs.
           </p>
         </div>
-        <div className="ml-0 md:ml-[86px] mr-10 md:mr-[86px] lg:mx-auto max-w-4xl flex items-end justify-between">
+        <div className="ml-0 md:ml-[86px] mr-10 md:mr-[86px] lg:mx-auto max-w-5xl flex items-end justify-between">
           <Image
             className="w-full"
             src={"/assets/images/Intersect (1).png"}
@@ -48,7 +51,7 @@ const Employment = () => {
             be at least 21 years of age to work on the Gaming Floor.
           </p>
         </div>
-        <div className="mx-10 md:mx-[86px] lg:mx-auto max-w-4xl mt-[97px]">
+        <div className="mx-10 md:mx-[86px] lg:mx-auto max-w-5xl mt-[97px]">
           <p className="text-[18px] font-[400px] text-white">
             FIND YOUR NEXT JOB IN our{" "}
             <p className="text-[36px]">5 opportunities</p>
@@ -93,6 +96,98 @@ const Employment = () => {
                     PREVIEW
                   </p>
                 </button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                  <Image
+                    className="absolute -top-0.5 -left-0.5"
+                    src={"/assets/images/jackpot_corner.png"}
+                    alt="corner"
+                    width={54}
+                    height={61}
+                  />
+                  <Molicule className="absolute top-[17px] right-[40px] text-gray-600" />
+                  <div className="nunito">
+                    <div>
+                      <p className="text-[12px] font-[300px] text-white/60">
+                        Nov, 9
+                      </p>
+                      <p className="text-[20px] font-bold">Bartender</p>
+                      <p className="text-white/60 font-[300px] text-[14px] mb-6">
+                        Bartenders prepare alcoholic or non-alcoholic beverages
+                        for bar and restaurant patrons.
+                      </p>
+                    </div>
+                    <div className="flex gap-2 justify-between text-white/60">
+                      <div className="flex-3">
+                        <p className="text-white text-[14px] font-bold mb-2">
+                          Requirements
+                        </p>
+                        <ul className="list-disc pl-4 text-[12px]">
+                          <li>Must be 21 years or older</li>
+                          <li>Must be willing to undergo background check</li>
+                          <li>
+                            Speak English fluently and coherently (bilingual a
+                            plus)
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="flex-3">
+                        <p className="text-white text-[14px] font-bold mb-2">
+                          Qualifications
+                        </p>
+                        <ul className="list-disc pl-4 text-[12px]">
+                          <li>
+                            Have a minimum of 1 year of bartending experience in
+                            a fast-paced environment
+                          </li>
+                          <li>
+                            Basic math skills necessary to run cash register and
+                            prepare cash drops
+                          </li>
+                        </ul>
+                        <a className="underline underline-offset-3 text-[14px]">
+                          See 4 more
+                        </a>
+                      </div>
+                      <div className="flex-3">
+                        <p className="text-white text-[14px] font-bold mb-2">
+                          Work Hours and Availability
+                        </p>
+                        <ul className="list-disc pl-4 text-[12px]">
+                          <li>
+                            Day Shift:
+                            <br /> 9:00 AM - 3:00 PM
+                          </li>
+                          <li>
+                            Swing Shift:
+                            <br /> 3:00 PM - 8:00 PM
+                          </li>
+                          <li>
+                            Grave Shift:
+                            <br /> 8:00 PM - 2:00 AM
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="flex-2">
+                        <p className="text-white text-[14px] font-bold mb-2">
+                          Compensation and Benefits
+                        </p>
+                        <p className="text-[12px]">
+                          Starting compensation is{" "}
+                          <p className="inline text-white font-bold">$15.45</p>{" "}
+                          hourly, plus tips. Employee benefits are available for
+                          all qualifying full-time employees including: paid
+                          time off, medical, vision, dental insurance, and a 25%
+                          employee discount on food, non-alcoholic beverages.
+                        </p>
+                      </div>
+                    </div>
+                    <BtnElement
+                      className="noodle mt-[20px] float-right"
+                      color="red"
+                      name="apply now"
+                    />
+                  </div>
+                </Modal>
                 <BtnElement
                   className="flex-5 w-full"
                   color="red"
@@ -101,6 +196,7 @@ const Employment = () => {
               </div>
             </div>
             <JobPost
+              onClick={() => setIsOpen(true)}
               className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 9"
               title="Bartender"
@@ -226,7 +322,7 @@ const Employment = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 mt-14 relative border-2 border-red-600 inline-block p-8 float-right -skew-x-16 mb-3 shadow-[0_0_15px_rgba(255,0,0,0.9)]">
+          <div className="w-full max-w-3xs mt-14 relative border-2 border-red-600 inline-block p-8 mb-16 mr-4 float-right -skew-x-16 shadow-[0_0_15px_rgba(255,0,0,0.9)]">
             <Image
               className="skew-x-16 absolute top-0 -right-10 -translate-[50%] bg-background p-2 "
               src={"/assets/images/Office Hours.png"}

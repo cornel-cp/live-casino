@@ -11,8 +11,12 @@ import Cutlery from "../components/icons/cutlery";
 import Hamburger from "../components/icons/hamburger";
 import FacebookIcon from "../components/icons/facebookIcon";
 import InstagramIcon from "../components/icons/instagramIcon";
+import Modal from "../components/Modal/modal";
+import { useState } from "react";
 
 const Dining = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Layout>
       {/* room Section */}
@@ -50,10 +54,89 @@ const Dining = () => {
                 <Cutlery />
               </div>
               <BtnElement
+                onClick={() => setIsOpen(true)}
                 className="w-[258px] mt-6 -mb-[50px]"
                 color="red"
                 name="see our great deals"
               />
+              <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                <Image
+                  className="absolute -top-0.5 -left-0.5"
+                  src={"/assets/images/jackpot_corner.png"}
+                  alt="corner"
+                  width={54}
+                  height={61}
+                />
+                <div>
+                  <p className="text-[28px] text-white">
+                    Happy hour{" "}
+                    <p className="text-red-600 inline">at casino m8trix</p>
+                  </p>
+                  <p className="text-[14px] font-[200px] text-white/60 nunito">
+                    Enjoy our great deals daily from 3 pm to 6 pm and from 9 pm
+                    to 11 pm !
+                  </p>
+                  <div className="flex justify-between items-end -mt-4">
+                    <p className="nunito text-[14px] pb-4">
+                      Food{" "}
+                      <p className="text-red-600 noodle inline">
+                        &frac12; OFF select
+                      </p>
+                      <p className="text-white noodle inline"> starters</p>
+                    </p>
+                    <Cutlery />
+                  </div>
+                  <div className="flex justify-start gap-2">
+                    <ul className="nunito list-disc pl-4 text-white/60">
+                      <li>Pot Stickers</li>
+                      <li>Roti Paratha</li>
+                      <li>Samosas</li>
+                      <li>Pork Egg Rolls</li>
+                      <li>Fried Calamari Strips</li>
+                    </ul>
+                    <ul className="nunito list-disc pl-4 text-white/60">
+                      <li>Online Rings</li>
+                      <li>&quot;Fry Basket&quot;</li>
+                      <li>Full Order Wings</li>
+                      <li>Chips & Salsa</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div className="flex justify-between items-end">
+                      <p className="nunito text-white pb-4">Drinks</p>
+                      <Cocktail />
+                    </div>
+                    <ul className="space-y-2 nunito">
+                      <li className="flex items-center text-white">
+                        <span className="w-2 h-2 bg-white/60 rounded-full mr-3"></span>
+                        <span className="flex-none">Heineken Bottles</span>
+                        <span className="flex-1 border-b border-dotted border-gray-500 mx-2 pt-2"></span>
+                        <span className="flex-none text-gray-300 noodle">
+                          $3.00
+                        </span>
+                      </li>
+
+                      <li className="flex items-center text-white">
+                        <span className="w-2 h-2 bg-white/60 rounded-full mr-3"></span>
+                        <span className="flex-none">Corona Extra</span>
+                        <span className="flex-1 border-b border-dotted border-gray-500 mx-2 pt-2"></span>
+                        <span className="flex-none text-gray-300 noodle">
+                          $3.50
+                        </span>
+                      </li>
+
+                      <li className="flex items-center text-white">
+                        <span className="w-2 h-2 bg-white/60 rounded-full mr-3"></span>
+                        <span className="flex-none">Budweiser</span>
+                        <span className="flex-1 border-b border-dotted border-gray-500 mx-2 pt-2"></span>
+                        <span className="flex-none text-gray-300 noodle">
+                          $2.80
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </Modal>
             </div>
           </BorderBox>
         </div>
@@ -71,15 +154,15 @@ const Dining = () => {
               <InstagramIcon />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 mb-10">
+          <div className="flex flex-col md:flex-row gap-4  mb-10">
             <Image
               src={"/assets/images/image_18.png"}
               alt="Image18"
               width={400}
               height={230}
-              className="flex-6 w-full md:h-full"
+              className="flex-6 w-full md:w-1/2"
             />
-            <div className=" md:w-1/2">
+            <div className="flex-6">
               <p className="text-white/60 font-extralight text-[14px] mb-5 nunito">
                 Zone 8 Sports Bar & Grill showcases the latest news and biggest
                 sporting events on our 40 HD flat screen TV’s, as well as two

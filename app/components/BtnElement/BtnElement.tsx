@@ -1,6 +1,7 @@
 const BtnElement = (props: any) => {
   return (
     <button
+      onClick={props.onClick}
       className={`${
         props.className
       } flex justify-center items-center md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer ${

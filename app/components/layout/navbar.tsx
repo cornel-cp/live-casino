@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <ul className="flex flex-col md:flex-row gap-2 py-4 px-10 bg-white/20 md:-skew-x-12 md:mr-11">
+    <ul className="flex flex-col md:flex-row gap-2 mt-14 md:mt-0 py-4 px-10 bg-white/20 md:-skew-x-12 md:mr-11">
       {menulist.map((menu, idx) => (
         <Link
           href={menu.path}
