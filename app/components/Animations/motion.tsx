@@ -42,7 +42,7 @@ export default function DraggableContainer() {
       onMouseLeave={handleMouseLeave}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
-      className="w-[400px] h-[300px] overflow-hidden cursor-grab active:cursor-grabbing pl-4"
+      className="w-[400px] h-[300px] overflow-hidden cursor-grab active:cursor-grabbing pl-4 mb-16"
     >
       <div className="flex flex-row items-center justify-around h-full flex-nowrap w-[1390px] md:flex-wrap md:w-full gap-2 pl-10 pr-25">
         <div className="w-[233px] h-[268px] relative border border-white [&:has(.special:hover)]:border-gray-600 transition duration-500">
