@@ -14,8 +14,8 @@ const EventSpaceCom = (props: eventSpaceComProps) => {
     const { text1, text2, text3, image, button1, button2 } = props;
 
     return (
-        <div className="pt-[30px] max-w-6xl w-full">
-            <div className="flex pt-[30px] relative gap-8 flex-col md:flex-row pb-12 ">
+        <div className="pt-[30px] w-full">
+            <div className="flex pt-[30px] relative max-w-6xl gap-8 flex-col md:flex-row pb-12 ">
                 <Image className="absolute " src={"/assets/images/jackpot_corner.png"} alt="jackpot_corner" width={85} height={95} />
                 <Image className="absolute top-[25px] left-[25px]" src={"/assets/images/jackpot_corner-gradient.png"} alt="jackpot_corner" width={85} height={95} />
                 <div className="flex-1 pl-[25px] pt-[15px] md:pt-[25px]">
@@ -24,8 +24,8 @@ const EventSpaceCom = (props: eventSpaceComProps) => {
                     <div className="hidden md:flex md:flex-col">
                         <p className="text-[14px] text-white pt-[19px]" style={{ fontFamily: "Nunito" }}>{text3}</p>
                         <div className="flex pt-3 md:pt-5 lg:pt-8">
-                            <button className={`bg-white text-red-600 -skew-x-12 ${button1 === "" ? "hidden" : ""}`}><p className="skew-x-12 text-[12px] lg:text-[16px]">{button1}</p></button>
-                            <button className="bg-red-600 text-white -skew-x-12 ml-4"><p className="skew-x-12 text-[12px] lg:text-[16px]">{button2}</p></button>
+                            <button className={`bg-white text-red-600 -skew-x-12 px-8 py-2.5 ${button1 === "" ? "hidden" : ""}`}><p className="skew-x-12 text-[12px] lg:text-[16px]">{button1}</p></button>
+                            <button className="bg-red-600 text-white -skew-x-12 px-8 py-2.5 ml-4"><p className="skew-x-12 text-[12px] lg:text-[16px]">{button2}</p></button>
                         </div>
                     </div>
                 </div>

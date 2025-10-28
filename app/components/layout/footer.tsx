@@ -17,7 +17,7 @@ const Footer = () => {
   });
 
   return (
-    <footer className=" mt-5">
+    <footer className="mt-5 nunito">
       <div className="bg-[url(/assets/images/footer-bg1.png)] bg-black bg-no-repeat bg-cover bg-left w-full ">
         <div className="bg-linear-to-r from-red-800/50 to-black/50 w-full bg-cover bg-no-repeat flex justify-center px-8 md:px-20">
           <div className="flex flex-col md:flex-row items-center max-w-6xl w-full py-8 justify-between gap-5 px-4">
@@ -36,13 +36,13 @@ const Footer = () => {
                     setData({ ...data, email: e.target.value })
                   }} placeholder="Your Email" />
                 </div>
-                <button className="w-full max-w-sm md:w-[103px]  px-8 py-2.5 bg-red-800 -skew-x-16" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
+                <button className="w-full max-w-sm md:w-auto  px-8 py-2.5 bg-red-800 -skew-x-16" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
               </form>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover bg-center flex flex-col justify-top w-full h-auto">
+      <div className="bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover bg-center flex flex-col justify-top py-15 w-full h-auto">
         <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover"></div>
         <div className="px-8 md:px-16">
           <div className="flex items-center">

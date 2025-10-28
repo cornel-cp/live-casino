@@ -29,7 +29,9 @@ const GameIcon = (props: gameiconProps) => {
             {icon === "ultimate" && <UltimateTexas />}
             {icon === "casino" && <CasinoWar />}
 
-            <p className="hidden sm:flex sm:justify-center text-white/20 text-[24px] text-center group-hover:text-white transition duration-500" >{name}</p>
+            <p className="flex justify-center items-center text-white/20 text-[24px] text-center group-hover:text-white transition duration-500" >{name}</p>
+
+
         </div>
     )
 }

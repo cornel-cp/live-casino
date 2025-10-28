@@ -9,7 +9,7 @@ const Games = () => {
     return (
         <div className="bg-background flex flex-col justify-center max-w-6xl w-full">
             <div className="border-2 border-red-600 text-center  px-4" style={{ boxShadow: "0 0 10px rgba(255, 0, 0, 0.8);" }}>
-                <p className=" text-white text-center text-4xl text-[50px]  bg-background -mt-7 md:-mt-14 max-w-[200px] md:max-w-[390px] mx-auto">ARE YOU IN?</p>
+                <p className=" text-white text-center text-4xl text-[50px]  bg-background -mt-6 md:-mt-8 max-w-[200px] md:max-w-[390px] mx-auto">ARE YOU IN?</p>
                 <p className="text-red-600 text-center lg:text-[32px] md:text-[32px] ">TABLE GAMING AT CASINO M8TRIX</p>
                 <p className="text-white lg:px-7 md:text-[14px] md:px-15 text-center pt-7" style={{ fontFamily: "Nunito" }}>Casino M8trix will be offering Limit & No Limit Texas Hold’em starting Sunday, May 2nd at 8am</p>
                 {/* Show the "More..." button on small screens */}

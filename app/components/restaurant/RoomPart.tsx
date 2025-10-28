@@ -19,15 +19,10 @@ interface RoomPartProps {
 const RoomPart = (props: RoomPartProps) => {
 
   return (
-<<<<<<< HEAD
-    <div className="relative max-w-4xl mx-auto px-4 md:px-10 pt-[25px] pb-[33.5px] border-4 border-red-600 shadow-[0_0_20px_rgba(255,0,0,0.9)] rounded-xs">
-=======
     <div className="relative mx-8 md:mx-auto lg:max-w-[1020px] px-4 md:px-10 pt-[25px] pb-[33.5px] border-4 border-red-600 shadow-[0_0_20px_rgba(255,0,0,0.9)] rounded-xs">
->>>>>>> 9be4eaba1aefb9a8352f5679867b54e84d9143be
       <Image
-        className={`absolute top-0 transform -translate-[50%] left-[50%] ${
-          props.direction === "right" ? " md:left-[85%]" : "md:left-20"
-        }`}
+        className={`absolute top-0 transform -translate-[50%] left-[50%] ${props.direction === "right" ? " md:left-[85%]" : "md:left-20"
+          }`}
         src={props.logoUrl}
         alt="restaurant"
         width={100}
@@ -88,11 +83,7 @@ const RoomPart = (props: RoomPartProps) => {
             alt={props.imageName}
             width={300}
             height={315}
-<<<<<<< HEAD
-          // className="w-full md:w-1/2 aspect-4/3"
-=======
             className="flex-6 w-full h-[133px] md:h-full"
->>>>>>> 9be4eaba1aefb9a8352f5679867b54e84d9143be
           />
         </div>
       ) : (

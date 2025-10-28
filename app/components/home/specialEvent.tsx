@@ -13,7 +13,7 @@ const SpecialEvent = () => {
                         <p className="text-[20px] lg:text-[28px]">Liquid</p>
                         <p className="text-[20px] lg:text-[28px] xl:pb-6">Lunch Specials</p>
                     </div>
-                    <button className="sm:-skew-x-12 w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-2.5"><p className="text-white sm:skew-x-12">READ MORE</p></button>
+                    <button className="w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-2.5"><p className="text-white sm:skew-x-12">READ MORE</p></button>
 
                 </div>
             </div>
@@ -25,7 +25,7 @@ const SpecialEvent = () => {
                         <p className="text-[20px] lg:text-[28px]">Liquid</p>
                         <p className="text-[20px] lg:text-[28px] xl:pb-6">Lunch Specials</p>
                     </div>
-                    <button className="sm:-skew-x-12 w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-2.5"><p className="text-white sm:skew-x-12">READ MORE</p></button>
+                    <button className="w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-2.5"><p className="text-white sm:skew-x-12">READ MORE</p></button>
                 </div>
             </div>
         </div >

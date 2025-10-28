@@ -22,7 +22,7 @@ const Carousel = () => {
             <div
                 className="flex transition-all duration-2000 ease-in-out w-full md:w-2/3 mx-auto"
             >
-                <div className="w-full min-h-auto md:h-[400px] brightness-50 hover:brightness-100"> {/* Full width for each image */}
+                <div className="w-full min-h-auto md:max-h-[500px] brightness-50 hover:brightness-100"> {/* Full width for each image */}
                     <Image
                         className="object-cover"
                         src={images[index].src}
