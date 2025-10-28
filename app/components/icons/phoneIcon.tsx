@@ -1,6 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Phone } from "lucide-react";
 
-export default function PhoneIcon() {
-  return <FontAwesomeIcon icon={faPhone} className="text-red-600 text-2xl" />;
-}
+const PhoneIcon = () => {
+  return <Phone className="pl-1 w-7 h-7 text-red-600" strokeWidth={2} />;
+};
+
+export default PhoneIcon;
