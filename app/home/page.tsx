@@ -12,6 +12,7 @@ import EventSpace from "../components/home/eventSpace";
 import Layout from "../components/layout/layout";
 import Link from "next/link";
 import Navbar from "../components/layout/navbar";
+import Carousel from "../components/home/carousel";
 
 const HomePage = () => {
 
@@ -30,9 +31,7 @@ const HomePage = () => {
             <Games />
             <HomeDining />
             <Discover />
-            <div className="py-20 bg-black/60 flex items-center justify-center" >
-                <Image src="/assets/images/Fake_Carousel.png" alt="carousel" width={895} height={347} />
-            </div>
+            <Carousel />
             <SpecialEvent />
             <EventSpace />
         </Layout>

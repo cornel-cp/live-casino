@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-*{
-  /* background-color:  black ; */
-  /* opacity: 0.3; */
-}
-
 
 @font-face {
   font-family: 'noodle';

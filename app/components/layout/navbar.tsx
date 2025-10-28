@@ -8,10 +8,6 @@ const Navbar = () => {
 
   const menulist = [
     {
-      label: "Home",
-      path: "/home",
-    },
-    {
       label: "Gaming",
       path: "/gaming",
     },
@@ -20,25 +16,32 @@ const Navbar = () => {
       path: "/dining",
     },
     {
+      label: "Events",
+      path: "/events",
+    },
+    {
+      label: "About",
+      path: "/about",
+    },
+    {
+      label: "Contact",
+      path: "/contact",
+    },
+    {
       label: "Employment",
       path: "/employment",
     },
   ];
 
-  useEffect(() => {
-    console.log(path);
-  }, []);
-
   return (
-    <ul className="flex gap-2 py-4 px-10 bg-white/20 -skew-x-12 mr-11">
+    <ul className="flex flex-col gap-6 py-4 px-10 mt-13 md:mt-0 bg-white/20 md:-skew-x-12 md:mr-11 md:flex-row transition-all duration-500">
       {menulist.map((menu, idx) => (
         <Link
           href={menu.path}
-          className={`uppercase  text-[14px] skew-x-12 cursor-pointer ${
-            "/" + path.split("/")[1] === menu.path
-              ? "text-white/50"
-              : "text-white"
-          }`}
+          className={`uppercase  text-[14px] md:skew-x-12 cursor-pointer hover:text-red-600 ${"/" + path.split("/")[1] === menu.path
+            ? "text-white/50"
+            : "text-white"
+            }`}
           key={idx}
         >
           {menu.label}

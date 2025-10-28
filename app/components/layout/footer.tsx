@@ -15,7 +15,30 @@ const Footer = () => {
   });
 
   return (
-    <footer className="nunito">
+    <footer className="nunito mt-5">
+      <div className="bg-[url(/assets/images/footer-bg1.png)] bg-black bg-no-repeat bg-cover bg-left w-full h-[140px]">
+        <div className="bg-[url(/assets/images/footer-gradient.png)] w-full bg-cover bg-no-repeat opacity-75">
+          <div className="flex flex-col sm:flex-row">
+            <div className="flex-6 mx-auto lg:px-[55px] md:px-9 sm:px-5 pt-8 pb-0">
+              <p className="text-white font-normal text-[24px] md:text-[40px] pt-[2.5px] m-0">CLUB 8 REWARDS</p>
+              <p className="text-white text-[12px] md:text-[18px] pt-0.5 m-0">GET FRESH NEWS EVERY MONTH!</p>
+            </div>
+            <div className="flex-6">
+              <form className="pt-[41px] pb-[41px] flex flex-col sm:flex-row z-50 items-center justify-around" action={"#"}>
+                <div>
+                  <input className="bg-white/20 block w-[207px] h-6 text-white mb-2.5 px-2 py-1 border-ra" value={data.name} onChange={(e) => {
+                    setData({ ...data, name: e.target.value })
+                  }} placeholder="Your Name" />
+
+                  <input className="bg-white/20 w-[207px] h-6 text-white px-2 py-1" value={data.email} onChange={(e) => {
+                    setData({ ...data, email: e.target.value })
+                  }} placeholder="Your Email" />
+                </div>
+                <button className="w-[103px] h-[34px] bg-red-800 -skew-x-16" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
+              </form>
+            </div>
+          </div></div>
+      </div>
       <div className="bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover flex flex-col justify-top w-full h-[535px]">
         <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover h-[267px] bg-no-repeat"></div>
         <div className="px-8 md:px-16">
