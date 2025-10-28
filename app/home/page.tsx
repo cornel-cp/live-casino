@@ -27,13 +27,17 @@ const HomePage = () => {
                 </video>
                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-b from-transparent to-black/80"> </div>
             </div>
-            <Jackpot />
-            <Games />
-            <HomeDining />
+            <div className="px-7 md:px-20 flex flex-col items-center">
+                <Jackpot />
+                <Games />
+                <HomeDining />
+            </div>
             <Discover />
-            <Carousel />
-            <SpecialEvent />
-            <EventSpace />
+            <div className="px-7 md:px-20 flex flex-col items-center">
+                <Carousel />
+                <SpecialEvent />
+                <EventSpace />
+            </div>
         </Layout>
 
     )

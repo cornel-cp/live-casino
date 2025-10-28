@@ -15,32 +15,33 @@ const Footer = () => {
   });
 
   return (
-    <footer className="nunito mt-5">
-      <div className="bg-[url(/assets/images/footer-bg1.png)] bg-black bg-no-repeat bg-cover bg-left w-full h-[140px]">
-        <div className="bg-[url(/assets/images/footer-gradient.png)] w-full bg-cover bg-no-repeat opacity-75">
-          <div className="flex flex-col sm:flex-row">
-            <div className="flex-6 mx-auto lg:px-[55px] md:px-9 sm:px-5 pt-8 pb-0">
-              <p className="text-white font-normal text-[24px] md:text-[40px] pt-[2.5px] m-0">CLUB 8 REWARDS</p>
+    <footer className=" mt-5">
+      <div className="bg-[url(/assets/images/footer-bg1.png)] bg-black bg-no-repeat bg-cover bg-left w-full ">
+        <div className="bg-linear-to-r from-red-800/50 to-black/50 w-full bg-cover bg-no-repeat flex justify-center px-8 md:px-20">
+          <div className="flex flex-col md:flex-row items-center max-w-6xl w-full py-8 justify-between gap-5 px-4">
+            <div className="w-sm md:w-auto">
+              <p className="text-white font-noodle text-5xl">CLUB 8 REWARDS</p>
               <p className="text-white text-[12px] md:text-[18px] pt-0.5 m-0">GET FRESH NEWS EVERY MONTH!</p>
             </div>
-            <div className="flex-6">
-              <form className="pt-[41px] pb-[41px] flex flex-col sm:flex-row z-50 items-center justify-around" action={"#"}>
-                <div>
-                  <input className="bg-white/20 block w-[207px] h-6 text-white mb-2.5 px-2 py-1 border-ra" value={data.name} onChange={(e) => {
+            <div className="w-sm md:w-auto">
+              <form className="flex flex-col md:flex-row gap-7 md:gap-10 z-50 items-center justify-around" action={"#"}>
+                <div className="flex flex-col w-full items-center">
+                  <input className="bg-white/20 block w-full max-w-sm md:w-auto min-w-[207px] text-white outline-none nunito mb-2.5 px-2 py-1 border-ra" value={data.name} onChange={(e) => {
                     setData({ ...data, name: e.target.value })
                   }} placeholder="Your Name" />
 
-                  <input className="bg-white/20 w-[207px] h-6 text-white px-2 py-1" value={data.email} onChange={(e) => {
+                  <input className="bg-white/20 w-full max-w-sm md:w-auto min-w-[207px] text-white outline-none px-2 nunito py-1" value={data.email} onChange={(e) => {
                     setData({ ...data, email: e.target.value })
                   }} placeholder="Your Email" />
                 </div>
-                <button className="w-[103px] h-[34px] bg-red-800 -skew-x-16" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
+                <button className="w-full max-w-sm md:w-[103px]  px-8 py-2.5 bg-red-800 -skew-x-16" type="submit"><p className="skew-x-16 text-white"> Subscribe</p></button>
               </form>
             </div>
-          </div></div>
+          </div>
+        </div>
       </div>
-      <div className="bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover flex flex-col justify-top w-full h-[535px]">
-        <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover h-[267px] bg-no-repeat"></div>
+      <div className="bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover bg-center flex flex-col justify-top w-full h-auto">
+        <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover"></div>
         <div className="px-8 md:px-16">
           <div className="flex items-center">
             <Image

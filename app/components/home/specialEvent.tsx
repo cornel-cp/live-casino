@@ -3,7 +3,7 @@ import Image from "next/image"
 const SpecialEvent = () => {
 
     return (
-        <div className="bg-background px-12 md:px-[90px] max-w-[600px] lg:max-w-7xl md:max-w-5xl mx-auto">
+        <div className="bg-background max-w-6xl w-full">
             <p className="text-2xl md:text-6xl text-white text-center pt-5 md:pt-[50px]">Specials & Events</p>
             <div className="flex pt-5 flex-col md:gap-2 md:flex-row  w-2/3 sm:w-full items-center rounded-2xl mx-auto">
                 <Image src={"/assets/images/specialEvent1.jpg"} alt="special event" width={265} height={110} className="w-full h-auto md:w-[200px] md:-skew-x-18 md:h-[90px] lg:h-[120px] xl:h-[150px] brightness-50 hover:brightness-100 transition-all duration-1000" />

@@ -64,3 +64,13 @@ tr td{
 .noodle {
   font-family: 'noodle';
 }
+
+.glow-effect {
+    @apply transition-shadow duration-300 ease-in-out; /* Tailwind transition classes */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 1), inset 0 0 10px rgba(0, 255, 255, 0.5); /* Outer and inner glow */
+}
+
+.glow-effect:hover {
+    @apply transition-shadow duration-300 ease-in-out;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 1), inset 0 0 20px rgba(0, 255, 255, 0.7); /* Hover effect */
+}

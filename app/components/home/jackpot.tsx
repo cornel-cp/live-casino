@@ -12,7 +12,7 @@ const Jackpot = () => {
     })
 
     return (
-        <div className="bg-background flex flex-col max-w-2xl py-10 md:py-30 md:flex-row lg:max-w-4xl xl:max-w-6xl mx-auto">
+        <div className="bg-background flex flex-col py-10 md:py-30 md:flex-row max-w-6xl">
             <div className="flex-4 text-white">
                 <div className="relative ">
                     <CornerGradient />
@@ -29,13 +29,13 @@ const Jackpot = () => {
                                 <span className="font-bold">Last Update</span>: 07/07/2023 16:04:28
                             </p>
                             <Link href={"/gaming/jackpot"}>
-                                <button className="bg-red-600 text-white -skew-x-12 p-2 rounded-sm"> <p className="text-[12px] skew-x-12"> Learn More</p></button>
+                                <button className="bg-red-600 text-white -skew-x-12 px-4 py-2.5 rounded-sm"> <p className="text-[12px] skew-x-12"> Learn More</p></button>
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="flex-4 text-white mt-4.5">
+            <div className="flex-4 text-white mt-4.5 px-3">
                 <InputModel text="Progressive Jackpot 10%" input={value.first} />
                 <InputModel text="Progressive Jackpot 100%" input={value.second} />
                 <InputModel text="Progressive Bad Beat Jackpot" input={value.third} />
