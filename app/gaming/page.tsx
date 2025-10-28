@@ -7,8 +7,11 @@ const Gaming = () => {
 
     return (
         <Layout>
-            <div className="bg-[url(/assets/images/gaming_header.png)] bg-no-repeat bg-cover bg-center flex flex-col justify-end w-full min-h-screen" >
-                <div className="bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full"></div>
+            <div className="bg-[url(/assets/images/gaming_bg.png)] bg-no-repeat bg-cover bg-center flex flex-col justify-end w-full min-h-screen" >
+                <div className="bg-linear-to-b from-white/10 to-black/90 flex flex-col justify-end items-center pb-20">
+                    <p className="text-[100px] text-white">ARE YOU IN?</p>
+                    <p className="text-[24px] text-red-600">TABLE GAMING AT CASINO M8TRIX</p>
+                </div>
             </div>
             <div className="bg-background flex flex-col items-center justify-center  max-w-6xl pt-24 px-12 mx-auto">
                 <div className="bg-background text-center border-2 border-red-600 mx-auto hidden md:flex md:flex-col">
