@@ -9,7 +9,12 @@ import PureIcon from "../icons/pureIcon";
 import ThreeCard from "../icons/threeCard";
 import UltimateTexas from "../icons/ultimateTexas";
 
-const GameIcon = (props: any) => {
+interface gameiconProps {
+    icon: string,
+    name: string
+}
+
+const GameIcon = (props: gameiconProps) => {
 
     const { icon, name } = props;
 
@@ -24,8 +29,9 @@ const GameIcon = (props: any) => {
             {icon === "ultimate" && <UltimateTexas />}
             {icon === "casino" && <CasinoWar />}
 
+            <p className="flex justify-center items-center text-white/20 text-[12px] md:text-[24px] text-center group-hover:text-white transition duration-500" >{name}</p>
 
-            <p className="text-white/20 text-[24px] text-center group-hover:text-white transition duration-500" >{name}</p>
+
         </div>
     )
 }

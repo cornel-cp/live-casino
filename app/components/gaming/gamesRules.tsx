@@ -1,21 +1,9 @@
-import { IcoBabacat } from "../icons/icons"
-import PokerIcon from "../icons/pokerIcon"
-import PriIcon from "../icons/priIcon"
 import EachGame from "./eachGame"
 
 const GamesRules = () => {
 
-
-    const items = [
-        {
-            icon: <PokerIcon />,
-            title: "POKER",
-            label: "Three card poker is one of the most popular",
-            desc: "poker games with two of the most played bonuses in the casino. Three card bonus pays with a pair or better…"
-        }
-    ]
     return (
-        <div className="pt-[125px]  text-white  px-8 sm:px-16 md:px-[86px] max-w-4xl mx-auto">
+        <div className="pt-10 md:pt-30 text-white mx-auto">
             <p className="text-[64px] text-center">GAMES RULES</p>
             {/* <div>
                 {items.map((item, idx) => (

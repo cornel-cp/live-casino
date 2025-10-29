@@ -4,8 +4,8 @@ const EventSpace = () => {
 
 
     return (
-        <div className="px-4 md:p-[55px] bg-background flex flex-col items-center">
-            <p className="text-[64px] text-white text-center">LOOKING FOR EVENT SPACES?</p>
+        <div className="bg-background flex flex-col items-center">
+            <p className="text-[40px] md:text-[64px] text-white text-center">LOOKING FOR EVENT SPACES?</p>
             <EventSpaceCom
                 text1="CASINO M8TRIX event tower"
                 text2="luxurious Meeting and event spaces"
