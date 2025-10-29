@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="bg-linear-to-r from-red-800/50 to-black/50 w-full bg-cover bg-no-repeat flex justify-center px-8 md:px-20">
           <div className="flex flex-col md:flex-row items-center max-w-6xl w-full py-8 justify-between gap-5 px-4">
             <div className="w-sm md:w-auto">
-              <p className="text-white font-noodle text-5xl">CLUB 8 REWARDS</p>
+              <p className="text-white noodle text-5xl">CLUB 8 REWARDS</p>
               <p className="text-white text-[12px] md:text-[18px] pt-0.5 m-0">GET FRESH NEWS EVERY MONTH!</p>
             </div>
             <div className="w-sm md:w-auto">

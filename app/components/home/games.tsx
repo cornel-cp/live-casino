@@ -13,7 +13,7 @@ const Games = () => {
                 <p className="text-red-600 text-center lg:text-[32px] md:text-[32px] ">TABLE GAMING AT CASINO M8TRIX</p>
                 <p className="text-white lg:px-7 md:text-[14px] md:px-15 text-center pt-7" style={{ fontFamily: "Nunito" }}>Casino M8trix will be offering Limit & No Limit Texas Hold’em starting Sunday, May 2nd at 8am</p>
                 {/* Show the "More..." button on small screens */}
-                <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pt-[38px] px-20`}>
+                <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pt-[38px] px-4 md:px-20`}>
                     <GameIcon icon="poker" name="poker" />
                     <GameIcon icon="pure" name="Pure 21.5 Blackjack" />
                     <GameIcon icon="baccarat" name="Baccarat" />
