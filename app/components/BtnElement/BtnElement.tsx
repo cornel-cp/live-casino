@@ -14,12 +14,12 @@ const BtnElement: React.FC<BtnElementProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`${className} flex justify-center items-center md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer ${
+      className={`${className} flex justify-center items-center md:w-[93px] -skew-x-16 cursor-pointer ${
         color === "red" ? "bg-red-600" : "border rounded-xs border-white"
       }`}
     >
       <p
-        className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}
+        className={`skew-x-16 text-white w-full text-[14px] py-4 font-normal text-wrap leading-none text-center`}
       >
         {name}
       </p>

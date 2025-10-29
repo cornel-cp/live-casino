@@ -20,8 +20,11 @@ const Dining = () => {
   return (
     <Layout>
       {/* room Section */}
-      <div className="bg-[url(/assets/images/bg_dining_room.jpg)] bg-center bg-no-repeat bg-cover h-[469px] flex flex-col justify-end w-full min-h-screen">
-        <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]">
+      <div
+        className="min-h-screen bg-center bg-no-repeat bg-cover flex flex-col justify-end"
+        style={{ backgroundImage: "url('/assets/images/bg_dining_room.jpg')" }}
+      >
+        <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-cover h-[469px]">
           <div className="">
             <p className="text-[100px] font-normal text-white leading-25">
               DINING
@@ -34,7 +37,7 @@ const Dining = () => {
       </div>
 
       {/* restaurant Section */}
-      <div className="flex flex-col justify-around gap-20 my-10 bg-gray-430">
+      <div className="flex flex-col justify-around gap-35 my-10 bg-gray-430">
         <div className="block md:hidden">
           <BorderBox>
             <div className="flex flex-col items-center">
@@ -142,12 +145,28 @@ const Dining = () => {
         </div>
         <BorderBox>
           <Image
-            className="absolute top-0 left-[50%] transform -translate-[50%] md:top-0 md:left-20 md:transform md:-translate-[50%]"
+            className="hidden md:block absolute top-0 left-[50%] transform -translate-[50%] md:top-0 md:left-20 md:transform md:-translate-[50%]"
             src="/Restaurant Logos.svg"
             alt="restaurant"
-            width={100}
-            height={100}
+            width={140}
+            height={140}
           />
+          <div className="block md:hidden">
+            <Image
+              className="absolute top-0  left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
+              src={"/assets/images/Ellipse 24.svg"}
+              alt="RestaurantLogo"
+              width={170}
+              height={92}
+            />
+            <Image
+              className="absolute top-0 left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
+              src={"/assets/images/Frame.svg"}
+              alt="RestaurantLogo"
+              width={175}
+              height={175}
+            />
+          </div>
           <div className="hidden md:block">
             <div className="flex justify-around gap-4 bg-background p-2 absolute top-[50%] -right-[5px] transform -translate-[50%] md:top-0 md:-right-[5px] md:transform md:-translate-[50%]">
               <FacebookIcon />
@@ -259,6 +278,7 @@ const Dining = () => {
         <RoomPart
           direction="right"
           logoUrl="/Epic Bar.svg"
+          logoBorderUrl="/Restaurant_Logos_(2).svg"
           text="Epic Bar is located in the heart of the casino and is the perfect setting for gathering and socializing. The bar serves finely crafted cocktails, draft beers, wines by the glass, and an appetizer and dining menu."
           firstHeader="Opening Hours"
           firstBody="Daily 6:00AM – 1:00AM"
@@ -271,6 +291,7 @@ const Dining = () => {
         <RoomPart
           direction="left"
           logoUrl="/parallel.svg"
+          logoBorderUrl="/Group 48095902.svg"
           text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
 
 Now accepting reservations for parties of 6 or larger. Have a seated dinner for up to 14 people, or host a cocktail party for up to 25.
@@ -287,6 +308,7 @@ Reservations are required to be made at least 48 hours in advance. A $100 food a
         <RoomPart
           direction="right"
           logoUrl="/Cafe.svg"
+          logoBorderUrl="/Restaurant Logos (3).svg"
           text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
 
 Now accepting reservations for parties of 6 or larger. Have a seated dinner for up to 14 people, or host a cocktail party for up to 25.

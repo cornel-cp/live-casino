@@ -5,6 +5,7 @@ import Link from "next/link";
 interface RoomPartProps {
   direction: string;
   logoUrl: string;
+  logoBorderUrl: string;
   text: string;
   firstHeader: string;
   firstBody: string;
@@ -18,6 +19,7 @@ interface RoomPartProps {
 const RoomPart: React.FC<RoomPartProps> = ({
   direction,
   logoUrl,
+  logoBorderUrl,
   text,
   firstHeader,
   firstBody,
@@ -30,16 +32,23 @@ const RoomPart: React.FC<RoomPartProps> = ({
   return (
     <div className="relative mx-8 md:mx-[88px] lg:mx-auto lg:max-w-[1020px] px-4 md:px-10 pt-[25px] pb-[33.5px] mt-2.5 border-4 border-red-600 shadow-[0_0_15px_rgba(255,0,0,0.9)] rounded-xs">
       <Image
-        className={`absolute top-0 transform -translate-[50%] left-[50%] ${
+        className={`hidden md:block absolute top-0 transform -translate-[50%] left-[50%] ${
           direction === "right" ? " md:left-[85%]" : "md:left-20"
         }`}
         src={logoUrl}
         alt="restaurant"
-        width={100}
-        height={100}
+        width={140}
+        height={140}
+      />
+      <Image
+        className="block md:hidden absolute top-0 left-1/2 translate-[-50%]"
+        src={logoBorderUrl}
+        alt="RestaurantLogo"
+        width={180}
+        height={180}
       />
       {direction === "right" ? (
-        <div className="flex gap-4 flex-col-reverse md:flex-row mb-20 md:mb-0 nunito">
+        <div className="flex gap-4 flex-col-reverse md:flex-row mb-30 md:mb-0 nunito">
           <div className="flex-6 relative">
             <p className="text-white/60 font-extralight text-[14px] mb-5">
               {text}
@@ -59,7 +68,7 @@ const RoomPart: React.FC<RoomPartProps> = ({
                 </span>
               </p>
             </div>
-            <div className="absolute -bottom-25 md:bottom-2.5 w-full noodle">
+            <div className="absolute -bottom-30 md:bottom-2.5 w-full noodle">
               <div className="flex flex-wrap justify-between gap-4">
                 <BtnElement
                   className="flex-2/12 sm:flex-5/12 md:flex-3/12 w-full md:w-full ml-5 md:ml-0"
@@ -90,7 +99,7 @@ const RoomPart: React.FC<RoomPartProps> = ({
           />
         </div>
       ) : (
-        <div className="flex flex-col mb-20 md:mb-0 md:flex-row gap-4">
+        <div className="flex flex-col mb-30 md:mb-0 md:flex-row gap-4">
           <Image
             className="flex-6 w-full md:w-1/2 md:h-full"
             src={imageUrl}
@@ -117,7 +126,7 @@ const RoomPart: React.FC<RoomPartProps> = ({
                 </span>
               </p>
             </div>
-            <div className="absolute -bottom-25 md:bottom-2.5 w-full noodle">
+            <div className="absolute -bottom-30 md:bottom-2.5 w-full noodle">
               <div className="flex flex-wrap justify-between gap-4">
                 <BtnElement
                   className="flex-2/12 sm:flex-5/12 md:flex-3/12 w-full md:w-full ml-5 md:ml-0"
