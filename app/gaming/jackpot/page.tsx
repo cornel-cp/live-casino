@@ -6,10 +6,22 @@ const Jackpot = () => {
 
     return (
         <Layout>
-            <div className="bg-[url(/assets/images/bg_jackpot.png)] bg-no-repeat bg-cover bg-center flex flex-col justify-end w-full min-h-screen">
-                <div className="bg-linear-to-b from-black/20 to-black/60 w-full min-h-screen bg-cover bg-no-repeat flex flex-col justify-end items-center pb-20">
-                    <p className="text-[100px] text-white">JACKPOTS</p>
-                    <p className="text-[24px] text-red-600">casino m8trix</p>
+
+            <div className="relative w-full min-h-screen flex flex-col justify-end items-center text-center overflow-hidden">
+                {/* Background image */}
+                <div className="absolute inset-0 bg-[url(/assets/images/bg_jackpot.png)] bg-no-repeat bg-cover bg-center brightness-50"></div>
+
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-black/90"></div>
+
+                {/* Foreground content */}
+                <div className="relative z-10 flex flex-col justify-end items-center pb-16 sm:pb-20 px-4">
+                    <p className="text-[60px]  lg:text-[100px] font-bold text-white leading-tight drop-shadow-lg">
+                        JACKPOTS
+                    </p>
+                    <p className="text-[20px]  lg:text-[24px] text-red-600 mt-3 drop-shadow-md">
+                        casino m8trix
+                    </p>
                 </div>
             </div>
 
