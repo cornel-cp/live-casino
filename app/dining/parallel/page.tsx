@@ -85,14 +85,17 @@ const Parallel = () => {
                 </div>
               </div>
             </div>
-            <Link href={"/dining"}>
-              <p className="text-white/40 text-[14px] pl-[85px] pt-[103px] pb-[71.5px]">
-                <span className="text-[14px] font-bold text-white/40 pr-2">
-                  &lt;
-                </span>
-                Back to dining
-              </p>
-            </Link>
+            <div className="pl-[85px] pt-[103px] pb-[71.5px]">
+              <Link href={"/dining"}>
+                <p className="text-white/40 text-[14px] group hover:text-white">
+                  <span className="text-[14px] font-bold text-white/40 pr-2 group-hover:text-white">
+                    &lt;
+                  </span>
+                  Back to{" "}
+                  <p className="group-hover:text-red-600 inline">dining</p>
+                </p>
+              </Link>
+            </div>
           </div>
         </Layout>
       </div>
