@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+
 @font-face {
   font-family: 'noodle';
   src: url('/assets/fonts/big_noodle_titling.ttf') format('truetype');
