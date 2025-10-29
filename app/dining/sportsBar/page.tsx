@@ -142,14 +142,17 @@ const SportsBar = () => {
                     <InstagramIcon />
                   </div>
                 </div>
-                <Link href="/dining" className="">
-                  <p className="text-white/40 text-[14px]">
-                    <span className="text-[14px] font-bold text-white/40 pr-2">
-                      &lt;
-                    </span>
-                    Back to dining
-                  </p>
-                </Link>
+                <div className="">
+                  <Link href="/dining" className="">
+                    <p className="text-white/40 text-[14px] group hover:text-white">
+                      <span className="text-[14px] font-bold text-white/40 pr-2 group-hover:text-white">
+                        &lt;
+                      </span>
+                      Back to{" "}
+                      <p className="group-hover:text-red-600 inline">dining</p>
+                    </p>
+                  </Link>
+                </div>
               </div>
               <div className="flex justify-between w-[316px]!">
                 <BtnElement className="" color="white" name="3D TOUR" />
