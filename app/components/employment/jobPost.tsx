@@ -39,7 +39,7 @@ const JobPost: React.FC<JobPostProps> = ({
       <div className="flex gap-2 w-full px-4 justify-between absolute -bottom-0.5 left-[50%] -translate-[50%] noodle">
         <button
           onClick={onClick}
-          className={`flex-5 w-full bg-white flex justify-center items-center h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+          className={`flex-5 w-full h-[34px] bg-white flex justify-center items-center -skew-x-16 cursor-pointer border rounded-xs border-white`}
         >
           <p
             className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
@@ -47,7 +47,11 @@ const JobPost: React.FC<JobPostProps> = ({
             PREVIEW
           </p>
         </button>
-        <BtnElement className="flex-5 w-full" color="red" name="APPLY NOW" />
+        <BtnElement
+          className="flex-5 w-full h-[34px]"
+          color="red"
+          name="APPLY NOW"
+        />
       </div>
     </div>
   );

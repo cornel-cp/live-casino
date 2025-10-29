@@ -74,7 +74,7 @@ const Employment = () => {
                 height={61}
               />
               <Molicule className="special absolute top-[15.5px] right-[16.5px] text-gray-600 hover:text-white transition duration-500" />
-              <div className="ml-[26px] mr-[30px] mt-[27px] mb-12 text-[14px]">
+              <div className="ml-[26px] mr-[30px] mt-[27px] mb-11.5 text-[14px]">
                 <p className="text-white/40 font-light">Nov, 13</p>
                 <div>
                   <p className="text-[20px] font-bold text-white">
@@ -88,10 +88,10 @@ const Employment = () => {
               </div>
               <div className="flex gap-2 justify-center px-4 noodle">
                 <button
-                  className={`flex-5 bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+                  className={`flex-5 bg-white flex justify-center items-center w-full h-[34px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
                 >
                   <p
-                    className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
+                    className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] py-4 font-normal text-wrap leading-none text-center`}
                   >
                     PREVIEW
                   </p>
@@ -189,7 +189,7 @@ const Employment = () => {
                   </div>
                 </Modal>
                 <BtnElement
-                  className="flex-5 w-full"
+                  className="flex-5 w-full h-[34px]"
                   color="red"
                   name="APPLY NOW"
                 />
@@ -233,10 +233,10 @@ const Employment = () => {
             </div>
             <div className="flex-2/12 w-full px-5 md:px-0">
               <button
-                className={`bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+                className={`bg-white flex justify-center items-center w-full -skew-x-16 cursor-pointer border rounded-xs border-white`}
               >
                 <p
-                  className={`hidden md:block skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
+                  className={`hidden md:block skew-x-16 text-red-600 max-w-[68px] text-[14px] py-4 font-normal text-wrap leading-none text-center`}
                 >
                   SEND RESUME
                 </p>
@@ -290,8 +290,8 @@ const Employment = () => {
               </div>
             </div>
             <div className="block md:hidden">
-              <div className="flex flex-col justify-between ml-[35px] pt-[30px] gap-2">
-                <div className="flex-6">
+              <div className="flex flex-col justify-between pt-[30px] gap-2">
+                <div className="flex-6 ml-[35px] ">
                   <p className="text-white text-[36px] font-normal">
                     why work at casino m8trix
                   </p>
@@ -300,13 +300,13 @@ const Employment = () => {
                   </p>
                 </div>
                 <Image
-                  className="flex-6 w-full"
+                  className="flex-6 w-full px-3"
                   src={"/assets/images/Image 20.jpg"}
                   alt="girl"
                   width={310}
                   height={264}
                 />
-                <p className="text-white/40 text-[14px] nunito">
+                <p className="text-white/40 text-[14px] nunito px-3">
                   Casino M8trix is an equal opportunity employer and no
                   employee, applicant, or candidate for hiring, promotion,
                   training or other benefit shall be discriminated against or
@@ -322,7 +322,7 @@ const Employment = () => {
               </div>
             </div>
           </div>
-          <div className="w-full max-w-3xs mt-14 relative border-2 border-red-600 inline-block p-8 mb-16 mr-4 float-right -skew-x-16 shadow-[0_0_15px_rgba(255,0,0,0.9)]">
+          <div className="w-full max-w-3xs mt-14 relative border-2 border-red-600 md:inline-block p-8 mb-16 mx-auto md:mr-4 md:float-right -skew-x-16 shadow-[0_0_15px_rgba(255,0,0,0.9)]">
             <Image
               className="skew-x-16 absolute top-0 -right-10 -translate-[50%] bg-background p-2 "
               src={"/assets/images/Office Hours.png"}

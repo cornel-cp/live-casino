@@ -56,7 +56,7 @@ export default function DraggableContainer() {
             height={61}
           />
           <Molicule className="special absolute top-[15.5px] right-[16.5px] text-gray-600 hover:text-white transition duration-500" />
-          <div className="ml-[26px] mr-[30px] mt-[27px] mb-12 text-[14px]">
+          <div className="ml-[26px] mr-[30px] mt-[27px] mb-11.5 text-[14px]">
             <p className="text-white/40 font-light">Nov, 13</p>
             <div>
               <p className="text-[20px] font-bold text-white">
@@ -70,7 +70,7 @@ export default function DraggableContainer() {
           </div>
           <div className="flex gap-2 justify-center px-4 noodle">
             <button
-              className={`flex-5 bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+              className={`flex-5 bg-white flex justify-center items-center w-full h-[34px]  -skew-x-16 cursor-pointer border rounded-xs border-white`}
             >
               <p
                 className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
@@ -79,7 +79,7 @@ export default function DraggableContainer() {
               </p>
             </button>
             <BtnElement
-              className="flex-5 w-full"
+              className="flex-5 w-full h-[34px]"
               color="red"
               name="APPLY NOW"
             />
