@@ -2,15 +2,15 @@
 import Image from "next/image";
 import Footer from "./footer";
 import Header from "./header";
+import React from "react";
 
-const Layout = (props: any) => {
-  const { children } = props;
+interface LayoutProps {
+  children: React.ReactNode;
+}
 
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const scrollToTop = () => {
     window.scrollTo({
-
-
-
       top: 0,
       behavior: "smooth",
     });

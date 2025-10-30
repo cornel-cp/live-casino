@@ -97,7 +97,7 @@ const Footer = () => {
               <div className="flex items-center justify-between mt-5">
                 <div className="flex text-white text-[9px]">
                   <Image
-                    src={"/assets/images/footer-logo.png"}
+                    src={"/Group.svg"}
                     alt="location"
                     width={120}
                     height={32}
@@ -122,7 +122,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="block md:hidden mb-7">
+            <div className="block md:hidden">
               <div className="flex items-center justify-between mt-5">
                 <div className="flex text-white text-[9px]">
                   <Image

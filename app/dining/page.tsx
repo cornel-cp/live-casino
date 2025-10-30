@@ -37,7 +37,7 @@ const Dining = () => {
       </div>
 
       {/* restaurant Section */}
-      <div className="flex flex-col justify-around gap-35 my-10 bg-gray-430">
+      <div className="flex flex-col justify-around gap-35 my-10 mb-[87px] bg-background">
         <div className="block md:hidden">
           <BorderBox>
             <div className="flex flex-col items-center">
@@ -153,7 +153,7 @@ const Dining = () => {
           />
           <div className="block md:hidden">
             <Image
-              className="absolute top-0  left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2 "
+              className="absolute top-0  left-1/2 md:left-0 -translate-x-1/2 -translate-y-1/2"
               src={"/assets/images/Ellipse 24.svg"}
               alt="RestaurantLogo"
               width={170}
@@ -292,11 +292,6 @@ const Dining = () => {
           direction="left"
           logoUrl="/parallel.svg"
           logoBorderUrl="/Group 48095902.svg"
-          text="Parallel Lounge is the perfect setting to host your next private cocktail party, business dinner, or birthday party.
-
-Now accepting reservations for parties of 6 or larger. Have a seated dinner for up to 14 people, or host a cocktail party for up to 25.
-
-Reservations are required to be made at least 48 hours in advance. A $100 food and beverage minimum applies. 21 and over."
           firstHeader="Opening Hours"
           firstBody="Daily 11am to 12am"
           secondHeader="Reservations"
@@ -304,7 +299,22 @@ Reservations are required to be made at least 48 hours in advance. A $100 food a
           imageUrl="/assets/images/room.png"
           imageName="RomeOfParallel"
           href="/dining/parallel"
-        />
+        >
+          <p>
+            Parallel Lounge is the perfect setting to host your next private
+            cocktail party, business dinner, or birthday party.
+          </p>
+
+          <p>
+            Now accepting reservations for parties of 6 or larger. Have a seated
+            dinner for up to 14 people, or host a cocktail party for up to 25.
+          </p>
+
+          <p>
+            Reservations are required to be made at least 48 hours in advance. A
+            $100 food and beverage minimum applies. 21 and over.
+          </p>
+        </RoomPart>
         <RoomPart
           direction="right"
           logoUrl="/Cafe.svg"
