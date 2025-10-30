@@ -17,7 +17,7 @@ const Cafe = () => {
             <div className="flex items-end justify-center bg-[url(/assets/images/bggradient_home.png)] bg-no-repeat bg-cover w-full h-[469px]"></div>
           </div>
           {/* main body Part */}
-          <div className=" bg-background pt-[60px] max-w-5xl mx-auto">
+          <div className=" bg-gray-340 pt-[60px] max-w-5xl mx-auto">
             <div className="flex gap-10 ml-28 mr-[85px]">
               <div className="relative">
                 <Image
@@ -68,10 +68,10 @@ const Cafe = () => {
                 <div className="flex justify-end gap-4 mt-[52px] noodle">
                   <BtnElement className="" color="white" name="3D TOUR" />
                   <button
-                    className={`bg-white flex justify-center items-center w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+                    className={`bg-white flex justify-center items-center w-[93px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
                   >
                     <p
-                      className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
+                      className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] py-4 font-normal text-wrap leading-none text-center`}
                     >
                       SEE MENU
                     </p>
@@ -79,14 +79,17 @@ const Cafe = () => {
                 </div>
               </div>
             </div>
-            <Link href={"/dining"}>
-              <p className="text-white/40 text-[14px] pl-[85px] pt-[103px] pb-[71.5px]">
-                <span className="text-[14px] font-bold text-white/40 pr-2">
-                  &lt;
-                </span>
-                Back to dining
-              </p>
-            </Link>
+            <div className="pl-[85px] pt-[103px] mb-[71.5px]">
+              <Link href={"/dining"}>
+                <p className="group text-white/40 text-[14px]  hover:text-white inline">
+                  <span className="text-[14px] font-bold text-white/40 group-hover:text-white pr-2">
+                    &lt;
+                  </span>
+                  Back to{" "}
+                  <p className="group-hover:text-red-600 inline">dining</p>
+                </p>
+              </Link>
+            </div>
           </div>
         </Layout>
       </div>
@@ -218,10 +221,10 @@ const Cafe = () => {
                 <div className="flex flex-col justify-between gap-4 noodle">
                   <BtnElement className="w-full" color="white" name="3D TOUR" />
                   <button
-                    className={`bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+                    className={`bg-white flex justify-center items-center w-full -skew-x-16 cursor-pointer border rounded-xs border-white`}
                   >
                     <p
-                      className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
+                      className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] py-4 font-normal text-wrap leading-none text-center`}
                     >
                       SEE MENU
                     </p>

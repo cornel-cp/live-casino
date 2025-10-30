@@ -3,7 +3,7 @@ import EachGame from "./eachGame"
 const GamesRules = () => {
 
     return (
-        <div className="pt-30  text-white mx-auto">
+        <div className="pt-10 md:pt-30 text-white mx-auto">
             <p className="text-[64px] text-center">GAMES RULES</p>
             {/* <div>
                 {items.map((item, idx) => (

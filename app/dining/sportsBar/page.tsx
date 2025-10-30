@@ -142,22 +142,25 @@ const SportsBar = () => {
                     <InstagramIcon />
                   </div>
                 </div>
-                <Link href="/dining" className="">
-                  <p className="text-white/40 text-[14px]">
-                    <span className="text-[14px] font-bold text-white/40 pr-2">
-                      &lt;
-                    </span>
-                    Back to dining
-                  </p>
-                </Link>
+                <div className="">
+                  <Link href="/dining" className="">
+                    <p className="text-white/40 text-[14px] group hover:text-white">
+                      <span className="text-[14px] font-bold text-white/40 pr-2 group-hover:text-white">
+                        &lt;
+                      </span>
+                      Back to{" "}
+                      <p className="group-hover:text-red-600 inline">dining</p>
+                    </p>
+                  </Link>
+                </div>
               </div>
               <div className="flex justify-between w-[316px]!">
                 <BtnElement className="" color="white" name="3D TOUR" />
                 <button
-                  className={`bg-white flex justify-center items-center w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+                  className={`bg-white flex justify-center items-center w-[93px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
                 >
                   <p
-                    className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
+                    className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] py-4 font-normal text-wrap leading-none text-center`}
                   >
                     SEE MENU
                   </p>
@@ -296,10 +299,10 @@ const SportsBar = () => {
                 <div className="flex flex-col justify-between gap-4">
                   <BtnElement className="w-full" color="white" name="3D TOUR" />
                   <button
-                    className={`bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
+                    className={`bg-white flex justify-center items-center w-full -skew-x-16 cursor-pointer border rounded-xs border-white`}
                   >
                     <p
-                      className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] font-normal text-wrap leading-none text-center`}
+                      className={`skew-x-16 text-red-600 max-w-[68px] text-[14px] py-4 font-normal text-wrap leading-none text-center`}
                     >
                       SEE MENU
                     </p>

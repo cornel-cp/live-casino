@@ -7,13 +7,25 @@ const Gaming = () => {
 
     return (
         <Layout>
-            <div className="bg-[url(/assets/images/gaming_bg.png)] bg-no-repeat bg-cover bg-center flex flex-col justify-end w-full min-h-screen" >
-                <div className="bg-linear-to-b from-white/10 to-black/90 flex flex-col justify-end items-center pb-20">
-                    <p className="text-[100px] text-white">ARE YOU IN?</p>
-                    <p className="text-[24px] text-red-600">TABLE GAMING AT CASINO M8TRIX</p>
+            <div className="relative w-full min-h-screen flex flex-col justify-end items-center text-center overflow-hidden">
+                {/* Background image */}
+                <div className="absolute inset-0 bg-[url(/assets/images/gaming_bg.png)] bg-no-repeat bg-cover bg-center brightness-50"></div>
+
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-linear-to-b from-white/10 to-black/90"></div>
+
+                {/* Foreground content */}
+                <div className="relative z-10 flex flex-col justify-end items-center pb-16 sm:pb-20 px-4">
+                    <p className="text-[60px] lg:text-[100px] font-bold text-white leading-tight drop-shadow-lg">
+                        ARE YOU IN?
+                    </p>
+                    <p className="text-[20px] lg:text-[24px] text-red-600 mt-3 drop-shadow-md">
+                        TABLE GAMING AT CASINO M8TRIX
+                    </p>
                 </div>
             </div>
-            <div className="bg-background flex flex-col items-center justify-center  max-w-6xl pt-24 px-12 mx-auto">
+
+            <div className="bg-background flex flex-col items-center justify-center  max-w-6xl pt-12 md:pt-24 px-12 mx-auto">
                 <div className="bg-background text-center border-2 border-red-600 mx-auto hidden md:flex md:flex-col">
                     {/* <div className="bg-linear-to-b from-white/10 to-black/90"> */}
                     <p className="text-white text-center text-[50px] -mt-10 bg-background max-w-[200px] mx-auto">GAMES</p>
