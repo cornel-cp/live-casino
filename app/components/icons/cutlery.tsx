@@ -1,4 +1,8 @@
-const Cutlery = () => {
+interface CutleryProps {
+  className?: string;
+}
+
+const Cutlery: React.FC<CutleryProps> = ({ className }) => {
   return (
     <svg
       width="80"
@@ -6,7 +10,7 @@ const Cutlery = () => {
       viewBox="0 0 80 78"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-white hover:text-red-600"
+      className={`${className} text-white hover:text-red-600`}
     >
       <g filter="url(#filter0_d_4797_5955)">
         <path

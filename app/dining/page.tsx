@@ -58,7 +58,7 @@ const Dining = () => {
               </div>
               <BtnElement
                 onClick={() => setIsOpen(true)}
-                className="w-[258px] mt-6 -mb-[50px]"
+                className="w-[258px] mt-6 -mb-[65px]"
                 color="red"
                 name="see our great deals"
               />
