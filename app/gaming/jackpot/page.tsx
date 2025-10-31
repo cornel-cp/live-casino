@@ -103,7 +103,7 @@ const Jackpot = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between items-center mt-20 border-white/40 border-1 py-5 -skew-x-16 ">
+                <div className="flex flex-col md:flex-row justify-between items-center my-20 border-white/40 border-1 py-5 -skew-x-16 ">
                     <div className="flex pl-0 md:pl-10 items-center">
                         <Image src={"/assets/images/Live.png"} alt="" width={20} height={20} />
                         <p className="text-white/60 pl-2">Time Last Updated</p>
@@ -114,7 +114,6 @@ const Jackpot = () => {
                         <p className="text-[14px] text-white/40 pr-0 md:pr-10">AM</p>
                     </div>
                 </div>
-
             </div>
         </Layout>
 

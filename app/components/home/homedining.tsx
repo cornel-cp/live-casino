@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 // Define a type for the image props for clarity and reusability
 interface DiningImageProps {
@@ -13,7 +14,7 @@ interface DiningImageProps {
 const DiningImage: React.FC<DiningImageProps> = ({ src, alt, width, height }) => {
     return (
         <Image
-            className="bg-center mx-auto brightness-50 hover:brightness-100 hover:scale-110 transition-all duration-1000 
+            className="bg-center mx-auto brightness-50 group-hover:brightness-100 group-hover:scale-110 transition-all duration-1000 
         h-20 w-[120px] 
         sm:h-[120px] sm:w-[150px] 
         md:h-[150px] md:w-[200px] 
@@ -29,10 +30,10 @@ const DiningImage: React.FC<DiningImageProps> = ({ src, alt, width, height }) =>
 
 const HomeDining = () => {
     const images = [
-        { src: "/assets/images/dining_first.jpg", alt: "dining1", width: 300, height: 181 },
-        { src: "/assets/images/dining_second.jpg", alt: "dining2", width: 300, height: 181 },
-        { src: "/assets/images/dining_third.jpg", alt: "dining3", width: 300, height: 181 },
-        { src: "/assets/images/dining_fourth.jpg", alt: "dining4", width: 300, height: 181 },
+        { src: "/assets/images/dining_first.jpg", alt: "dining1", width: 300, height: 181, link: "/dining/sportsBar" },
+        { src: "/assets/images/dining_second.jpg", alt: "dining2", width: 300, height: 181, link: "/dining/EpicBar" },
+        { src: "/assets/images/dining_third.jpg", alt: "dining3", width: 300, height: 181, link: "/dining/parallel" },
+        { src: "/assets/images/dining_fourth.jpg", alt: "dining4", width: 300, height: 181, link: "/dining/cafe" },
     ];
 
     return (
@@ -41,14 +42,21 @@ const HomeDining = () => {
                 Dining
             </p>
             <div className="grid grid-cols-2 justify-center -ml-20 sm:grid-cols-2 sm:-ml-30 md:-ml-24 lg:grid-cols-3 lg:-ml-16 xl:grid-cols-4 items-center pb-[120px] -skew-x-24 gap-4">
-                {images.map((image) => (
-                    <DiningImage
-                        key={image.src}
-                        src={image.src}
-                        alt={image.alt}
-                        width={image.width}
-                        height={image.height}
-                    />
+                {images.map((image, index) => (
+                    <Link className="relative group" href={image.link} key={index}>
+                        <DiningImage
+                            key={image.src}
+                            src={image.src}
+                            alt={image.alt}
+                            width={image.width}
+                            height={image.height}
+                        />
+                        <p className="absolute top-1/2 left-1/2
+      -translate-x-1/2 -translate-y-1/2
+      text-[60px] font-bold text-white
+      opacity-0 group-hover:opacity-100
+      transition-all duration-500 ease-out">{image.link.split("/").pop()}</p>
+                    </Link>
                 ))}
             </div>
         </div>
