@@ -271,15 +271,6 @@ const Header = ({ className = "" }: HeaderProps) => {
                       </Link>
                     </div>
                   </DropNavbar> : ""}
-                  {/* Tooltip with outside arrow */}
-                  {/* <div
-                    className="absolute top-[40px] left-[100px] -translate-x-1/2
-          w-[380px] bg-white/10 backdrop-blur-md border border-white/30 text-white
-          rounded-lg shadow-xl invisible group-hover:opacity-100 group-hover:visible
-          transition-all duration-300 p-4 text-center z-50
-          group-hover:translate-y-1 -skew-x-12">
-                    <div>123</div>
-                  </div> */}
                 </div>
               );
             })}
