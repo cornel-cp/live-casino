@@ -17,7 +17,7 @@ const Games = () => {
                     <GameIcon icon="poker" name="poker" />
                     <GameIcon icon="pure" name="Pure 21.5 Blackjack" />
                     <GameIcon icon="baccarat" name="Baccarat" />
-                    <GameIcon icon="aka" name="AKA PAI GOW POKER" />
+                    <GameIcon icon="three_card" name="AKA PAI GOW POKER" />
                     <GameIcon icon="pri" name="PAI GOW TILES" />
                 </div>
                 <Link href={"/gaming"}>

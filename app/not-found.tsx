@@ -5,16 +5,15 @@ import LinkedinIcon from "./components/icons/linkedinIcon"
 import LocationOutline from "./components/icons/locationIcon"
 import PhoneIcon from "./components/icons/phoneIcon"
 import YoutubeIcon from "./components/icons/youtubeIcon"
-import Footer from "./components/layout/footer"
 import Header from "./components/layout/header"
-import Layout from "./components/layout/layout"
 import Image from "next/image"
 
-const Notfound = () => {
+const NotFound = () => {
     return (
         <div>
             <Header />
-            <div className="mb-40">
+
+            <div>
                 <div className="flex md:justify-center max-w-6xl mx-auto mt-[125px] gap-10 relative px-20">
                     <div className="hidden md:flex">
                         <Image
@@ -192,4 +191,4 @@ const Notfound = () => {
     )
 }
 
-export default Notfound
+export default NotFound

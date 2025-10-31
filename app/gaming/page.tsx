@@ -12,7 +12,7 @@ const Gaming = () => {
                 <div className="absolute inset-0 bg-[url(/assets/images/gaming_bg.png)] bg-no-repeat bg-cover bg-center brightness-50"></div>
 
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-linear-to-b from-white/10 to-black/90"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-white/10 to-[#181818]"></div>
 
                 {/* Foreground content */}
                 <div className="relative z-10 flex flex-col justify-end items-center pb-16 sm:pb-20 px-4">
@@ -27,7 +27,6 @@ const Gaming = () => {
 
             <div className="bg-background flex flex-col items-center justify-center  max-w-6xl pt-12 md:pt-24 px-12 mx-auto">
                 <div className="bg-background text-center border-2 border-red-600 mx-auto hidden md:flex md:flex-col">
-                    {/* <div className="bg-linear-to-b from-white/10 to-black/90"> */}
                     <p className="text-white text-center text-[50px] -mt-10 bg-background max-w-[200px] mx-auto">GAMES</p>
                     <p className="text-[9px] text-white text-center nunito"><span className="font-bold">Last Update:</span> 07/06/2022 16:04:28</p>
                     <GamesTable />
@@ -46,7 +45,7 @@ const Gaming = () => {
                 offered at Casino M8trix."
                         button1=""
                         button2="Join academy"
-                        image="card_acadamy" />
+                        image="cardacadamy" />
                 </div>
             </div>
 
