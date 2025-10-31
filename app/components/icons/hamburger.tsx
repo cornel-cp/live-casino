@@ -1,12 +1,16 @@
-const Hamburger = () => {
+interface HamburgerProps {
+  className?: string;
+}
+
+const Hamburger: React.FC<HamburgerProps> = ({ className }) => {
   return (
     <svg
-      width="80"
-      height="80"
+      width="75"
+      height="70"
       viewBox="0 0 80 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-white hover:text-red-600"
+      className={`${className} text-white hover:text-red-600`}
     >
       <g filter="url(#filter0_d_4797_5947)">
         <path
