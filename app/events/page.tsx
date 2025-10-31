@@ -1,6 +1,5 @@
 "user client";
 
-import Image from "next/image";
 import EventComponent from "../components/events/eventComponent";
 import Layout from "../components/layout/layout";
 
