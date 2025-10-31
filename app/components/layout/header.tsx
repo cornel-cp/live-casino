@@ -260,13 +260,13 @@ const Header = ({ className = "" }: HeaderProps) => {
                     title="life at "
                     button="">
                     <div className="flex gap-4 pt-4">
-                      <Link href={"/gaming"} className="bg-[url('/assets/images/aboutLogo1.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex justify-center items-center">
+                      <Link href={"/about"} className="bg-[url('/assets/images/aboutLogo1.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex justify-center items-center">
                         <p className="text-[14px]">about us</p>
                       </Link>
-                      <Link href={"/gaming"} className="bg-[url('/assets/images/aboutLogo2.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex justify-center items-center">
+                      <Link href={"/community"} className="bg-[url('/assets/images/aboutLogo2.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex justify-center items-center">
                         <p className="text-[14px]">community outreach</p>
                       </Link>
-                      <Link href={"/gaming"} className="bg-[url('/assets/images/aboutLogo3.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex justify-center items-center">
+                      <Link href={"/employment"} className="bg-[url('/assets/images/aboutLogo3.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex justify-center items-center">
                         <p className="text-[14px]">employment</p>
                       </Link>
                     </div>
