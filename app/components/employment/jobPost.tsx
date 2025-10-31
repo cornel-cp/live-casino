@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BtnElement from "../BtnElement/BtnElement";
 import Molicule from "../icons/molicule";
+import Link from "next/link";
 
 interface JobPostProps {
   className: string;
@@ -47,11 +48,13 @@ const JobPost: React.FC<JobPostProps> = ({
             PREVIEW
           </p>
         </button>
-        <BtnElement
-          className="flex-5 w-full h-[34px]"
-          color="red"
-          name="APPLY NOW"
-        />
+        <Link href={"/home"} className="flex-5 ">
+          <BtnElement
+            className="w-full h-[34px]"
+            color="red"
+            name="APPLY NOW"
+          />
+        </Link>
       </div>
     </div>
   );

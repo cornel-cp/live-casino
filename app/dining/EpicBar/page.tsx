@@ -1,15 +1,91 @@
 "use client";
 
 import BtnElement from "@/app/components/BtnElement/BtnElement";
+import Cocktail from "@/app/components/icons/cocktail";
+import Cutlery from "@/app/components/icons/cutlery";
 import FacebookIcon from "@/app/components/icons/facebookIcon";
 import InstagramIcon from "@/app/components/icons/instagramIcon";
 import Layout from "@/app/components/layout/layout";
+import Modal from "@/app/components/Modal/modal";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const EpicBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
+      {/* Modal Section */}
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <Image
+          className="absolute -top-0.5 -left-0.5"
+          src={"/assets/images/jackpot_corner.png"}
+          alt="corner"
+          width={54}
+          height={61}
+        />
+        <div>
+          <p className="text-[28px] text-white">
+            Happy hour <p className="text-red-600 inline">at casino m8trix</p>
+          </p>
+          <p className="text-[14px] font-[200px] text-white/60 nunito">
+            Enjoy our great deals daily from 3 pm to 6 pm and from 9 pm to 11 pm
+            !
+          </p>
+          <div className="flex justify-between items-end -mt-4">
+            <p className="nunito text-[14px] pb-4">
+              Food{" "}
+              <p className="text-red-600 noodle inline">&frac12; OFF select</p>
+              <p className="text-white noodle inline"> starters</p>
+            </p>
+            <Cutlery />
+          </div>
+          <div className="flex justify-start gap-2">
+            <ul className="nunito list-disc pl-4 text-white/60">
+              <li>Pot Stickers</li>
+              <li>Roti Paratha</li>
+              <li>Samosas</li>
+              <li>Pork Egg Rolls</li>
+              <li>Fried Calamari Strips</li>
+            </ul>
+            <ul className="nunito list-disc pl-4 text-white/60">
+              <li>Online Rings</li>
+              <li>&quot;Fry Basket&quot;</li>
+              <li>Full Order Wings</li>
+              <li>Chips & Salsa</li>
+            </ul>
+          </div>
+          <div>
+            <div className="flex justify-between items-end">
+              <p className="nunito text-white pb-4">Drinks</p>
+              <Cocktail />
+            </div>
+            <ul className="space-y-2 nunito">
+              <li className="flex items-center text-white">
+                <span className="w-2 h-2 bg-white/60 rounded-full mr-3"></span>
+                <span className="flex-none">Heineken Bottles</span>
+                <span className="flex-1 border-b border-dotted border-gray-500 mx-2 pt-2"></span>
+                <span className="flex-none text-gray-300 noodle">$3.00</span>
+              </li>
+
+              <li className="flex items-center text-white">
+                <span className="w-2 h-2 bg-white/60 rounded-full mr-3"></span>
+                <span className="flex-none">Corona Extra</span>
+                <span className="flex-1 border-b border-dotted border-gray-500 mx-2 pt-2"></span>
+                <span className="flex-none text-gray-300 noodle">$3.50</span>
+              </li>
+
+              <li className="flex items-center text-white">
+                <span className="w-2 h-2 bg-white/60 rounded-full mr-3"></span>
+                <span className="flex-none">Budweiser</span>
+                <span className="flex-1 border-b border-dotted border-gray-500 mx-2 pt-2"></span>
+                <span className="flex-none text-gray-300 noodle">$2.80</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Modal>
       <div className="hidden md:block">
         <Layout>
           {/* main image Part */}
@@ -86,8 +162,14 @@ const EpicBar = () => {
                   </p>
                 </div>
                 <div className="flex justify-end gap-4 mt-[52px] noodle">
-                  <BtnElement className="" color="white" name="3D TOUR" />
+                  <BtnElement
+                    onClick={() => setIsOpen(true)}
+                    className=""
+                    color="white"
+                    name="3D TOUR"
+                  />
                   <button
+                    onClick={() => setIsOpen(true)}
                     className={`bg-white flex justify-center items-center w-[93px]  -skew-x-16 cursor-pointer border rounded-xs border-white`}
                   >
                     <p
@@ -239,8 +321,14 @@ const EpicBar = () => {
               </div>
               <div>
                 <div className="flex flex-col justify-between gap-4 noodle">
-                  <BtnElement className="w-full" color="white" name="3D TOUR" />
+                  <BtnElement
+                    onClick={() => setIsOpen(true)}
+                    className="w-full"
+                    color="white"
+                    name="3D TOUR"
+                  />
                   <button
+                    onClick={() => setIsOpen(true)}
                     className={`bg-white flex justify-center items-center w-full -skew-x-16 cursor-pointer border rounded-xs border-white`}
                   >
                     <p
@@ -250,6 +338,7 @@ const EpicBar = () => {
                     </p>
                   </button>
                   <BtnElement
+                    onClick={() => setIsOpen(true)}
                     className="w-full"
                     color="red"
                     name="RESERVATIONS"

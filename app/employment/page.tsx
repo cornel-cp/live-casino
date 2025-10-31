@@ -1,4 +1,4 @@
-"user client";
+"use client";
 
 import Image from "next/image";
 import Layout from "../components/layout/layout";
@@ -6,8 +6,13 @@ import Molicule from "../components/icons/molicule";
 import BtnElement from "../components/BtnElement/BtnElement";
 import JobPost from "../components/employment/jobPost";
 import DraggableContainer from "../components/Animations/motion";
+import { useState } from "react";
+import Modal from "../components/Modal/modal";
+import Link from "next/link";
 
 const Employment = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="bg-background">
       <Layout>
@@ -85,6 +90,7 @@ const Employment = () => {
               </div>
               <div className="flex gap-2 justify-center px-4 noodle">
                 <button
+                  onClick={() => setIsOpen(true)}
                   className={`flex-5 bg-white flex justify-center items-center w-full h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}
                 >
                   <p
@@ -93,32 +99,131 @@ const Employment = () => {
                     PREVIEW
                   </p>
                 </button>
-                <BtnElement
-                  className="flex-5 w-full"
-                  color="red"
-                  name="APPLY NOW"
-                />
+                <Link href={"/home"}>
+                  <BtnElement
+                    className="flex-5 w-full h-[33.5px]"
+                    color="red"
+                    name="APPLY NOW"
+                  />
+                </Link>
               </div>
             </div>
             <JobPost
+              onClick={() => setIsOpen(true)}
               className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 9"
               title="Bartender"
               text="Bartenders prepare alcoholic or non-alcoholic beverages for bar and restaurant patrons."
             />
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+              <Image
+                className="absolute -top-0.5 -left-0.5"
+                src={"/assets/images/jackpot_corner.png"}
+                alt="corner"
+                width={54}
+                height={61}
+              />
+              <Molicule className="absolute top-[17px] right-10 text-gray-600" />
+              <div className="nunito flex flex-col gap-4">
+                <div>
+                  <p className="text-[12px] font-[300px] text-white/60">
+                    Nov, 9
+                  </p>
+                  <p className="text-[20px] font-bold">Bartender</p>
+                  <p className="text-white/60 font-[300px] text-[14px] mb-6">
+                    Bartenders prepare alcoholic or non-alcoholic beverages for
+                    bar and restaurant patrons.
+                  </p>
+                </div>
+                <div className="flex flex-col md:flex-row gap-2 justify-between text-white/60">
+                  <div className="flex-3">
+                    <p className="text-white text-[14px] font-bold mb-2">
+                      Requirements
+                    </p>
+                    <ul className="list-disc pl-4 text-[12px]">
+                      <li>Must be 21 years or older</li>
+                      <li>Must be willing to undergo background check</li>
+                      <li>
+                        Speak English fluently and coherently (bilingual a plus)
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="flex-3">
+                    <p className="text-white text-[14px] font-bold mb-2">
+                      Qualifications
+                    </p>
+                    <ul className="list-disc pl-4 text-[12px]">
+                      <li>
+                        Have a minimum of 1 year of bartending experience in a
+                        fast-paced environment
+                      </li>
+                      <li>
+                        Basic math skills necessary to run cash register and
+                        prepare cash drops
+                      </li>
+                    </ul>
+                    <a className="underline underline-offset-3 text-[14px]">
+                      See 4 more
+                    </a>
+                  </div>
+                  <div className="flex-3">
+                    <p className="text-white text-[14px] font-bold mb-2">
+                      Work Hours and Availability
+                    </p>
+                    <ul className="list-disc pl-4 text-[12px]">
+                      <li>
+                        Day Shift:
+                        <br /> 9:00 AM - 3:00 PM
+                      </li>
+                      <li>
+                        Swing Shift:
+                        <br /> 3:00 PM - 8:00 PM
+                      </li>
+                      <li>
+                        Grave Shift:
+                        <br /> 8:00 PM - 2:00 AM
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="flex-2">
+                    <p className="text-white text-[14px] font-bold mb-2">
+                      Compensation and Benefits
+                    </p>
+                    <p className="text-[12px]">
+                      Starting compensation is{" "}
+                      <p className="inline text-white font-bold">$15.45</p>{" "}
+                      hourly, plus tips. Employee benefits are available for all
+                      qualifying full-time employees including: paid time off,
+                      medical, vision, dental insurance, and a 25% employee
+                      discount on food, non-alcoholic beverages.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <Link href={"/home"}>
+                <BtnElement
+                  className="noodle mt-5 float-right"
+                  color="red"
+                  name="apply now"
+                />
+              </Link>
+            </Modal>
             <JobPost
+              onClick={() => setIsOpen(true)}
               className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 11"
               title="Security Officer"
               text="Security Officer candidates with specialty skills including customer service and concierge experience. "
             />
             <JobPost
+              onClick={() => setIsOpen(true)}
               className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 21"
               title="Chip Runner"
               text="Responsible for chip and cash transactions, issuing imprest bank carts and table banks, assisting with even-exchange employee transactions."
             />
             <JobPost
+              onClick={() => setIsOpen(true)}
               className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
               date="Nov, 17"
               title="Poker Dealer"
