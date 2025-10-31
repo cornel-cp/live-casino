@@ -5,12 +5,12 @@ const Contact = () => {
 
     return (
         <Layout>
-            <div className="relative w-full min-h-screen bg-[url(/assets/images/contact.png)] bg-no-repeat bg-cover bg-bottom-left">
+            <div className="relative w-full h-screen min-h-screen bg-[url(/assets/images/contact.png)] bg-no-repeat bg-cover bg-bottom-left">
                 {/* Overlay to darken background */}
                 <div className="absolute bottom-0 left-0 w-full h-full bg-linear-to-b from-black/20 to-[#181818]"> </div>
                 {/* Content stays bright */}
-                <div className="relative flex flex-col justify-center items-center h-full">
-                    <p className="text-white font-normal text-center text-[64px] pt-[550px] md:text-[100px] md:pt-[550px]">CONTACT US</p>
+                <div className="relative flex flex-col justify-end pb-16 items-center h-full">
+                    <p className="text-white font-normal text-center text-[64px] md:text-[100px]">CONTACT US</p>
                     <p className="text-center font-normal text-[28px] text-[#e00000] mt-[-30px]">CASINO M8TRIX</p>
                 </div>
             </div>
