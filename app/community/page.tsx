@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Layout from "../components/layout/layout"
 import BtnElement from "../components/BtnElement/BtnElement"
+import Link from "next/link"
 
 const About = () => {
 
@@ -40,16 +41,20 @@ const About = () => {
                         </div>
                     </div>
                     <div className="flex flex-col md:flex-row md:justify-center gap-4 noodle mb-10 mx-10">
-                        <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}>
-                            <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
-                                VIEW WEBSITE
-                            </p>
-                        </button>
-                        <button className={`bg-red-600 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-red-600`}>
-                            <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
-                                DONATE
-                            </p>
-                        </button>
+                        <Link href={"/not-found.tsx"}>
+                            <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white`}>
+                                <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
+                                    VIEW WEBSITE
+                                </p>
+                            </button>
+                        </Link>
+                        <Link href={"/not-found.tsx"}>
+                            <button className={`bg-red-600 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-red-600`}>
+                                <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
+                                    DONATE
+                                </p>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
