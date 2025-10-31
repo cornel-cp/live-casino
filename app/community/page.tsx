@@ -6,11 +6,11 @@ const About = () => {
 
     return (
         <Layout>
-            <div className="relative w-full min-h-screen bg-[url(/assets/images/community.jpg)] bg-no-repeat bg-cover bg-center">
+            <div className="relative w-full h-screen min-h-screen bg-[url(/assets/images/community.jpg)] bg-no-repeat bg-cover bg-center">
                 {/* Overlay to darken background */}
                 <div className="absolute bottom-0 left-0 w-full h-full bg-linear-to-b from-black/20 to-[#181818]"> </div>
                 {/* Content stays bright */}
-                <div className="relative flex flex-col justify-center items-center h-full">
+                <div className="relative flex flex-col justify-end pb-16 items-center h-full">
                     <p className="text-white font-normal text-center text-[64px] pt-[550px] md:text-[100px] md:pt-[550px]">COMMUNITY</p>
                     <p className="text-center font-normal text-[28px] text-[#e00000] mt-[-30px]">OUTREACH</p>
                 </div>
@@ -19,11 +19,11 @@ const About = () => {
             <div className="max-w-6xl items-center flex flex-col justify-center mx-auto">
                 <p className="text-center text-[36px] font-[400px] pb-[5px] pt-[42px]">Social responsibility</p>
                 <p className="text-center text-[18px] font-[400px] pb-[15px]">giving back to our community</p>
-                <p className="text-center nunito font-[200px] text-[14px] pb-[30px] mx-20">We at M8trix firmly believe in giving back to our community. Our brand ambassadors serve the community through charitable efforts, like supporting organizations fighting cancer, helping to feed the homeless, visiting local animal rescue organizations, and working to keep our Bay Area parks clean.</p>
+                <p className="text-center nunito font-[200px] text-[14px] pb-[30px] mx-6 sm:mx-10 md:mx-20">We at M8trix firmly believe in giving back to our community. Our brand ambassadors serve the community through charitable efforts, like supporting organizations fighting cancer, helping to feed the homeless, visiting local animal rescue organizations, and working to keep our Bay Area parks clean.</p>
             </div>
 
             <div className="max-w-6xl items-center mx-auto mt-[70px] mb-[110px]">
-                <div className="mx-20 border-red-600 border-4">
+                <div className="mx-6 sm:mx-10 md:mx-20 border-red-600 border-4 shadow-[0_0_15px_rgba(255,0,0,0.9)]">
                     <p className="text-center noodle text-[36px] font-[400px] pb-[5px] pt-[42px] mx-10">Supporting fight against Blood cancer</p>
                     <p className="text-center noodle text-[18px] font-[400px] mx-10">Leukemia and Lymphoma Society</p>
                     <div className="flex flex-col md:flex-row mx-10 mb-2">

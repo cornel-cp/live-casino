@@ -6,12 +6,10 @@ import Head from "next/head";
 import Link from "next/link";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -32,7 +30,7 @@ export default function RootLayout({
         <Link href="/assets/fonts/big_noodle_titling.ttf" rel="stylesheet" />
       </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-screen m-auto`}
+        className={`antialiased min-w-screen m-auto`}
       >
         <div className="max-w-screen m-auto">{children}</div>
       </body>

@@ -29,7 +29,10 @@ const ThreeCardGame = () => {
             with a pair or better and our Six card bonus gives our players the
             opportunity to win up to 1000 to 1.
           </p>
-          <BtnElement className="mb-16 px-4 w-full md:w-auto" color="white" name="LEARN MORE" />
+          <Link href={"/cardacadamy/threecard"}>
+
+            <BtnElement className="mb-16 px-4 w-full md:w-auto" color="white" name="LEARN MORE" />
+          </Link>
         </div>
         <div className="nunito border-2 border-gray-600 gap-7 px-3 md:px-10 pb-8">
           <p className="noodle bg-background text-red-600 text-[28px] text-center font-[400px] max-w-[140px] px-2 -mt-5">

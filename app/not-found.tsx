@@ -1,3 +1,4 @@
+import Link from "next/link"
 import FacebookIcon from "./components/icons/facebookIcon"
 import InstagramIcon from "./components/icons/instagramIcon"
 import LinkedinIcon from "./components/icons/linkedinIcon"
@@ -40,26 +41,34 @@ const NotFound = () => {
                         </div>
                         <p className="text-[18px] text-[#5c5c5c] noodle font-[400px]">IT LOOKS LIKE NOTHING WAS FOUND AT THIS LOCATION</p>
                         <div className="hidden md:flex mt-8">
-                            <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white mr-2`}>
-                                <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
-                                    HOMEPAGE
-                                </p>
-                            </button>
-                            <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white mr-2`}>
-                                <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
-                                    GAMING
-                                </p>
-                            </button>
-                            <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white mr-2`}>
-                                <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
-                                    DINING
-                                </p>
-                            </button>
-                            <button className={`bg-red-600 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-red-600`}>
-                                <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
-                                    CONTACT US
-                                </p>
-                            </button>
+                            <Link href={"/home"}>
+                                <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white mr-2`}>
+                                    <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
+                                        HOMEPAGE
+                                    </p>
+                                </button>
+                            </Link>
+                            <Link href={"/gaming"}>
+                                <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white mr-2`}>
+                                    <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
+                                        GAMING
+                                    </p>
+                                </button>
+                            </Link>
+                            <Link href={"/dining"}>
+                                <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white mr-2`}>
+                                    <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
+                                        DINING
+                                    </p>
+                                </button>
+                            </Link>
+                            <Link href={"/contact"}>
+                                <button className={`bg-red-600 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-red-600`}>
+                                    <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
+                                        CONTACT US
+                                    </p>
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
