@@ -19,7 +19,7 @@ const Tower = () => {
           <div className="md:my-7">
             <Link
               href="/events"
-              className="group text-white/40 md:text-white text-[14px] inline-flex items-center gap-1 transition"
+              className="group ml-10 md:ml-0 text-white/40 md:text-white text-[14px] inline-flex items-center gap-1 transition"
             >
               <span className="text-[14px] font-bold text-white/40 md:text-white pr-2">
                 &lt;

@@ -17,7 +17,7 @@ const Drink = () => {
         <div className="max-w-4xl mx-auto mt-24 md:pb-24">
           <Link
             href="/events"
-            className="group text-white text-[14px] inline-flex items-center gap-1 transition"
+            className="group  ml-10 md:ml-0 text-white text-[14px] inline-flex items-center gap-1 transition"
           >
             <span className="text-[14px] font-bold text-white pr-2">&lt;</span>
             <span>

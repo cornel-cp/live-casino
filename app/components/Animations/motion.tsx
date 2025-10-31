@@ -5,6 +5,7 @@ import Molicule from "../icons/molicule";
 import BtnElement from "../BtnElement/BtnElement";
 import JobPost from "../employment/jobPost";
 import Modal from "../Modal/modal";
+import Link from "next/link";
 
 export default function DraggableContainer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,6 +71,7 @@ export default function DraggableContainer() {
           </div>
           <div className="flex gap-2 justify-center px-4 noodle">
             <button
+              onClick={() => setIsOpen(true)}
               className={`flex-5 bg-white flex justify-center items-center w-full h-[34px]  -skew-x-16 cursor-pointer border rounded-xs border-white`}
             >
               <p
@@ -78,11 +80,13 @@ export default function DraggableContainer() {
                 PREVIEW
               </p>
             </button>
-            <BtnElement
-              className="flex-5 w-full h-[34px]"
-              color="red"
-              name="APPLY NOW"
-            />
+            <Link href={"/home"} className="flex-5 ">
+              <BtnElement
+                className="w-full h-[34px]"
+                color="red"
+                name="APPLY NOW"
+              />
+            </Link>
           </div>
         </div>
         <JobPost
@@ -100,7 +104,7 @@ export default function DraggableContainer() {
             width={54}
             height={61}
           />
-          <Molicule className="absolute top-[17px] right-[40px] text-gray-600" />
+          <Molicule className="absolute top-[17px] right-10 text-gray-600" />
           <div className="nunito flex flex-col gap-4">
             <div>
               <p className="text-[12px] font-[300px] text-white/60">Nov, 9</p>
@@ -174,26 +178,31 @@ export default function DraggableContainer() {
                 </p>
               </div>
             </div>
-            <BtnElement
-              className="noodle mt-[20px] float-right"
-              color="red"
-              name="apply now"
-            />
+            <Link href={"/home"}>
+              <BtnElement
+                className="noodle mt-5 px-2 float-right"
+                color="red"
+                name="apply now"
+              />
+            </Link>
           </div>
         </Modal>
         <JobPost
+          onClick={() => setIsOpen(true)}
           className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
           date="Nov, 11"
           title="Security Officer"
           text="Security Officer candidates with specialty skills including customer service and concierge experience. "
         />
         <JobPost
+          onClick={() => setIsOpen(true)}
           className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
           date="Nov, 21"
           title="Chip Runner"
           text="Responsible for chip and cash transactions, issuing imprest bank carts and table banks, assisting with even-exchange employee transactions."
         />
         <JobPost
+          onClick={() => setIsOpen(true)}
           className="hover:border-white [&:has(.special:hover)]:border-gray-600 transition-all duration-500"
           date="Nov, 17"
           title="Poker Dealer"
