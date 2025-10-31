@@ -1,12 +1,14 @@
 import Image from "next/image";
 import BtnElement from "../BtnElement/BtnElement";
 import Link from "next/link";
+import React from "react";
 
 interface RoomPartProps {
   direction: string;
   logoUrl: string;
   logoBorderUrl: string;
-  text: string;
+  text?: string;
+  children?: React.ReactNode;
   firstHeader: string;
   firstBody: string;
   secondHeader: string;
@@ -21,6 +23,7 @@ const RoomPart: React.FC<RoomPartProps> = ({
   logoUrl,
   logoBorderUrl,
   text,
+  children,
   firstHeader,
   firstBody,
   secondHeader,
@@ -30,7 +33,7 @@ const RoomPart: React.FC<RoomPartProps> = ({
   imageName,
 }) => {
   return (
-    <div className="relative mx-8 md:mx-[88px] lg:mx-auto lg:max-w-[1020px] px-4 md:px-10 pt-[25px] pb-[33.5px] mt-2.5 border-4 border-red-600 shadow-[0_0_15px_rgba(255,0,0,0.9)] rounded-xs">
+    <div className="relative mx-8 md:mx-[88px] lg:mx-auto lg:max-w-[1020px] px-4 md:px-10 pt-[50px] pb-[30px] mt-2.5 border-4 border-red-600 shadow-[0_0_15px_rgba(255,0,0,0.9)] rounded-xs">
       <Image
         className={`hidden md:block absolute top-0 transform -translate-[50%] left-[50%] ${
           direction === "right" ? " md:left-[85%]" : "md:left-20"
@@ -109,7 +112,7 @@ const RoomPart: React.FC<RoomPartProps> = ({
           />
           <div className="flex-6 relative nunito">
             <p className="text-white/60 font-extralight text-[14px] mb-5">
-              {text}
+              {children}
             </p>
             <div className="flex justify-between mb-2.5">
               <p className="text-[14px] font-bold text-white">{firstHeader}</p>

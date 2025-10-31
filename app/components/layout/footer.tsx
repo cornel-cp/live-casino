@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="nunito bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover pb-10">
+      <div className="nunito bg-[url(/assets/images/footer-bg2.png)] bg-black bg-no-repeat bg-cover bg-center pb-10">
         <div className="bg-[url(/assets/images/footer_bg2_gradient.png)] w-full bg-cover h-[267px] md:hidden bg-no-repeat"></div>
         <div className="px-10 md:px-12 md:pt-50 lg:px-0 lg:max-w-4xl xl:max-w-6xl lg:mx-auto">
           <div className="-mt-[150px] md:mt-0">
@@ -97,7 +97,7 @@ const Footer = () => {
               <div className="flex items-center justify-between mt-5">
                 <div className="flex text-white text-[9px]">
                   <Image
-                    src={"/assets/images/footer-logo.png"}
+                    src={"/Group.svg"}
                     alt="location"
                     width={120}
                     height={32}
@@ -122,7 +122,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="block md:hidden mb-7">
+            <div className="block md:hidden">
               <div className="flex items-center justify-between mt-5">
                 <div className="flex text-white text-[9px]">
                   <Image
