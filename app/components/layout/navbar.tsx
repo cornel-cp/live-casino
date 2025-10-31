@@ -183,7 +183,7 @@ const Navbar = ({ onLinkClick }: NavbarProps) => {
     },
     {
       label: "Card Academy",
-      path: "/card-academy",
+      path: "/cardacadamy",
       subItems: [
         { label: "Gaming tips and tricks", path: "/card-academy/gameTips" },
         { label: "BACCARAT GOLD 1.0", path: "/card-academy/baccarat" },

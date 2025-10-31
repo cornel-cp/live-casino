@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 
 interface eventSpaceComProps {
     text1: string,
@@ -25,7 +26,9 @@ const EventSpaceCom = (props: eventSpaceComProps) => {
                         <p className="text-[14px] text-white pt-[19px]" style={{ fontFamily: "Nunito" }}>{text3}</p>
                         <div className="flex pt-3 md:pt-5 lg:pt-8">
                             <button className={`bg-white text-red-600 -skew-x-12 px-8 py-2.5 ${button1 === "" ? "hidden" : ""}`}><p className="skew-x-12 text-[12px] lg:text-[16px]">{button1}</p></button>
-                            <button className="bg-red-600 text-white -skew-x-12 px-8 py-2.5 ml-4"><p className="skew-x-12 text-[12px] lg:text-[16px]">{button2}</p></button>
+                            <Link href={"/cardacadamy"}>
+                                <button className="bg-red-600 text-white -skew-x-12 px-8 py-2.5 ml-4"><p className="skew-x-12 text-[12px] lg:text-[16px]">{button2}</p></button>
+                            </Link>
                         </div>
                     </div>
                 </div>
