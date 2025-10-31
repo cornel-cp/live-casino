@@ -17,7 +17,7 @@ const HomePage = () => {
                 <video controls={false} autoPlay muted>
                     <source src="/assets/video/home_video.mp4" ></source>
                 </video>
-                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-b from-transparent to-black/80"> </div>
+                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-b from-transparent to-[#181818]"> </div>
             </div>
             <div className="px-7 md:px-20 flex flex-col items-center">
                 <Jackpot />

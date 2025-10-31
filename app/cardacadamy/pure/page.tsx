@@ -11,7 +11,7 @@ const AcadamyPure = () => {
                 <div className="absolute inset-0 bg-[url(/assets/images/acadamy_pure.jpg)] bg-no-repeat bg-cover bg-center "></div>
 
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-linear-to-b from-white/10 to-black/90"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-white/10 to-[#181818]"></div>
 
             </div>
             <div className="max-w-6xl mx-auto px-6 sm:px-10 md:px-20 z-50">

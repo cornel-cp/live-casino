@@ -33,7 +33,7 @@ const EventSpaceCom = (props: eventSpaceComProps) => {
                     </div>
                 </div>
                 <div className="shrink-0 pt-[15px] md:pt-[25px] px-3">
-                    <Image className="w-full md:w-[300px] lg:w-[360px]" src={`/assets/images/${image}.png`} alt="Event Tower" width={358} height={254} />
+                    <Image className="w-full md:w-[300px] lg:w-[360px]" src={`/assets/images/${image}`} alt="Event Tower" width={358} height={254} />
                 </div>
                 <div className="flex flex-col md:hidden px-3">
                     <p className="text-[9px] sm:text-[14px] text-white pt-[19px]" style={{ fontFamily: "Nunito" }}>{text3}</p>
