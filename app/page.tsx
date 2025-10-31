@@ -8,9 +8,20 @@ import SpecialEvent from "./components/home/specialEvent";
 import EventSpace from "./components/home/eventSpace";
 import Layout from "./components/layout/layout";
 import Carousel from "./components/home/carousel";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
 
+
+    const [loading, setLoading] = useState(true);
+
+    // Fake 2-second delay for testing
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 2000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) return null; // <— Next.js shows app/loading.tsx automatically her
     return (
         <Layout>
             <div className="relative">
