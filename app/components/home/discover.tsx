@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Discover = () => {
 
@@ -16,7 +17,9 @@ const Discover = () => {
                         M8trix might look like, check out our restaurants
                         and card games tables.</p>
                     <div className="flex justify-center md:justify-end pt-10">
-                        <button className="bg-red-600 -skew-x-12 px-5 py-2.5 w-3/4 md:w-[100px]" ><p className="text-white skew-x-12">3D TOUR</p></button>
+                        <Link href={"events/tower"}>
+                            <button className="bg-red-600 -skew-x-12 px-5 py-2.5 w-3/4 md:w-[100px]" ><p className="text-white skew-x-12">3D TOUR</p></button>
+                        </Link>
                     </div>
                 </div>
             </div>

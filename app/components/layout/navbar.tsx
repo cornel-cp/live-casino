@@ -178,7 +178,7 @@ const Navbar = ({ onLinkClick }: NavbarProps) => {
       path: "/events",
       subItems: [
         { label: "BLACKJACK BONUS BETS", path: "/events/bonusbet" },
-        { label: "EVENTTOWER", path: "/events/eventtower" },
+        { label: "EVENTTOWER", path: "/events/event/tower" },
       ],
     },
     {
