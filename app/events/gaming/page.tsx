@@ -8,7 +8,7 @@ import Image from "next/image";
 import EventComponent from "@/app/components/events/eventComponent";
 import PartSmComponent from "@/app/components/events/partSmComponent";
 
-const Garning = () => {
+const Gaming = () => {
   return (
     <div className="bg-background">
       <Layout>
@@ -109,4 +109,4 @@ const Garning = () => {
   );
 };
 
-export default Garning;
+export default Gaming;

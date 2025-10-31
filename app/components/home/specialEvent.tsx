@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const SpecialEvent = () => {
   return (
@@ -20,9 +21,11 @@ const SpecialEvent = () => {
             <p className="text-[20px] lg:text-[28px]">Liquid</p>
             <p className="text-[20px] lg:text-[28px] xl:pb-6">Lunch Specials</p>
           </div>
-          <button className="w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-[5px]">
-            <p className="text-white sm:skew-x-12">READ MORE</p>
-          </button>
+          <Link href={"events/liquid"}>
+            <button className="w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-[5px]">
+              <p className="text-white sm:skew-x-12">READ MORE</p>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex pt-8 pb-20 flex-col md:gap-2 md:flex-row w-2/3 sm:w-full items-center rounded-2xl mx-auto">
@@ -39,9 +42,11 @@ const SpecialEvent = () => {
             <p className="text-[20px] lg:text-[28px]">Liquid</p>
             <p className="text-[20px] lg:text-[28px] xl:pb-6">Lunch Specials</p>
           </div>
-          <button className="w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-[5px]">
-            <p className="text-white sm:skew-x-12">READ MORE</p>
-          </button>
+          <Link href={"events/blackJack"}>
+            <button className="w-full sm:w-auto bg-red-600 sm:mr-5 px-5 py-[5px]">
+              <p className="text-white sm:skew-x-12">READ MORE</p>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

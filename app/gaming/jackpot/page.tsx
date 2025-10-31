@@ -29,6 +29,10 @@ const Jackpot = () => {
 
             <div className="bg-background text-white max-w-6xl px-10 md:px-16 mx-auto">
                 <div className="flex flex-col justify-center items-center md:flex-row py-20 ">
+                    <div>
+                        <Image className="absolute top-[-30px]" src={"/assets/images/jackpot_corner.png"} alt="jackpot_corner" width={86} height={95} />
+                        <Image className="absolute top-[-35px] left-[-5px]" src={"/assets/images/jackpot_corner-gradient.png"} alt="jackpot_corner" width={85} height={95} />
+                    </div>
                     <div className="flex-4 text-center md:text-left">
                         <p className=" text-white text-4xl">Progressive Jackpot</p>
                         <p className="text-white/80 text-[12px] nunito pt-5">Amet enim nibh morbi morbi. At sed nibh vestibulum cursus at nibh congue eget. </p>

@@ -17,7 +17,7 @@ const PartSmComponent: React.FC<EventComponentProps> = ({
   const urlList: Record<string, string> = {
     "/assets/images/image_dish (1).png": "/events/oysters",
     "/assets/images/image_dish (2).png": "/events/drink",
-    "/assets/images/image_dish (3).png": "/events/garning",
+    "/assets/images/image_dish (3).png": "/events/gaming",
     "/assets/images/image_dish (4).png": "/events/blackJack",
     "/assets/images/image_dish (5).png": "/events/liquid",
   };
