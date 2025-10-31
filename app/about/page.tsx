@@ -24,9 +24,11 @@ const About = () => {
 
             <div className="relative bg-[url(/assets/images/visit.png)] bg-no-repeat bg-cover bg-center w-full h-[50vw] min-h-110 flex justify-center align-middle items-center px-6 sm:px-10 md:px-20">
                 <div className="absolute inset-0 bg-black/40" />
-                <button className="w-full border-2 border-white -skew-x-16 text-white p-2 cursor-pointer sm:w-full md:w-30 lg:w-30 mx-6 sm:mx-10 md:mx-20">
-                    <p className="skew-x-16 noodle">VIRTUAL VISIT</p>
-                </button>
+                <Link href={"/not-found.tsx"}>
+                    <button className="w-full border-2 border-white -skew-x-16 text-white p-2 cursor-pointer sm:w-full md:w-30 lg:w-30 mx-6 sm:mx-10 md:mx-20">
+                        <p className="skew-x-16 noodle">VIRTUAL VISIT</p>
+                    </button>
+                </Link>
             </div>
 
             <div className="max-w-6xl mx-auto mt-[66px]">

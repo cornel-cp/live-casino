@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Layout from "../components/layout/layout"
+import Link from "next/link"
 
 const Contact = () => {
 
@@ -25,9 +26,11 @@ const Contact = () => {
                             height={320}
                             className="[clip-path:polygon(0_0,100%_0,100%_calc(0),calc(100%-126px)_100%,0_100%)] h-full"
                         />
-                        <button className="border-2 border-white -skew-x-20 text-white p-2 cursor-pointer w-25 mx-[55px] absolute top-1/2 left-1/10">
-                            <p className="skew-x-20 noodle text-[14px] font-[400px]">GET DIRECTIONS</p>
-                        </button>
+                        <Link href={"/not-found.tsx"}>
+                            <button className="border-2 border-white -skew-x-20 text-white p-2 cursor-pointer w-25 mx-[55px] absolute top-1/2 left-1/10">
+                                <p className="skew-x-20 noodle text-[14px] font-[400px]">GET DIRECTIONS</p>
+                            </button>
+                        </Link>
                     </div>
                     <div className="w-full md:w-2/5">
                         <div className="mt-[99px] hidden md:block">
@@ -67,9 +70,11 @@ const Contact = () => {
 
             <div className="relative bg-[url(/assets/images/location.png)] bg-no-repeat bg-cover bg-center w-full h-[50vw] min-h-110 flex justify-center align-middle items-center md:hidden mt-20">
                 <div className="absolute inset-0 bg-black/40" />
-                <button className="w-full border-2 border-white -skew-x-16 text-white p-2 cursor-pointer sm:w-full md:w-30 lg:w-30 mx-20">
-                    <p className="skew-x-16 noodle">GET DIRECTIONS</p>
-                </button>
+                <Link href={"/not-found.tsx"}>
+                    <button className="border-2 border-white -skew-x-16 text-white p-2 cursor-pointer sm:w-full md:w-30 lg:w-30 mx-auto">
+                        <p className="skew-x-16 noodle">GET DIRECTIONS</p>
+                    </button>
+                </Link>
             </div>
 
             <div className="mx-auto max-w-6xl px-20">
@@ -92,9 +97,11 @@ const Contact = () => {
                             </select>
                             <textarea className="block md:hidden outline-none border-b-2 border-white w-full min-h-[70px] placeholder-white mt-5 h-[236px]" placeholder=" Your Message"></textarea>
                             <div className="mx-2">
-                                <button className="w-full border-2 bg-red-600 border-red-600 -skew-x-16 text-white p-1 cursor-pointer md:w-30 mt-9 md:mt-0">
-                                    <p className="skew-x-16 noodle text-[14px] font-[400px]">SEND</p>
-                                </button>
+                                <Link href={"/not-found.tsx"}>
+                                    <button className="w-full border-2 bg-red-600 border-red-600 -skew-x-16 text-white p-1 cursor-pointer md:w-30 mt-9 md:mt-0">
+                                        <p className="skew-x-16 noodle text-[14px] font-[400px]">SEND</p>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
