@@ -186,7 +186,7 @@ const Employment = () => {
                 </div>
                 <Image
                   className="max-w-sm"
-                  src={"/assets/images/Image 20.jpg"}
+                  src={"/assets/images/Image20.jpg"}
                   alt="girl"
                   width={310}
                   height={264}
@@ -205,7 +205,7 @@ const Employment = () => {
                 </div>
                 <Image
                   className="flex-6 w-full"
-                  src={"/assets/images/Image 20.jpg"}
+                  src={"/assets/images/Image20.jpg"}
                   alt="girl"
                   width={310}
                   height={264}

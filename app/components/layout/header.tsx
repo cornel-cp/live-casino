@@ -187,7 +187,7 @@ const Header = ({ className = "" }: HeaderProps) => {
                         />
                       </Link>
                       <Link
-                        href="/dining/EpicBar"
+                        href="/dining/sportsBar"
                         className="relative w-[100px] h-20 flex justify-center items-center overflow-hidden rounded-md group"
                       >
                         {/* Background image with slight blur */}
@@ -202,7 +202,7 @@ const Header = ({ className = "" }: HeaderProps) => {
                         />
                       </Link>
                       <Link
-                        href="/dining/EpicBar"
+                        href="/dining/cafe"
                         className="relative w-[100px] h-20 flex justify-center items-center overflow-hidden rounded-md group"
                       >
                         {/* Background image with slight blur */}
@@ -217,7 +217,7 @@ const Header = ({ className = "" }: HeaderProps) => {
                         />
                       </Link>
                       <Link
-                        href="/dining/EpicBar"
+                        href="/dining/parallel"
                         className="relative w-[100px] h-20 flex justify-center items-center overflow-hidden rounded-md group"
                       >
                         {/* Background image with slight blur */}
@@ -240,15 +240,15 @@ const Header = ({ className = "" }: HeaderProps) => {
                     button="event request"
                   >
                     <div className="flex gap-4 pt-4">
-                      <Link href={"/gaming"} className="bg-[url('/assets/images/eventLogo1.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] group h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex flex-col justify-center items-center">
+                      <Link href={"/events/oysters"} className="bg-[url('/assets/images/eventLogo1.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] group h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex flex-col justify-center items-center">
                         <p className="text-[18px]">fresh oysters</p>
                         <p className="text-[12px]">fresh oysters</p>
                       </Link>
-                      <Link href={"/gaming"} className="bg-[url('/assets/images/eventLogo2.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex flex-col justify-center items-center">
+                      <Link href={"/events/drink"} className="bg-[url('/assets/images/eventLogo2.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex flex-col justify-center items-center">
                         <p className="text-[14px]">drink specials</p>
                         <p className="text-[12px]">monday to wendesday</p>
                       </Link>
-                      <Link href={"/gaming"} className="bg-[url('/assets/images/eventLogo3.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex flex-col justify-center items-center">
+                      <Link href={"/events/gaming"} className="bg-[url('/assets/images/eventLogo3.png')] bg-cover bg-center brightness-30 hover:brightness-90 rounded-md w-[100px] h-20 bg-white/10 hover:bg-black/40 transition duration-1000 flex flex-col justify-center items-center">
                         <p className="text-[14px]">gaming floor special</p>
                         <p className="text-[12px]">monday to wendesday</p>
                       </Link>

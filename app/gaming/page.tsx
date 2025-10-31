@@ -45,7 +45,7 @@ const Gaming = () => {
                 offered at Casino M8trix."
                         button1=""
                         button2="Join academy"
-                        image="cardacadamy" />
+                        image="cardacadamy.jpg" />
                 </div>
             </div>
 
