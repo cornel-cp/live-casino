@@ -1,13 +1,13 @@
 "use client";
 
-import Jackpot from "../components/home/jackpot";
-import Games from "../components/home/games";
-import HomeDining from "../components/home/homedining";
-import Discover from "../components/home/discover";
-import SpecialEvent from "../components/home/specialEvent";
-import EventSpace from "../components/home/eventSpace";
-import Layout from "../components/layout/layout";
-import Carousel from "../components/home/carousel";
+import Jackpot from "./components/home/jackpot";
+import Games from "./components/home/games";
+import HomeDining from "./components/home/homedining";
+import Discover from "./components/home/discover";
+import SpecialEvent from "./components/home/specialEvent";
+import EventSpace from "./components/home/eventSpace";
+import Layout from "./components/layout/layout";
+import Carousel from "./components/home/carousel";
 
 const HomePage = () => {
 
