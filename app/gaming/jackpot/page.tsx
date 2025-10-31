@@ -4,6 +4,8 @@ import Image from "next/image"
 
 const Jackpot = () => {
 
+
+
     return (
         <Layout>
 
@@ -12,7 +14,7 @@ const Jackpot = () => {
                 <div className="absolute inset-0 bg-[url(/assets/images/bg_jackpot.png)] bg-no-repeat bg-cover bg-center brightness-50"></div>
 
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-black/90"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-[#181818]"></div>
 
                 {/* Foreground content */}
                 <div className="relative z-10 flex flex-col justify-end items-center pb-16 sm:pb-20 px-4">

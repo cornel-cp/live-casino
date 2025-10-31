@@ -28,9 +28,11 @@ const EachGame = () => {
           the most played bonuses in the casino. Three card bonus pays with a
           pair or better…
         </p>
-        <button className="text-white border-white border-2 bg-black py-2.5 px-5 mt-2.5 -skew-x-12 hover:text-red-600 hover:border-red-600">
-          <p className="skew-x-12">SEE MORE</p>
-        </button>
+        <Link href={"/gaming/threeCardGame"}>
+          <button className="text-white border-white border-2 bg-black py-2.5 px-5 mt-2.5 -skew-x-12 hover:text-red-600 hover:border-red-600">
+            <p className="skew-x-12">SEE MORE</p>
+          </button>
+        </Link>
       </div>
       <div className="flex-4 group border border-white/20 m-1 text-center py-6 hover:border-red-600 transition duration-1000">
         <PriIcon />
@@ -40,9 +42,11 @@ const EachGame = () => {
           the most played bonuses in the casino. Three card bonus pays with a
           pair or better…
         </p>
-        <button className="text-white border-white border-2 bg-black py-2.5 px-5 mt-2.5 -skew-x-12 hover:text-red-600 hover:border-red-600">
-          <p className="skew-x-12">SEE MORE</p>
-        </button>
+        <Link href={"/gaming/threeCardGame"}>
+          <button className="text-white border-white border-2 bg-black py-2.5 px-5 mt-2.5 -skew-x-12 hover:text-red-600 hover:border-red-600">
+            <p className="skew-x-12">SEE MORE</p>
+          </button>
+        </Link>
       </div>
     </div>
   );

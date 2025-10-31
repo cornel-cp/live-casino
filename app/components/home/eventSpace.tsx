@@ -15,7 +15,7 @@ const EventSpace = () => {
                 your next great event soon!"
                 button1="EVENT REQUEST"
                 button2="Venue Details"
-                image="event_tower" />
+                image="event_tower.png" />
             <EventSpaceCom
                 text1="Casino M8TRIX Card academy"
                 text2="Learn from the professionals"
@@ -27,7 +27,7 @@ const EventSpace = () => {
                 offered at Casino M8trix."
                 button1=""
                 button2="Join academy"
-                image="card_acadamy" />
+                image="cardacadamy.jpg" />
         </div>
     )
 }

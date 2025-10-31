@@ -13,10 +13,10 @@ const CardAcadamy = () => {
         <Layout>
             <div className="relative w-full min-h-screen flex flex-col justify-end items-center text-center overflow-hidden">
                 {/* Background image */}
-                <div className="absolute inset-0 bg-[url(/assets/images/card_acadamy.jpg)] bg-no-repeat bg-cover bg-center brightness-50"></div>
+                <div className="absolute inset-0 bg-[url(/assets/images/cardacadamy.jpg)] bg-no-repeat bg-cover bg-center brightness-50"></div>
 
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-linear-to-b from-white/10 to-black/90"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-white/10 to-[#181818]"></div>
 
                 {/* Foreground content */}
                 <div className="relative z-10 flex flex-col justify-end items-center pb-16 sm:pb-20 px-4">
