@@ -9,7 +9,7 @@ const Events = () => {
       <Layout>
         {/* room Section */}
         <div
-          className="w-full min-h-screen bg-no-repeat bg-size-[200%_100%] bg-position-[right_center] brightness-75 md:bg-cover md:bg-center flex flex-col justify-end"
+          className="w-full min-h-screen bg-no-repeat bg-position-[right_center] brightness-75 md:bg-cover md:bg-center flex flex-col justify-end"
           style={{
             backgroundImage: "url('/assets/images/bg_event_room.jpg')",
           }}
