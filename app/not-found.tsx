@@ -41,7 +41,7 @@ const NotFound = () => {
                             </div>
                             <p className="text-[18px] text-[#5c5c5c] noodle font-[400px]">IT LOOKS LIKE NOTHING WAS FOUND AT THIS LOCATION</p>
                             <div className="hidden md:flex mt-8">
-                                <Link href={"/home"}>
+                                <Link href={"/"}>
                                     <button className={`bg-red-600-0 flex items-center w-full md:w-[93px] h-[33.5px] -skew-x-16 cursor-pointer border rounded-xs border-white mr-2`}>
                                         <p className={`skew-x-16 text-white w-full text-[14px] font-normal text-wrap leading-none text-center`}>
                                             HOMEPAGE

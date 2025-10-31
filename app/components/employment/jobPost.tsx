@@ -48,7 +48,7 @@ const JobPost: React.FC<JobPostProps> = ({
             PREVIEW
           </p>
         </button>
-        <Link href={"/home"} className="flex-5 ">
+        <Link href={"/"} className="flex-5 ">
           <BtnElement
             className="w-full h-[34px]"
             color="red"

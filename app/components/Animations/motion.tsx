@@ -80,7 +80,7 @@ export default function DraggableContainer() {
                 PREVIEW
               </p>
             </button>
-            <Link href={"/home"} className="flex-5 ">
+            <Link href={"/"} className="flex-5 ">
               <BtnElement
                 className="w-full h-[34px]"
                 color="red"
@@ -178,7 +178,7 @@ export default function DraggableContainer() {
                 </p>
               </div>
             </div>
-            <Link href={"/home"}>
+            <Link href={"/"}>
               <BtnElement
                 className="noodle mt-5 px-2 float-right"
                 color="red"

@@ -41,7 +41,7 @@ const Header = ({ className = "" }: HeaderProps) => {
         <div className="bg-white/20 absolute w-full h-[50px] backdrop-blur-md"></div>
 
         {/* Logo */}
-        <Link href="/home" className="absolute left-5 top-2 z-100">
+        <Link href="/" className="absolute left-5 top-2 z-100">
           <Image
             src="/assets/images/md_logo.svg"
             alt="Site logo"
@@ -108,7 +108,7 @@ const Header = ({ className = "" }: HeaderProps) => {
 
       {/* ============ DESKTOP HEADER ============ */}
       <div className="hidden md:flex md:justify-end items-center relative">
-        <Link href="/home" className="absolute left-5 top-0 sm:left-20">
+        <Link href="/" className="absolute left-5 top-0 sm:left-20">
           <Image
             src="/logo.svg"
             alt="Site logo"

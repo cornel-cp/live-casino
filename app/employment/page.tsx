@@ -99,7 +99,7 @@ const Employment = () => {
                     PREVIEW
                   </p>
                 </button>
-                <Link href={"/home"}>
+                <Link href={"/"}>
                   <BtnElement
                     className="flex-5 w-full h-[33.5px]"
                     color="red"
@@ -200,7 +200,7 @@ const Employment = () => {
                   </div>
                 </div>
               </div>
-              <Link href={"/home"}>
+              <Link href={"/"}>
                 <BtnElement
                   className="noodle mt-5 float-right"
                   color="red"
