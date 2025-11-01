@@ -4,6 +4,8 @@ import "./globals.css";
 import "./fontawesome";
 import Head from "next/head";
 import Link from "next/link";
+import Loading from "./loading";
+import LoadingWrapper from "./loading";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -32,7 +34,10 @@ export default function RootLayout({
       <body
         className={`antialiased min-w-screen m-auto`}
       >
+        <LoadingWrapper>
+
         <div className="max-w-screen m-auto">{children}</div>
+        </LoadingWrapper>
       </body>
     </html>
   );
