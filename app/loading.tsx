@@ -131,4 +131,3 @@ export default function LoadingWrapper({ children }: { children: React.ReactNode
         </div>
     );
 }
-}
