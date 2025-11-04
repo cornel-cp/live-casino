@@ -2,6 +2,10 @@
 
 A modern, responsive web application for Casino M8Trix, the premiere 24/7 entertainment destination in San Jose and Silicon Valley. Built with Next.js 16, React 19, and TypeScript, featuring a sleek UI with smooth animations and comprehensive gaming, dining, and event information.
 
+<img width="1920" height="960" alt="Cover" src="https://github.com/user-attachments/assets/d4c52e37-307a-4647-823e-433c1d44b21c" />
+
+
+
 ## 📋 Project Overview
 
 Casino M8Trix is a comprehensive digital platform that serves as the online presence for Casino M8Trix, a premier 24/7 entertainment destination located in San Jose, California. The platform provides visitors with detailed information about casino games, dining options, events, educational resources, and facilitates communication with the establishment.
