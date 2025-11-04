@@ -26,6 +26,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --font-noodle: 'noodle';
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,7 +40,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   /* opacity: 0.3; */
-  font-family: 'noodle';
+  font-family: var(--font-noodle), 'noodle', sans-serif !important;
 }
 
 header button:hover{
@@ -65,7 +66,7 @@ tr td{
 }
 
 .noodle {
-  font-family: 'noodle';
+  font-family: var(--font-noodle), 'noodle', sans-serif;
 }
 
 .glow-effect {
