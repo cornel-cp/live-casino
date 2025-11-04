@@ -25,7 +25,7 @@ const HomePage = () => {
     return (
         <Layout>
             <div className="relative">
-                <video controls={false} autoPlay muted>
+                <video controls={false} autoPlay muted className="w-full object-cover">
                     <source src="/assets/video/home_video.mp4" ></source>
                 </video>
                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-b from-transparent to-[#181818]"> </div>
