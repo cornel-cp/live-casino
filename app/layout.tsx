@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./fontawesome";
 import LoadingWrapper from "./loading";
+import WebVitalsReporter from "./_components/WebVitalsRepoter";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.className} ${geistMono.className} antialiased min-w-screen m-auto`}
       >
+        <WebVitalsReporter />
         <LoadingWrapper>
           <div className="max-w-screen m-auto">{children}</div>
         </LoadingWrapper>
