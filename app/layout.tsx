@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./fontawesome";
 import LoadingWrapper from "./loading";
-import WebVitalsReporter from "./_components/WebVitalsRepoter";
+import Script from "next/script";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -27,10 +27,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Replace with your GA4 Measurement ID */}
+        <Script
+          id="ga4"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-TXBRCD6JXR`}
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TXBRCD6JXR', { send_page_view: true });
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.className} ${geistMono.className} antialiased min-w-screen m-auto`}
       >
-        <WebVitalsReporter />
         <LoadingWrapper>
           <div className="max-w-screen m-auto">{children}</div>
         </LoadingWrapper>
